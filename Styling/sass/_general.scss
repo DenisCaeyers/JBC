@@ -1,0 +1,4 @@
+/* Override with Content-Box */
+.ms-qatbutton span, .ms-commandLink, .ms-srch-sb-searchLink, .ms-srch-sb-navLink {
+	box-sizing: content-box;
+}
