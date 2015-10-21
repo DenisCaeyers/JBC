@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Bootstrap styling */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 /* line 9, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -1453,7 +1454,7 @@ img {
 }
 
 /* line 81, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img {
+.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img, #contentRow .jbc-pageimage img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -8308,8 +8309,8 @@ button.close {
 
 /* line 45, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
-  border-top: 1px #F1F1F1 solid;
-  border-bottom: 1px #F1F1F1 solid;
+  border-top: 1px #7c7a74 solid;
+  border-bottom: 1px #7c7a74 solid;
 }
 @media screen and (max-width: 768px) {
   /* line 45, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
@@ -8317,53 +8318,78 @@ button.close {
     overflow-y: visible !important;
   }
 }
+/* line 53, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox {
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   /* line 53, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox {
-    width: 100%;
+    text-align: left;
   }
-  /* line 56, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+  /* line 58, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox * {
     width: 100%;
   }
 }
-/* line 60, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 62, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root {
+  padding-top: 5px;
   /*@media screen and (max-width:$screen-sm){
   	width: 100%;
   }*/
 }
-/* line 66, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 69, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root > li > a {
   display: none;
 }
-/* line 72, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li li {
-  padding: 15px;
+/* line 74, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li {
+  /*padding-left:$gutter;
+  padding-right: $gutter;*/
 }
-/* line 75, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 77, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
-  padding: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1;
+  line-height: 10px !important;
+  margin: 0;
+  margin-right: 30px;
+  /*padding-top: $gutter;
+  padding-bottom: $gutter;*/
 }
-/* line 79, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 90, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:visited, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
   background-color: white !important;
 }
-/* line 82, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 93, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover {
+  /*border-bottom:4px solid $yellow;*/
+}
+/* line 96, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:active {
+  color: black;
+}
+/* line 99, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
   margin: 0;
 }
-/* line 90, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 108, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic {
   /*position: relative;*/
+  width: 200px !important;
 }
-/* line 92, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 111, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li {
   display: block;
   float: none;
-  padding: 2px 5px;
+  /* padding:2px 5px; */
 }
-/* line 99, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 118, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
   display: none;
 }
@@ -8375,81 +8401,89 @@ button.close {
   /* Style the top row, set padding & height */
   padding-top: 15px;
   padding-bottom: 0;
-  height: 170px;
+  min-height: 170px;
+  height: auto;
   position: relative;
 }
-/* line 14, ../sass/JBC/_jbc-general.scss */
+@media screen and (max-width: 768px) {
+  /* line 5, ../sass/JBC/_jbc-general.scss */
+  #s4-titlerow {
+    min-height: 110px;
+  }
+}
+/* line 18, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox {
   margin: 0;
   width: 100%;
 }
-/* line 17, ../sass/JBC/_jbc-general.scss */
+/* line 21, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow {
   /* Center the site logo */
   /* Navigation container¨*/
   /* Search box div */
 }
-/* line 21, ../sass/JBC/_jbc-general.scss */
+/* line 25, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
   position: absolute;
   left: 50%;
   padding-top: 20px;
 }
-/* line 25, ../sass/JBC/_jbc-general.scss */
+/* line 29, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon #DeltaSiteLogo {
   position: relative;
   left: -50%;
 }
-/* line 31, ../sass/JBC/_jbc-general.scss */
+/* line 35, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
   margin-top: 105px;
-  height: 50px !important;
 }
-/* line 36, ../sass/JBC/_jbc-general.scss */
+/* line 39, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
   position: absolute;
   right: 15px;
 }
 
-/* line 45, ../sass/JBC/_jbc-general.scss */
+/* Content Styling */
+/* line 48, ../sass/JBC/_jbc-general.scss */
+#contentRow {
+  padding-top: 20px;
+}
+/* line 50, ../sass/JBC/_jbc-general.scss */
 #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 48, ../sass/JBC/_jbc-general.scss */
+/* line 53, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-box, #contentRow .jbc-graybox, #contentRow .jbc-yellowbox, #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 52, ../sass/JBC/_jbc-general.scss */
+/* line 57, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 56, ../sass/JBC/_jbc-general.scss */
+/* line 61, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 60, ../sass/JBC/_jbc-general.scss */
+/* line 65, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-whitebox {
   background-color: white;
 }
 
-/* line 20, ../sass/jbc-StorePageLayout.scss */
+/* TODO Local font gebruiken */
+/* line 23, ../sass/jbc-StorePageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Hide the Quick Launch */
-/* line 28, ../sass/jbc-StorePageLayout.scss */
+/* line 31, ../sass/jbc-StorePageLayout.scss */
 #sideNavBox {
   display: none;
 }
 
 /* Content Styling */
-/* line 33, ../sass/jbc-StorePageLayout.scss */
-#contentRow {
-  padding-top: 15px;
-}
-/* line 36, ../sass/jbc-StorePageLayout.scss */
+/* line 38, ../sass/jbc-StorePageLayout.scss */
 #contentRow .row .jbc-box, #contentRow .row .jbc-graybox, #contentRow .row .jbc-yellowbox, #contentRow .row .jbc-whitebox {
   min-height: 300px;
 }

@@ -9,7 +9,11 @@
 	/* Style the top row, set padding & height */
 	padding-top: 15px;
 	padding-bottom: 0;
-	height: 170px;
+	min-height: 170px;
+	@media screen and (max-width:$screen-sm){
+		min-height:110px;
+	}
+	height:auto;
  	position: relative;
 	#titleAreaBox{
 		margin: 0;
@@ -30,7 +34,6 @@
 			.ms-breadcrumb-box{
 				 #DeltaTopNavigation {
 					 margin-top: 105px;
-					 height: 50px !important;
 				 }
 			}
 			> div + div + div + div {
@@ -41,7 +44,9 @@
 	} 
 }
 
+/* Content Styling */
 #contentRow{
+	padding-top: $gutter + 5px;
 	.ms-webpartzone-cell {
  		margin: 0;
 	}

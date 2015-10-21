@@ -45,19 +45,22 @@
 				#DeltaTopNavigation{
 					@extend .navbar-collapse;
 					@extend .collapse;
-					border-top: 1px #F1F1F1 solid;
-  					border-bottom: 1px #F1F1F1 solid;
+					border-top: 1px $darkgray solid;
+  					border-bottom: 1px $darkgray solid;
 					@media screen and (max-width:$screen-sm){
 						overflow-y:visible !important;
 					}
 					.ms-core-listMenu-horizontalBox{
+						width: 100%;
+						text-align: center;
 						@media screen and (max-width:$screen-sm){
-							width: 100%;
+							text-align: left;
 							* {
 								width: 100%;
 							}
 						}
 						ul.ms-core-listMenu-root{
+							padding-top:5px;
 							/*@media screen and (max-width:$screen-sm){
 								width: 100%;
 							}*/
@@ -69,30 +72,46 @@
 							}
 							// Normal navigation
 							li{
-								li{
-									padding: $gutter;
-								}
+								/*padding-left:$gutter;
+								padding-right: $gutter;*/
 								a{
-									padding:0 !important;
+									padding-top:10px !important;
+									padding-bottom:10px !important;
+									font-family: 'Open Sans', sans-serif;
+									text-transform: uppercase;
+									font-size:1;
+									line-height: 10px !important;
+									@include resetmargin;
+									margin-right:50px;
+									/*padding-top: $gutter;
+									padding-bottom: $gutter;*/
 								}
 								//All states
 								a:hover, a:visited, a:focus, a{
 									background-color:white !important;
 								}
+								a:hover{
+									/*border-bottom:4px solid $yellow;*/
+								}
+								a:active{
+									color:black;
+								}
 								> ul{
 									@extend .nav;
 									@extend .navbar-nav;
 									@include resetmargin;
+
 								}
 							}
 							//Dropdown navigation
 							li.dynamic-children{
 								> ul.dynamic{
 									/*position: relative;*/
+									width:200px !important;
 									li{
 										display: block;
 										float: none;
-										padding:2px 5px;	
+										/* padding:2px 5px; */	
 									}
 								}
 							}
