@@ -1,0 +1,123 @@
+/* CGK Responsive Framework */
+/* SASS only file */
+
+/* Suitbar, hide on mobile devices */
+#suiteBarDelta{
+	@extend .hidden-sm;
+	@extend .hidden-xs;
+}
+
+/* RibbonRow, hide on mobile devices */
+#s4-ribbonrow{
+	@extend .hidden-sm;
+	@extend .hidden-xs;
+}
+
+/* Extend the TitleRow to use the container features */
+#s4-titlerow{
+	#titleAreaBox{
+		@extend .container;
+		@media screen and (max-width: $screen-sm){
+			@include resetmargin;
+		}
+		
+		#titleAreaRow{
+			#siteIcon{
+				@media screen and (max-width: $screen-sm)
+				{
+					display: table !important;
+				}
+			}
+			.ms-breadcrumb-box{
+				@media screen and (max-width: $screen-sm)
+				{
+					display: table !important;
+					height: auto;
+				}
+			}
+			div.ms-tableCell{
+				@media screen and (max-width: $screen-sm)
+				{
+					display: block;
+				}
+				.ms-mpSearchBox{
+					@media screen and (max-width: $screen-sm)
+					{
+						float: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Extend contentRow with container */
+#contentRow{
+	@extend .container;
+	padding-top:$gutter;
+	#contentBox{
+		@include resetmargin;
+		@include resetminmax-width;
+	}
+}
+
+/* Responsive newsfeeds */
+ // General newsfeed container
+ #ms-microfeeddiv{
+	  min-width: 0px !important;
+	  // Newsfeed title "Newsfeed"
+	  #ms-titlebararea{
+		  min-width: 0px !important;
+		  #ms-titlebardiv{
+			  margin-top:0;
+		  }
+	  }
+	  // Start a conversation textbox
+	  #ms-microblogdiv{
+		  min-width: 0px !important;
+	  }
+	  
+	  // Full feed content
+	  #ms-newsfeedpartdiv{
+		  min-width: 0px !important;
+		  *{
+			  @include resetminmax-width;
+		  }
+		  .ms-microfeed-userThumbnailArea{
+			  @extend .hidden-xs;
+		  }
+		  .ms-microfeed-attachmentReplyPreviewDiv{
+			  @include resetminmax-width;
+		  }
+		  .ms-microfeed-rootBody{
+			  @media screen and (max-width:$screen-sm)
+			  {
+					@include resetmargin;	  
+			  }
+		  }
+		  .ms-microfeed-replyArea{
+			  	 @media screen and (max-width:$screen-sm)
+			  	  {
+				  	@include resetmargin;
+				  }
+			  .ms-microfeedReplyContent{
+				  @media screen and (max-width:$screen-sm)
+			  	  {
+				  	@include resetmargin;
+				  }  
+			   }
+			  .ms-microfeed-replyBody{
+				  @media screen and (max-width:$screen-sm)
+			  	  {
+				  	@include resetmargin;
+				  }
+			  }
+		  }
+		  .ms-microfeed-attachmentDiv{
+			  img{
+				  @extend .img-responsive;
+			  }
+		  }
+	  }
+ }
+ 

@@ -1,0 +1,108 @@
+/* To use the collapsable TopNav, add the following HTML onto the PageLayout */
+/* Add into the contents of the ContentPlaceHolder with id = PlaceHolderMain */
+/* <div class="sassy-nav-button">
+		<button type="button" class="sassy-toggle collapsed" data-toggle="collapse" data-target="#DeltaTopNavigation" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	</div>
+*/
+.sassy-nav-button{
+	@extend .hidden-md;
+	@extend .hidden-lg;
+	position: fixed;
+	top:$gutter;
+	right:$gutter;
+	background-color: $grayscale;
+	z-index: 200;
+	button.sassy-toggle{
+		@extend .btn;
+		@extend .btn-default;
+		@include resetpadding;
+		@include border-radius(0);
+		@include box-shadow(0, 0, 5px, 0, $grayscale);
+		height: 32px;
+		width: 32px;
+		min-width: 32px;
+		padding: 5px;
+		color: darken($grayscale,10%);
+		border: none;
+		span.icon-bar{
+			background-color:black;
+			width: auto;
+			height: 3px;
+			display: block;
+			margin: 3px 0;
+		}
+	}
+}
+
+#s4-titlerow{
+	#titleAreaBox{
+		#titleAreaRow{
+			.ms-breadcrumb-box{
+				#DeltaTopNavigation{
+					@extend .navbar-collapse;
+					@extend .collapse;
+					border-top: 1px #F1F1F1 solid;
+  					border-bottom: 1px #F1F1F1 solid;
+					@media screen and (max-width:$screen-sm){
+						overflow-y:visible !important;
+					}
+					.ms-core-listMenu-horizontalBox{
+						@media screen and (max-width:$screen-sm){
+							width: 100%;
+							* {
+								width: 100%;
+							}
+						}
+						ul.ms-core-listMenu-root{
+							/*@media screen and (max-width:$screen-sm){
+								width: 100%;
+							}*/
+							// Hide the first link
+							> li{
+								> a{
+									display: none;
+								}
+							}
+							// Normal navigation
+							li{
+								/*@media screen and (max-width:$screen-sm){
+									width: 100%;
+								}*/
+								a{
+									padding:0 !important;
+								}
+								//All states
+								a:hover, a:visited, a:focus, a{
+									background-color:white !important;
+								}
+								> ul{
+									@extend .nav;
+									@extend .navbar-nav;
+									@include resetmargin;
+								}
+							}
+							//Dropdown navigation
+							li.dynamic-children{
+								> ul.dynamic{
+									/*position: relative;*/
+									li{
+										display: block;
+										float: none;
+										padding:2px 5px;	
+									}
+								}
+							}
+							.ms-navedit-editArea{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

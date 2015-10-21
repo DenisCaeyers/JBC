@@ -1452,7 +1452,7 @@ img {
 }
 
 /* line 81, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive {
+.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -2033,36 +2033,36 @@ pre code {
 }
 
 /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-.container {
+.container, #s4-titlerow #titleAreaBox, #contentRow {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:before, .container:after {
+.container:before, #s4-titlerow #titleAreaBox:before, #contentRow:before, .container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:after {
+.container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container {
+  .container, #s4-titlerow #titleAreaBox, #contentRow {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container {
+  .container, #s4-titlerow #titleAreaBox, #contentRow {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container {
+  .container, #s4-titlerow #titleAreaBox, #contentRow {
     width: 1170px;
   }
 }
@@ -5195,8 +5195,10 @@ tbody.collapse.in {
 }
 
 /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.container > .navbar-header,
+.container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header,
 .container > .navbar-collapse,
+#s4-titlerow #titleAreaBox > .navbar-collapse,
+#contentRow > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
@@ -5204,8 +5206,10 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .container > .navbar-header,
+  .container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header,
   .container > .navbar-collapse,
+  #s4-titlerow #titleAreaBox > .navbar-collapse,
+  #contentRow > .navbar-collapse,
   .container-fluid > .navbar-header,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
@@ -5270,7 +5274,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 177, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, #s4-titlerow .navbar > #titleAreaBox .navbar-brand, .navbar > #contentRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -6008,11 +6012,11 @@ a.badge:hover, a.badge:focus {
   border-top-color: #d5d5d5;
 }
 /* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.container .jumbotron {
+.container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron {
   border-radius: 6px;
 }
 /* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.jumbotron .container {
+.jumbotron .container, .jumbotron #s4-titlerow #titleAreaBox, #s4-titlerow .jumbotron #titleAreaBox, .jumbotron #contentRow {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -6022,7 +6026,7 @@ a.badge:hover, a.badge:focus {
     padding-bottom: 48px;
   }
   /* line 38, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .container .jumbotron {
+  .container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -7938,13 +7942,13 @@ button.close {
 
 @media (max-width: 767px) {
   /* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-xs {
+  .hidden-xs, #suiteBarDelta, #s4-ribbonrow, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-userThumbnailArea {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-sm {
+  .hidden-sm, #suiteBarDelta, #s4-ribbonrow {
     display: none !important;
   }
 }
@@ -8027,6 +8031,119 @@ button.close {
   }
 }
 /* Variables & mixins */
+/* Gutter sizing */
+/* CGK Repsonsive Framework */
+/* Override with Content-Box */
+/* line 2, ../sass/_general.scss */
+.ms-qatbutton span, .ms-commandLink, .ms-srch-sb-searchLink, .ms-srch-sb-navLink {
+  box-sizing: content-box;
+}
+
+/* CGK Responsive Framework */
+/* SASS only file */
+/* Suitbar, hide on mobile devices */
+/* RibbonRow, hide on mobile devices */
+/* Extend the TitleRow to use the container features */
+@media screen and (max-width: 768px) {
+  /* line 18, ../sass/_cgk-responsive-framework.scss */
+  #s4-titlerow #titleAreaBox {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 25, ../sass/_cgk-responsive-framework.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
+    display: table !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 31, ../sass/_cgk-responsive-framework.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
+    display: table !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 38, ../sass/_cgk-responsive-framework.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 43, ../sass/_cgk-responsive-framework.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell .ms-mpSearchBox {
+    float: none;
+  }
+}
+
+/* Extend contentRow with container */
+/* line 55, ../sass/_cgk-responsive-framework.scss */
+#contentRow {
+  padding-top: 15px;
+}
+/* line 58, ../sass/_cgk-responsive-framework.scss */
+#contentRow #contentBox {
+  margin: 0;
+  min-width: auto;
+  max-width: auto;
+}
+
+/* Responsive newsfeeds */
+/* line 66, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv {
+  min-width: 0px !important;
+}
+/* line 69, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-titlebararea {
+  min-width: 0px !important;
+}
+/* line 71, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
+  margin-top: 0;
+}
+/* line 76, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-microblogdiv {
+  min-width: 0px !important;
+}
+/* line 81, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-newsfeedpartdiv {
+  min-width: 0px !important;
+}
+/* line 83, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-newsfeedpartdiv * {
+  min-width: auto;
+  max-width: auto;
+}
+/* line 89, ../sass/_cgk-responsive-framework.scss */
+#ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
+  min-width: auto;
+  max-width: auto;
+}
+@media screen and (max-width: 768px) {
+  /* line 92, ../sass/_cgk-responsive-framework.scss */
+  #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 98, ../sass/_cgk-responsive-framework.scss */
+  #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 103, ../sass/_cgk-responsive-framework.scss */
+  #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 109, ../sass/_cgk-responsive-framework.scss */
+  #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
+    margin: 0;
+  }
+}
+
 /* JBC General styling */
 /* line 1, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow {
@@ -8069,19 +8186,19 @@ button.close {
   right: 15px;
 }
 
-/* line 16, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 20, ../sass/jbc-SingleColumnPageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Hide the Quick Launch */
-/* line 24, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 28, ../sass/jbc-SingleColumnPageLayout.scss */
 #sideNavBox {
   display: none;
 }
 
 /* Content Styling */
-/* line 29, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 33, ../sass/jbc-SingleColumnPageLayout.scss */
 #contentRow {
   padding-top: 15px;
 }
