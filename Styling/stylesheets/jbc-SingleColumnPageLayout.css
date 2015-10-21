@@ -8027,3 +8027,61 @@ button.close {
   }
 }
 /* Variables & mixins */
+/* JBC General styling */
+/* line 1, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow {
+  /* Style the top row, set padding & height */
+  padding-top: 15px;
+  padding-bottom: 0;
+  height: 170px;
+  position: relative;
+}
+/* line 7, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox {
+  margin: 0;
+  width: 100%;
+}
+/* line 10, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow {
+  /* Center the site logo */
+  /* Navigation container¨*/
+  /* Search box div */
+}
+/* line 14, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
+  position: absolute;
+  left: 50%;
+  padding-top: 20px;
+}
+/* line 18, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow #siteIcon #DeltaSiteLogo {
+  position: relative;
+  left: -50%;
+}
+/* line 24, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
+  margin-top: 105px;
+  height: 50px !important;
+}
+/* line 29, ../sass/JBC/_jbc-general.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
+  position: absolute;
+  right: 15px;
+}
+
+/* line 16, ../sass/jbc-SingleColumnPageLayout.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
+  display: none;
+}
+
+/* Hide the Quick Launch */
+/* line 24, ../sass/jbc-SingleColumnPageLayout.scss */
+#sideNavBox {
+  display: none;
+}
+
+/* Content Styling */
+/* line 29, ../sass/jbc-SingleColumnPageLayout.scss */
+#contentRow {
+  padding-top: 15px;
+}

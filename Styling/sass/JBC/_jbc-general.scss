@@ -1,0 +1,35 @@
+#s4-titlerow{
+	/* Style the top row, set padding & height */
+	padding-top: 15px;
+	padding-bottom: 0;
+	height: 170px;
+ 	position: relative;
+	#titleAreaBox{
+		margin: 0;
+  		width: 100%;
+		#titleAreaRow{
+			/* Center the site logo */
+			/* Navigation container¨*/
+ 			/* Search box div */
+			#siteIcon{ 
+				position: absolute;
+ 				left: 50%;
+ 				padding-top: 20px;
+				#DeltaSiteLogo {
+ 					position: relative;
+ 					left: -50%;
+				}
+			}
+			.ms-breadcrumb-box{
+				 #DeltaTopNavigation {
+					 margin-top: 105px;
+					 height: 50px !important;
+				 }
+			}
+			> div + div + div + div {
+				position: absolute;
+  				right: 15px;
+			}
+		}
+	} 
+}
