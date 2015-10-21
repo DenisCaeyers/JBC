@@ -8275,19 +8275,23 @@ button.close {
   background-color: white;
 }
 
-/* line 20, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 20, ../sass/jbc-StorePageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Hide the Quick Launch */
-/* line 28, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 28, ../sass/jbc-StorePageLayout.scss */
 #sideNavBox {
   display: none;
 }
 
 /* Content Styling */
-/* line 33, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 33, ../sass/jbc-StorePageLayout.scss */
 #contentRow {
   padding-top: 15px;
+}
+/* line 36, ../sass/jbc-StorePageLayout.scss */
+#contentRow .row .jbc-box, #contentRow .row .jbc-graybox, #contentRow .row .jbc-yellowbox, #contentRow .row .jbc-whitebox {
+  min-height: 300px;
 }

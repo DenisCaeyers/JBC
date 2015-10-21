@@ -33,3 +33,25 @@
 		}
 	} 
 }
+
+#contentRow{
+	.ms-webpartzone-cell {
+ 		margin: 0;
+	}
+	.jbc-box{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.jbc-graybox{
+		@extend .jbc-box;
+		background-color:$gray;
+	}
+	.jbc-yellowbox{
+		@extend .jbc-box;
+		background-color:$yellow;
+	}
+	.jbc-whitebox{
+		@extend .jbc-box;
+		background-color:white;
+	}
+}

@@ -1,0 +1,40 @@
+/* Bootstrap styling */
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+/* Variables & mixins */
+@import "variables";
+@import "mixins";
+
+/* CGK Repsonsive Framework */
+@import "general";
+@import "cgk-responsive-framework";
+
+/* JBC General styling */
+@import "JBC/jbc-general";
+
+#s4-titlerow{
+	#titleAreaBox{
+		#titleAreaRow{
+			#pageTitle{
+				display: none;
+			}
+		}	
+	}   	
+}
+
+/* Hide the Quick Launch */
+#sideNavBox {
+  display: none;
+}
+
+/* Content Styling */
+#contentRow {
+	padding-top: 15px;
+	.row{
+	  	.jbc-box{
+		  min-height:300px;
+		}
+ 	}
+}
