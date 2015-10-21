@@ -8337,11 +8337,9 @@ button.close {
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root > li > a {
   display: none;
 }
-/* line 71, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li {
-  /*@media screen and (max-width:$screen-sm){
-  	width: 100%;
-  }*/
+/* line 72, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li li {
+  padding: 15px;
 }
 /* line 75, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
