@@ -1,4 +1,11 @@
+/* Import navigation styling */
+@import "Navigation/jbc-collapsable-topnav";
+
+
 #s4-titlerow{
+	/* Use Bootstrap container */
+	@extend .container;
+	@include resetpadding;
 	/* Style the top row, set padding & height */
 	padding-top: 15px;
 	padding-bottom: 0;

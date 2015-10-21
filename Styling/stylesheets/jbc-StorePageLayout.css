@@ -345,8 +345,9 @@ th {
   }
 
   /* line 83, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret,
-  .dropup > .btn > .caret {
+  .btn > .caret, .sassy-nav-button button.sassy-toggle > .caret,
+  .dropup > .btn > .caret,
+  .sassy-nav-button .dropup > button.sassy-toggle > .caret {
     border-top-color: #000 !important;
   }
 
@@ -2033,36 +2034,36 @@ pre code {
 }
 
 /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-.container, #s4-titlerow #titleAreaBox, #contentRow {
+.container, #s4-titlerow #titleAreaBox, #contentRow, #s4-titlerow {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:before, #s4-titlerow #titleAreaBox:before, #contentRow:before, .container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after {
+.container:before, #s4-titlerow #titleAreaBox:before, #contentRow:before, #s4-titlerow:before, .container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after, #s4-titlerow:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after {
+.container:after, #s4-titlerow #titleAreaBox:after, #contentRow:after, #s4-titlerow:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, #s4-titlerow #titleAreaBox, #contentRow {
+  .container, #s4-titlerow #titleAreaBox, #contentRow, #s4-titlerow {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, #s4-titlerow #titleAreaBox, #contentRow {
+  .container, #s4-titlerow #titleAreaBox, #contentRow, #s4-titlerow {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, #s4-titlerow #titleAreaBox, #contentRow {
+  .container, #s4-titlerow #titleAreaBox, #contentRow, #s4-titlerow {
     width: 1170px;
   }
 }
@@ -3686,9 +3687,11 @@ input[type="checkbox"] {
 /* line 298, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static.input-lg, .form-horizontal .form-group-lg .form-control-static.form-control, .input-group-lg > .form-control-static.form-control,
 .input-group-lg > .form-control-static.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-static.btn, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .input-group-sm > .form-control-static.form-control,
+.input-group-lg > .input-group-btn > .form-control-static.btn,
+.sassy-nav-button .input-group-lg > .input-group-btn > button.form-control-static.sassy-toggle, .form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn {
+.input-group-sm > .input-group-btn > .form-control-static.btn,
+.sassy-nav-button .input-group-sm > .input-group-btn > button.form-control-static.sassy-toggle {
   padding-left: 0;
   padding-right: 0;
 }
@@ -3696,7 +3699,8 @@ input[type="checkbox"] {
 /* line 67, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-sm, .form-horizontal .form-group-sm .form-control, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn {
+.input-group-sm > .input-group-btn > .btn,
+.sassy-nav-button .input-group-sm > .input-group-btn > button.sassy-toggle {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3727,7 +3731,8 @@ select[multiple].input-sm,
 /* line 67, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .input-lg, .form-horizontal .form-group-lg .form-control, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn {
+.input-group-lg > .input-group-btn > .btn,
+.sassy-nav-button .input-group-lg > .input-group-btn > button.sassy-toggle {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3780,7 +3785,8 @@ select[multiple].input-lg,
 /* line 341, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_forms.scss */
 .input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
-.input-group-lg > .input-group-btn > .btn + .form-control-feedback {
+.input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.sassy-nav-button .input-group-lg > .input-group-btn > button.sassy-toggle + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px;
@@ -3789,7 +3795,8 @@ select[multiple].input-lg,
 /* line 346, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_forms.scss */
 .input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
-.input-group-sm > .input-group-btn > .btn + .form-control-feedback {
+.input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.sassy-nav-button .input-group-sm > .input-group-btn > button.sassy-toggle + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -4022,7 +4029,7 @@ select[multiple].input-lg,
 }
 
 /* line 9, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn {
+.btn, .sassy-nav-button button.sassy-toggle {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -4042,25 +4049,25 @@ select[multiple].input-lg,
   user-select: none;
 }
 /* line 25, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.btn:focus, .sassy-nav-button button.sassy-toggle:focus, .btn:active:focus, .sassy-nav-button button.sassy-toggle:active:focus, .btn.active:focus, .sassy-nav-button button.active.sassy-toggle:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:hover, .btn:focus {
+.btn:hover, .sassy-nav-button button.sassy-toggle:hover, .btn:focus, .sassy-nav-button button.sassy-toggle:focus {
   color: #333;
   text-decoration: none;
 }
 /* line 36, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:active, .btn.active {
+.btn:active, .sassy-nav-button button.sassy-toggle:active, .btn.active, .sassy-nav-button button.active.sassy-toggle {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 43, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+.btn.disabled, .sassy-nav-button button.disabled.sassy-toggle, .btn[disabled], .sassy-nav-button button[disabled].sassy-toggle, fieldset[disabled] .btn, fieldset[disabled] .sassy-nav-button button.sassy-toggle, .sassy-nav-button fieldset[disabled] button.sassy-toggle {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -4070,28 +4077,28 @@ select[multiple].input-lg,
 }
 
 /* line 57, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-default {
+.btn-default, .sassy-nav-button button.sassy-toggle {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
 }
 /* line 11, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:hover, .sassy-nav-button button.sassy-toggle:hover, .btn-default:focus, .sassy-nav-button button.sassy-toggle:focus, .btn-default:active, .sassy-nav-button button.sassy-toggle:active, .btn-default.active, .sassy-nav-button button.active.sassy-toggle, .open > .btn-default.dropdown-toggle, .sassy-nav-button .open > button.dropdown-toggle.sassy-toggle {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
 /* line 20, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:active, .sassy-nav-button button.sassy-toggle:active, .btn-default.active, .sassy-nav-button button.active.sassy-toggle, .open > .btn-default.dropdown-toggle, .sassy-nav-button .open > button.dropdown-toggle.sassy-toggle {
   background-image: none;
 }
 /* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+.btn-default.disabled, .sassy-nav-button button.disabled.sassy-toggle, .btn-default.disabled:hover, .sassy-nav-button button.disabled.sassy-toggle:hover, .btn-default.disabled:focus, .sassy-nav-button button.disabled.sassy-toggle:focus, .btn-default.disabled:active, .sassy-nav-button button.disabled.sassy-toggle:active, .btn-default.disabled.active, .sassy-nav-button button.disabled.active.sassy-toggle, .btn-default[disabled], .sassy-nav-button button[disabled].sassy-toggle, .btn-default[disabled]:hover, .sassy-nav-button button[disabled].sassy-toggle:hover, .btn-default[disabled]:focus, .sassy-nav-button button[disabled].sassy-toggle:focus, .btn-default[disabled]:active, .sassy-nav-button button[disabled].sassy-toggle:active, .btn-default[disabled].active, .sassy-nav-button button[disabled].active.sassy-toggle, fieldset[disabled] .btn-default, fieldset[disabled] .sassy-nav-button button.sassy-toggle, .sassy-nav-button fieldset[disabled] button.sassy-toggle, fieldset[disabled] .btn-default:hover, fieldset[disabled] .sassy-nav-button button.sassy-toggle:hover, .sassy-nav-button fieldset[disabled] button.sassy-toggle:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .sassy-nav-button button.sassy-toggle:focus, .sassy-nav-button fieldset[disabled] button.sassy-toggle:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .sassy-nav-button button.sassy-toggle:active, .sassy-nav-button fieldset[disabled] button.sassy-toggle:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .sassy-nav-button button.active.sassy-toggle, .sassy-nav-button fieldset[disabled] button.active.sassy-toggle {
   background-color: #fff;
   border-color: #ccc;
 }
 /* line 38, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-default .badge {
+.btn-default .badge, .sassy-nav-button button.sassy-toggle .badge {
   color: #fff;
   background-color: #333;
 }
@@ -4261,7 +4268,7 @@ select[multiple].input-lg,
 }
 
 /* line 124, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .sassy-nav-button .btn-group-lg > button.sassy-toggle {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -4269,7 +4276,7 @@ select[multiple].input-lg,
 }
 
 /* line 128, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .sassy-nav-button .btn-group-sm > button.sassy-toggle {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -4277,7 +4284,7 @@ select[multiple].input-lg,
 }
 
 /* line 132, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn {
+.btn-xs, .btn-group-xs > .btn, .sassy-nav-button .btn-group-xs > button.sassy-toggle {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -4315,21 +4322,21 @@ input[type="button"].btn-block {
 }
 
 /* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_component-animations.scss */
-.collapse {
+.collapse, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
   display: none;
 }
 /* line 21, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_component-animations.scss */
-.collapse.in {
+.collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .in#DeltaTopNavigation {
   display: block;
 }
 
 /* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_component-animations.scss */
-tr.collapse.in {
+tr.collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box tr.in#DeltaTopNavigation {
   display: table-row;
 }
 
 /* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_component-animations.scss */
-tbody.collapse.in {
+tbody.collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box tbody.in#DeltaTopNavigation {
   display: table-row-group;
 }
 
@@ -4521,29 +4528,39 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .sassy-nav-button .btn-group > button.sassy-toggle,
+.btn-group-vertical > .btn,
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle {
   position: relative;
   float: left;
 }
 /* line 15, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+.btn-group > .btn:hover, .sassy-nav-button .btn-group > button.sassy-toggle:hover, .btn-group > .btn:focus, .sassy-nav-button .btn-group > button.sassy-toggle:focus, .btn-group > .btn:active, .sassy-nav-button .btn-group > button.sassy-toggle:active, .btn-group > .btn.active, .sassy-nav-button .btn-group > button.active.sassy-toggle,
 .btn-group-vertical > .btn:hover,
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle:hover,
 .btn-group-vertical > .btn:focus,
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle:active,
+.btn-group-vertical > .btn.active,
+.sassy-nav-button .btn-group-vertical > button.active.sassy-toggle {
   z-index: 2;
 }
 /* line 21, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:focus,
-.btn-group-vertical > .btn:focus {
+.btn-group > .btn:focus, .sassy-nav-button .btn-group > button.sassy-toggle:focus,
+.btn-group-vertical > .btn:focus,
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle:focus {
   outline: 0;
 }
 
 /* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn,
+.btn-group .btn + .btn, .btn-group .sassy-nav-button button.sassy-toggle + .btn, .sassy-nav-button .btn-group button.sassy-toggle + .btn, .btn-group .sassy-nav-button .btn + button.sassy-toggle, .sassy-nav-button .btn-group .btn + button.sassy-toggle, .btn-group .sassy-nav-button button.sassy-toggle + button.sassy-toggle, .sassy-nav-button .btn-group button.sassy-toggle + button.sassy-toggle,
 .btn-group .btn + .btn-group,
+.btn-group .sassy-nav-button button.sassy-toggle + .btn-group,
+.sassy-nav-button .btn-group button.sassy-toggle + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .sassy-nav-button .btn-group + button.sassy-toggle,
+.sassy-nav-button .btn-group .btn-group + button.sassy-toggle,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -4567,29 +4584,29 @@ tbody.collapse.in {
   float: left;
 }
 /* line 47, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn,
+.btn-toolbar > .btn, .sassy-nav-button .btn-toolbar > button.sassy-toggle,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
 /* line 54, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .sassy-nav-button .btn-group > button.sassy-toggle:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 /* line 59, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .sassy-nav-button .btn-group > button.sassy-toggle:first-child {
   margin-left: 0;
 }
 /* line 61, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .sassy-nav-button .btn-group > button.sassy-toggle:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 66, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .sassy-nav-button .btn-group > button.sassy-toggle:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4601,19 +4618,19 @@ tbody.collapse.in {
 }
 
 /* line 75, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .sassy-nav-button .btn-group > .btn-group:not(:first-child):not(:last-child) > button.sassy-toggle {
   border-radius: 0;
 }
 
 /* line 79, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:first-child > .btn:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child, .sassy-nav-button .btn-group > .btn-group:first-child > button.sassy-toggle:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 84, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:last-child > .btn:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child, .sassy-nav-button .btn-group > .btn-group:last-child > button.sassy-toggle:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4625,13 +4642,13 @@ tbody.collapse.in {
 }
 
 /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .sassy-nav-button .btn-group > button.sassy-toggle + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 /* line 112, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .sassy-nav-button .btn-group-lg.btn-group > button.sassy-toggle + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4648,25 +4665,26 @@ tbody.collapse.in {
 }
 
 /* line 130, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn .caret {
+.btn .caret, .sassy-nav-button button.sassy-toggle .caret {
   margin-left: 0;
 }
 
 /* line 134, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .sassy-nav-button .btn-group-lg > button.sassy-toggle .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
 /* line 139, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .sassy-nav-button .btn-group-lg > button.sassy-toggle .caret, .sassy-nav-button .dropup .btn-group-lg > button.sassy-toggle .caret {
   border-width: 0 5px 5px;
 }
 
 /* line 148, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .sassy-nav-button .btn-group-vertical > button.sassy-toggle,
 .btn-group-vertical > .btn-group,
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn,
+.sassy-nav-button .btn-group-vertical > .btn-group > button.sassy-toggle {
   display: block;
   float: none;
   width: 100%;
@@ -4682,49 +4700,51 @@ tbody.collapse.in {
   clear: both;
 }
 /* line 160, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group > .btn {
+.btn-group-vertical > .btn-group > .btn, .sassy-nav-button .btn-group-vertical > .btn-group > button.sassy-toggle {
   float: none;
 }
 /* line 165, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn,
+.btn-group-vertical > .btn + .btn, .sassy-nav-button .btn-group-vertical > button.sassy-toggle + .btn, .sassy-nav-button .btn-group-vertical > .btn + button.sassy-toggle, .sassy-nav-button .btn-group-vertical > button.sassy-toggle + button.sassy-toggle,
 .btn-group-vertical > .btn + .btn-group,
+.sassy-nav-button .btn-group-vertical > button.sassy-toggle + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+.sassy-nav-button .btn-group-vertical > .btn-group + button.sassy-toggle,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
 /* line 175, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .sassy-nav-button .btn-group-vertical > button.sassy-toggle:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 178, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .sassy-nav-button .btn-group-vertical > button.sassy-toggle:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 /* line 182, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .sassy-nav-button .btn-group-vertical > button.sassy-toggle:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 187, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .sassy-nav-button .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button.sassy-toggle {
   border-radius: 0;
 }
 
 /* line 191, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .sassy-nav-button .btn-group-vertical > .btn-group:first-child:not(:last-child) > button.sassy-toggle:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 /* line 196, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .sassy-nav-button .btn-group-vertical > .btn-group:last-child:not(:first-child) > button.sassy-toggle:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4737,14 +4757,14 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 /* line 210, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn,
+.btn-group-justified > .btn, .sassy-nav-button .btn-group-justified > button.sassy-toggle,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
 /* line 216, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn-group .btn {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .sassy-nav-button button.sassy-toggle, .sassy-nav-button .btn-group-justified > .btn-group button.sassy-toggle {
   width: 100%;
 }
 /* line 220, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -4753,8 +4773,9 @@ tbody.collapse.in {
 }
 
 /* line 235, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_button-groups.scss */
-[data-toggle="buttons"] > .btn > input[type="radio"],
-[data-toggle="buttons"] > .btn > input[type="checkbox"] {
+[data-toggle="buttons"] > .btn > input[type="radio"], .sassy-nav-button [data-toggle="buttons"] > button.sassy-toggle > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="checkbox"],
+.sassy-nav-button [data-toggle="buttons"] > button.sassy-toggle > input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -4818,7 +4839,8 @@ tbody.collapse.in {
 /* line 85, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon.input-sm, .form-horizontal .form-group-sm .input-group-addon.form-control,
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn {
+.input-group-sm > .input-group-btn > .input-group-addon.btn,
+.sassy-nav-button .input-group-sm > .input-group-btn > button.input-group-addon.sassy-toggle {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
@@ -4826,7 +4848,8 @@ tbody.collapse.in {
 /* line 90, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon.input-lg, .form-horizontal .form-group-lg .input-group-addon.form-control,
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn {
+.input-group-lg > .input-group-btn > .input-group-addon.btn,
+.sassy-nav-button .input-group-lg > .input-group-btn > button.input-group-addon.sassy-toggle {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -4841,10 +4864,14 @@ tbody.collapse.in {
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+.sassy-nav-button .input-group-btn:first-child > button.sassy-toggle,
 .input-group-btn:first-child > .btn-group > .btn,
+.sassy-nav-button .input-group-btn:first-child > .btn-group > button.sassy-toggle,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+.sassy-nav-button .input-group-btn:last-child > button.sassy-toggle:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.sassy-nav-button .input-group-btn:last-child > .btn-group:not(:last-child) > button.sassy-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4858,10 +4885,14 @@ tbody.collapse.in {
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+.sassy-nav-button .input-group-btn:last-child > button.sassy-toggle,
 .input-group-btn:last-child > .btn-group > .btn,
+.sassy-nav-button .input-group-btn:last-child > .btn-group > button.sassy-toggle,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+.sassy-nav-button .input-group-btn:first-child > button.sassy-toggle:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.sassy-nav-button .input-group-btn:first-child > .btn-group:not(:first-child) > button.sassy-toggle {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4878,84 +4909,84 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 /* line 140, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn {
+.input-group-btn > .btn, .sassy-nav-button .input-group-btn > button.sassy-toggle {
   position: relative;
 }
 /* line 142, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn + .btn {
+.input-group-btn > .btn + .btn, .sassy-nav-button .input-group-btn > button.sassy-toggle + .btn, .sassy-nav-button .input-group-btn > .btn + button.sassy-toggle, .sassy-nav-button .input-group-btn > button.sassy-toggle + button.sassy-toggle {
   margin-left: -1px;
 }
 /* line 146, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active {
+.input-group-btn > .btn:hover, .sassy-nav-button .input-group-btn > button.sassy-toggle:hover, .input-group-btn > .btn:focus, .sassy-nav-button .input-group-btn > button.sassy-toggle:focus, .input-group-btn > .btn:active, .sassy-nav-button .input-group-btn > button.sassy-toggle:active {
   z-index: 2;
 }
 /* line 155, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn, .sassy-nav-button .input-group-btn:first-child > button.sassy-toggle,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 /* line 161, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn, .sassy-nav-button .input-group-btn:last-child > button.sassy-toggle,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
 
 /* line 9, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav {
+.nav, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 /* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.nav:before, .nav:after {
+.nav:before, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul:before, .nav:after, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.nav:after {
+.nav:after, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul:after {
   clear: both;
 }
 /* line 15, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li {
+.nav > li, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li {
   position: relative;
   display: block;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a {
+.nav > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 /* line 23, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a:hover, .nav > li > a:focus {
+.nav > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:hover, .nav > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 /* line 31, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li.disabled > a {
+.nav > li.disabled > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li.disabled > a {
   color: #777777;
 }
 /* line 34, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+.nav > li.disabled > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li.disabled > a:hover, .nav > li.disabled > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li.disabled > a:focus {
   color: #777777;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 /* line 46, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+.nav .open > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open > a, .nav .open > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open > a:hover, .nav .open > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
 }
 /* line 59, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav .nav-divider {
+.nav .nav-divider, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 /* line 66, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a > img {
+.nav > li > a > img, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a > img {
   max-width: none;
 }
 
@@ -5135,7 +5166,7 @@ tbody.collapse.in {
 }
 
 /* line 50, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-collapse {
+.navbar-collapse, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
   overflow-x: visible;
   padding-right: 15px;
   padding-left: 15px;
@@ -5144,74 +5175,90 @@ tbody.collapse.in {
   -webkit-overflow-scrolling: touch;
 }
 /* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.navbar-collapse:before, .navbar-collapse:after {
+.navbar-collapse:before, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation:before, .navbar-collapse:after, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.navbar-collapse:after {
+.navbar-collapse:after, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation:after {
   clear: both;
 }
 /* line 59, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-collapse.in {
+.navbar-collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .in#DeltaTopNavigation {
   overflow-y: auto;
 }
 @media (min-width: 768px) {
   /* line 50, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-collapse {
+  .navbar-collapse, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
     width: auto;
     border-top: 0;
     box-shadow: none;
   }
   /* line 68, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-collapse.collapse {
+  .navbar-collapse.collapse, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
   /* line 75, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-collapse.in {
+  .navbar-collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .in#DeltaTopNavigation {
     overflow-y: visible;
   }
   /* line 81, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-top #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-top #DeltaTopNavigation, .navbar-static-top .navbar-collapse, .navbar-static-top #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-static-top #DeltaTopNavigation, .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-bottom #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-bottom #DeltaTopNavigation {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 /* line 92, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-fixed-top .navbar-collapse,
-.navbar-fixed-bottom .navbar-collapse {
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-top #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-top #DeltaTopNavigation,
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-bottom #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-bottom #DeltaTopNavigation {
   max-height: 340px;
 }
 @media (max-width: 480px) and (orientation: landscape) {
   /* line 92, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse {
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-top #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-top #DeltaTopNavigation,
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-bottom #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-fixed-bottom #DeltaTopNavigation {
     max-height: 200px;
   }
 }
 
 /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header,
+.container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header, #s4-titlerow > .navbar-header,
 .container > .navbar-collapse,
 #s4-titlerow #titleAreaBox > .navbar-collapse,
 #contentRow > .navbar-collapse,
+#s4-titlerow > .navbar-collapse,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container > #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #titleAreaBox > #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #contentRow > #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-titlerow > #DeltaTopNavigation,
 .container-fluid > .navbar-header,
-.container-fluid > .navbar-collapse {
+.container-fluid > .navbar-collapse,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container-fluid > #DeltaTopNavigation {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
   /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header,
+  .container > .navbar-header, #s4-titlerow #titleAreaBox > .navbar-header, #contentRow > .navbar-header, #s4-titlerow > .navbar-header,
   .container > .navbar-collapse,
   #s4-titlerow #titleAreaBox > .navbar-collapse,
   #contentRow > .navbar-collapse,
+  #s4-titlerow > .navbar-collapse,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container > #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #titleAreaBox > #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #contentRow > #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-titlerow > #DeltaTopNavigation,
   .container-fluid > .navbar-header,
-  .container-fluid > .navbar-collapse {
+  .container-fluid > .navbar-collapse,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container-fluid > #DeltaTopNavigation {
     margin-right: 0;
     margin-left: 0;
   }
@@ -5274,7 +5321,7 @@ tbody.collapse.in {
 }
 @media (min-width: 768px) {
   /* line 177, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, #s4-titlerow .navbar > #titleAreaBox .navbar-brand, .navbar > #contentRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, #s4-titlerow .navbar > #titleAreaBox .navbar-brand, .navbar > #contentRow .navbar-brand, .navbar > #s4-titlerow .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -5315,18 +5362,18 @@ tbody.collapse.in {
 }
 
 /* line 229, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav {
+.navbar-nav, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
   margin: 7.5px -15px;
 }
 /* line 232, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav > li > a {
+.navbar-nav > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
   /* line 240, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu {
+  .navbar-nav .open .dropdown-menu, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -5336,36 +5383,37 @@ tbody.collapse.in {
     box-shadow: none;
   }
   /* line 248, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   /* line 252, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a {
     line-height: 20px;
   }
   /* line 254, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-nav .open .dropdown-menu > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
   /* line 229, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav {
+  .navbar-nav, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
     float: left;
     margin: 0;
   }
   /* line 267, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav > li {
+  .navbar-nav > li, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li {
     float: left;
   }
   /* line 269, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav > li > a {
+  .navbar-nav > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
   /* line 275, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav.navbar-right:last-child {
+  .navbar-nav.navbar-right:last-child, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul.navbar-right:last-child {
     margin-right: -15px;
   }
 }
@@ -5418,14 +5466,14 @@ tbody.collapse.in {
 }
 
 /* line 345, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav > li > .dropdown-menu, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 350, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu, .navbar-fixed-bottom #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > .dropdown-menu, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-fixed-bottom li > ul > li > .dropdown-menu {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -5436,12 +5484,12 @@ tbody.collapse.in {
   margin-bottom: 8px;
 }
 /* line 362, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .sassy-nav-button .btn-group-sm > button.navbar-btn.sassy-toggle {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* line 365, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .sassy-nav-button .btn-group-xs > button.navbar-btn.sassy-toggle {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5483,21 +5531,21 @@ tbody.collapse.in {
   color: #777;
 }
 /* line 412, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > li > a {
   color: #777;
 }
 /* line 415, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > li > a:focus {
   color: #333;
   background-color: transparent;
 }
 /* line 422, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .active > a:focus {
   color: #555;
   background-color: #e7e7e7;
 }
 /* line 430, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+.navbar-default .navbar-nav > .disabled > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
 }
@@ -5514,32 +5562,32 @@ tbody.collapse.in {
   background-color: #888;
 }
 /* line 450, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-collapse,
+.navbar-default .navbar-collapse, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-default #DeltaTopNavigation,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
 /* line 459, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul > .open > a:focus {
   background-color: #e7e7e7;
   color: #555;
 }
 @media (max-width: 767px) {
   /* line 470, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > li > a {
     color: #777;
   }
   /* line 472, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > li > a:focus {
     color: #333;
     background-color: transparent;
   }
   /* line 479, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
   }
   /* line 487, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-default li > ul .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
   }
@@ -5584,21 +5632,21 @@ tbody.collapse.in {
   color: #777777;
 }
 /* line 546, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > li > a {
   color: #777777;
 }
 /* line 549, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > li > a:focus {
   color: #fff;
   background-color: transparent;
 }
 /* line 556, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .active > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .active > a:focus {
   color: #fff;
   background-color: #090909;
 }
 /* line 564, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .disabled > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .disabled > a:focus {
   color: #444;
   background-color: transparent;
 }
@@ -5615,40 +5663,40 @@ tbody.collapse.in {
   background-color: #fff;
 }
 /* line 585, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-collapse, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .navbar-inverse #DeltaTopNavigation,
 .navbar-inverse .navbar-form {
   border-color: #101010;
 }
 /* line 593, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul > .open > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul > .open > a:focus {
   background-color: #090909;
   color: #fff;
 }
 @media (max-width: 767px) {
   /* line 604, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .dropdown-header, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
   }
   /* line 607, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu .divider, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu .divider {
     background-color: #090909;
   }
   /* line 610, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > li > a {
     color: #777777;
   }
   /* line 612, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > li > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > li > a:focus {
     color: #fff;
     background-color: transparent;
   }
   /* line 619, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .active > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .active > a:focus {
     color: #fff;
     background-color: #090909;
   }
   /* line 627, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul .open .dropdown-menu > .disabled > a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .navbar-inverse li > ul .open .dropdown-menu > .disabled > a:focus {
     color: #444;
     background-color: transparent;
   }
@@ -5877,7 +5925,7 @@ tbody.collapse.in {
   display: none;
 }
 /* line 25, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_labels.scss */
-.btn .label {
+.btn .label, .sassy-nav-button button.sassy-toggle .label {
   position: relative;
   top: -1px;
 }
@@ -5963,12 +6011,12 @@ a.label:hover, a.label:focus {
   display: none;
 }
 /* line 27, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_badges.scss */
-.btn .badge {
+.btn .badge, .sassy-nav-button button.sassy-toggle .badge {
   position: relative;
   top: -1px;
 }
 /* line 31, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .sassy-nav-button .btn-group-xs > button.sassy-toggle .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6012,11 +6060,11 @@ a.badge:hover, a.badge:focus {
   border-top-color: #d5d5d5;
 }
 /* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron {
+.container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron, #s4-titlerow .jumbotron {
   border-radius: 6px;
 }
 /* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.jumbotron .container, .jumbotron #s4-titlerow #titleAreaBox, #s4-titlerow .jumbotron #titleAreaBox, .jumbotron #contentRow {
+.jumbotron .container, .jumbotron #s4-titlerow #titleAreaBox, #s4-titlerow .jumbotron #titleAreaBox, .jumbotron #contentRow, .jumbotron #s4-titlerow {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -6026,7 +6074,7 @@ a.badge:hover, a.badge:focus {
     padding-bottom: 48px;
   }
   /* line 38, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron {
+  .container .jumbotron, #s4-titlerow #titleAreaBox .jumbotron, #contentRow .jumbotron, #s4-titlerow .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -7142,12 +7190,12 @@ button.close {
   clear: both;
 }
 /* line 110, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer .sassy-nav-button button.sassy-toggle + .btn, .sassy-nav-button .modal-footer button.sassy-toggle + .btn, .modal-footer .sassy-nav-button .btn + button.sassy-toggle, .sassy-nav-button .modal-footer .btn + button.sassy-toggle, .modal-footer .sassy-nav-button button.sassy-toggle + button.sassy-toggle, .sassy-nav-button .modal-footer button.sassy-toggle + button.sassy-toggle {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 115, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .sassy-nav-button button.sassy-toggle + .btn, .sassy-nav-button .modal-footer .btn-group button.sassy-toggle + .btn, .modal-footer .btn-group .sassy-nav-button .btn + button.sassy-toggle, .sassy-nav-button .modal-footer .btn-group .btn + button.sassy-toggle, .modal-footer .btn-group .sassy-nav-button button.sassy-toggle + button.sassy-toggle, .sassy-nav-button .modal-footer .btn-group button.sassy-toggle + button.sassy-toggle {
   margin-left: -1px;
 }
 /* line 119, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_modals.scss */
@@ -7642,7 +7690,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 202, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_carousel.scss */
-.carousel-caption .btn {
+.carousel-caption .btn, .carousel-caption .sassy-nav-button button.sassy-toggle, .sassy-nav-button .carousel-caption button.sassy-toggle {
   text-shadow: none;
 }
 
@@ -7954,13 +8002,13 @@ button.close {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-md {
+  .hidden-md, .sassy-nav-button {
     display: none !important;
   }
 }
 @media (min-width: 1200px) {
   /* line 18, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
-  .hidden-lg {
+  .hidden-lg, .sassy-nav-button {
     display: none !important;
   }
 }
@@ -8036,7 +8084,7 @@ button.close {
 /* CGK Repsonsive Framework */
 /* Override with Content-Box */
 /* line 2, ../sass/_general.scss */
-.ms-qatbutton span, .ms-commandLink, .ms-srch-sb-searchLink, .ms-srch-sb-navLink {
+.ms-qatbutton span, .ms-commandLink, .ms-srch-sb-searchLink, .ms-srch-sb-navLink, .ms-microfeed-likeImageParent > img {
   box-sizing: content-box;
 }
 
@@ -8162,115 +8210,227 @@ button.close {
 }
 /* line 69, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea {
+  display: none;
   min-width: 0px !important;
 }
-/* line 71, ../sass/_cgk-responsive-framework.scss */
+/* line 72, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
   margin-top: 0;
 }
-/* line 76, ../sass/_cgk-responsive-framework.scss */
+/* line 77, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-microblogdiv {
   min-width: 0px !important;
 }
-/* line 81, ../sass/_cgk-responsive-framework.scss */
+/* line 82, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv {
   min-width: 0px !important;
 }
-/* line 83, ../sass/_cgk-responsive-framework.scss */
+/* line 84, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv * {
   min-width: auto;
   max-width: auto;
 }
-/* line 89, ../sass/_cgk-responsive-framework.scss */
+/* line 90, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
   min-width: auto;
   max-width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 92, ../sass/_cgk-responsive-framework.scss */
+  /* line 93, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 98, ../sass/_cgk-responsive-framework.scss */
+  /* line 99, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 103, ../sass/_cgk-responsive-framework.scss */
+  /* line 104, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 109, ../sass/_cgk-responsive-framework.scss */
+  /* line 110, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
     margin: 0;
   }
 }
 
 /* JBC General styling */
-/* line 1, ../sass/JBC/_jbc-general.scss */
+/* Import navigation styling */
+/* To use the collapsable TopNav, add the following HTML onto the PageLayout */
+/* Add into the contents of the ContentPlaceHolder with id = PlaceHolderMain */
+/* <div class="sassy-nav-button">
+		<button type="button" class="sassy-toggle collapsed" data-toggle="collapse" data-target="#DeltaTopNavigation" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	</div>
+*/
+/* line 11, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+.sassy-nav-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #F1F1F1;
+  z-index: 200;
+}
+/* line 19, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+.sassy-nav-button button.sassy-toggle {
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: 0 0 5px 0 #F1F1F1;
+  -webkit-box-shadow: 0 0 5px 0 #F1F1F1;
+  box-shadow: 0 0 5px 0 #F1F1F1;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  padding: 5px;
+  color: #d7d7d7;
+  border: none;
+}
+/* line 31, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+.sassy-nav-button button.sassy-toggle span.icon-bar {
+  background-color: black;
+  width: auto;
+  height: 3px;
+  display: block;
+  margin: 3px 0;
+}
+
+/* line 45, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
+  border-top: 1px #F1F1F1 solid;
+  border-bottom: 1px #F1F1F1 solid;
+}
+@media screen and (max-width: 768px) {
+  /* line 45, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
+    overflow-y: visible !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 53, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox {
+    width: 100%;
+  }
+  /* line 56, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox * {
+    width: 100%;
+  }
+}
+/* line 60, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root {
+  /*@media screen and (max-width:$screen-sm){
+  	width: 100%;
+  }*/
+}
+/* line 66, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root > li > a {
+  display: none;
+}
+/* line 71, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li {
+  /*@media screen and (max-width:$screen-sm){
+  	width: 100%;
+  }*/
+}
+/* line 75, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
+  padding: 0 !important;
+}
+/* line 79, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:visited, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
+  background-color: white !important;
+}
+/* line 82, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
+  margin: 0;
+}
+/* line 90, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic {
+  /*position: relative;*/
+}
+/* line 92, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li {
+  display: block;
+  float: none;
+  padding: 2px 5px;
+}
+/* line 99, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
+  display: none;
+}
+
+/* line 5, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow {
+  /* Use Bootstrap container */
+  padding: 0;
   /* Style the top row, set padding & height */
   padding-top: 15px;
   padding-bottom: 0;
   height: 170px;
   position: relative;
 }
-/* line 7, ../sass/JBC/_jbc-general.scss */
+/* line 14, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox {
   margin: 0;
   width: 100%;
 }
-/* line 10, ../sass/JBC/_jbc-general.scss */
+/* line 17, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow {
   /* Center the site logo */
   /* Navigation container¨*/
   /* Search box div */
 }
-/* line 14, ../sass/JBC/_jbc-general.scss */
+/* line 21, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
   position: absolute;
   left: 50%;
   padding-top: 20px;
 }
-/* line 18, ../sass/JBC/_jbc-general.scss */
+/* line 25, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon #DeltaSiteLogo {
   position: relative;
   left: -50%;
 }
-/* line 24, ../sass/JBC/_jbc-general.scss */
+/* line 31, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
   margin-top: 105px;
   height: 50px !important;
 }
-/* line 29, ../sass/JBC/_jbc-general.scss */
+/* line 36, ../sass/JBC/_jbc-general.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
   position: absolute;
   right: 15px;
 }
 
-/* line 38, ../sass/JBC/_jbc-general.scss */
+/* line 45, ../sass/JBC/_jbc-general.scss */
 #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 41, ../sass/JBC/_jbc-general.scss */
+/* line 48, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-box, #contentRow .jbc-graybox, #contentRow .jbc-yellowbox, #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 45, ../sass/JBC/_jbc-general.scss */
+/* line 52, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 49, ../sass/JBC/_jbc-general.scss */
+/* line 56, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 53, ../sass/JBC/_jbc-general.scss */
+/* line 60, ../sass/JBC/_jbc-general.scss */
 #contentRow .jbc-whitebox {
   background-color: white;
 }
