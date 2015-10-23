@@ -1,0 +1,38 @@
+/* Bootstrap styling */
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+/* Variables & mixins */
+@import "variables";
+@import "mixins";
+
+/* CGK Repsonsive Framework */
+@import "general";
+@import "cgk-responsive-framework";
+
+/* JBC General styling */
+@import "JBC/jbc-general";
+
+/* TODO Local font gebruiken */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+#s4-titlerow{
+	#titleAreaBox{
+		#titleAreaRow{
+			#pageTitle{
+				display: none;
+			}
+		}	
+	}   	
+}
+
+/* Hide the Quick Launch */
+#sideNavBox {
+  display: none;
+}
+
+/* Content Styling */
+#contentRow {
+	
+}

@@ -8348,7 +8348,23 @@ button.close {
   /*padding-left:$gutter;
   padding-right: $gutter;*/
 }
-/* line 77, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 78, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:visited, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
+  background-color: white !important;
+}
+/* line 81, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover {
+  /*border-bottom:4px solid $yellow;*/
+}
+/* line 84, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:active {
+  color: black;
+}
+/* line 87, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
+  margin: 0;
+}
+/* line 93, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
@@ -8361,26 +8377,10 @@ button.close {
   /*padding-top: $gutter;
   padding-bottom: $gutter;*/
 }
-/* line 90, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:visited, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:focus, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
-  background-color: white !important;
-}
-/* line 93, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover {
-  /*border-bottom:4px solid $yellow;*/
-}
-/* line 96, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:active {
-  color: black;
-}
-/* line 99, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li > ul {
-  margin: 0;
-}
 /* line 108, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic {
   /*position: relative;*/
-  width: 200px !important;
+  width: 220px !important;
 }
 /* line 111, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li {
@@ -8388,7 +8388,11 @@ button.close {
   float: none;
   /* padding:2px 5px; */
 }
-/* line 118, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 115, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a {
+  margin-right: 0;
+}
+/* line 121, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
   display: none;
 }

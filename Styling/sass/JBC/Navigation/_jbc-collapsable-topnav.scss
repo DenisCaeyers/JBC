@@ -74,18 +74,6 @@
 							li{
 								/*padding-left:$gutter;
 								padding-right: $gutter;*/
-								a{
-									padding-top:10px !important;
-									padding-bottom:10px !important;
-									font-family: 'Open Sans', sans-serif;
-									text-transform: uppercase;
-									font-size:1;
-									line-height: 10px !important;
-									@include resetmargin;
-									margin-right:50px;
-									/*padding-top: $gutter;
-									padding-bottom: $gutter;*/
-								}
 								//All states
 								a:hover, a:visited, a:focus, a{
 									background-color:white !important;
@@ -102,16 +90,31 @@
 									@include resetmargin;
 
 								}
+								a{
+									padding-top:10px !important;
+									padding-bottom:10px !important;
+									font-family: 'Open Sans', sans-serif;
+									text-transform: uppercase;
+									font-size:1;
+									line-height: 10px !important;
+									@include resetmargin;
+									margin-right:50px;
+									/*padding-top: $gutter;
+									padding-bottom: $gutter;*/
+								}
 							}
 							//Dropdown navigation
 							li.dynamic-children{
 								> ul.dynamic{
 									/*position: relative;*/
-									width:200px !important;
+									width:220px !important;
 									li{
 										display: block;
 										float: none;
 										/* padding:2px 5px; */	
+										a{
+											margin-right:0;
+										}
 									}
 								}
 							}

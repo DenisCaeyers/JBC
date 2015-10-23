@@ -1454,7 +1454,7 @@ img {
 }
 
 /* line 81, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img, #contentRow .jbc-pageimage img {
+.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img {
   display: block;
   width: 100% \9;
   max-width: 100%;
@@ -8475,19 +8475,15 @@ button.close {
 }
 
 /* TODO Local font gebruiken */
-/* line 23, ../sass/jbc-StorePageLayout.scss */
+/* line 23, ../sass/jbc-HR4MeOverviewPageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Hide the Quick Launch */
-/* line 31, ../sass/jbc-StorePageLayout.scss */
+/* line 31, ../sass/jbc-HR4MeOverviewPageLayout.scss */
 #sideNavBox {
   display: none;
 }
 
 /* Content Styling */
-/* line 38, ../sass/jbc-StorePageLayout.scss */
-#contentRow .row .jbc-box, #contentRow .row .jbc-graybox, #contentRow .row .jbc-yellowbox, #contentRow .row .jbc-whitebox {
-  min-height: 300px;
-}
