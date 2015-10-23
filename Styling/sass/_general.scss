@@ -67,3 +67,11 @@
             display: none;
         }
     }
+    
+/* Override SharePoint Search result magins */
+.ms-srch-result{
+    @include resetmargin;
+}
+.ms-srch-result-groups{
+    @include resetmargin;
+}

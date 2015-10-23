@@ -8155,6 +8155,17 @@ button.close {
     display: none;
   }
 }
+/* Override SharePoint Search result magins */
+/* line 72, ../sass/_general.scss */
+.ms-srch-result {
+  margin: 0;
+}
+
+/* line 75, ../sass/_general.scss */
+.ms-srch-result-groups {
+  margin: 0;
+}
+
 /* CGK Responsive Framework */
 /* SASS only file */
 /* Suitbar, hide on mobile devices */
