@@ -25,3 +25,10 @@
   box-shadow: $h-shadow $v-shadow $blur $spread $color;
 }
 
+@mixin transition($property, $speed, $effect) {
+    -webkit-transition: $property $speed $effect;
+    -moz-transition: $property $speed $effect;
+    -o-transition: $property $speed $effect;
+    transition: $property $speed $effect;
+}
+

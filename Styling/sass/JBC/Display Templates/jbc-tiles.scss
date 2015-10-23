@@ -2,12 +2,34 @@
 @import "variables";
 @import "mixins";
 
+.jbc-tile-title {
+		position: absolute;
+		z-index:10;
+		background-color: $yellow;
+		padding: 10px 70px 10px $gutter;
+		bottom: 20%;
+		left: 0;
+		
+		@include border-radius(3px);
+		
+		h3{
+			@include resetmargin;
+			color:white;					
+		}		
+		
+		h3:after{
+			content: "  >>";
+			font-size:14px;
+		}
+}
+
 .jbc-tile{   
     overflow:hidden;
     background-size:100%;
     padding-bottom:100%;
     height:auto;
-    position:relative;
+	position: relative;
+	background-color:$gray;
 	
 	margin-bottom:$gutter + $gutter;
 	
@@ -21,20 +43,17 @@
 		.overlay{
 			background-color: rgba(0,0,0,0.3);
 			position: absolute;
-			height: 30%;
+			height: 100%;
 			width: 100%;
-			bottom: 0;
-			
-			.title {
-				position: absolute;
-				bottom: $gutter + $gutter;
-				left: $gutter + $gutter;
-				
-				h3{
-					color:white;
-					text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
-				}		
-			}
+			top:100%;
+			color:white;
+			padding: $gutter*2;
+			@include transition(all, 0.4s, ease);
 		}
+	}
+}
+.jbc-tile:hover{
+	.overlay{
+		top:0;
 	}
 }
