@@ -2102,7 +2102,7 @@ pre code {
 }
 
 /* line 11, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, #contentRow #sideNavBox, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, #contentRow #contentBox, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2632,7 +2632,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, #contentRow #sideNavBox, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, #contentRow #contentBox, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -2647,7 +2647,7 @@ pre code {
   }
 
   /* line 35, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-3 {
+  .col-md-3, #contentRow #sideNavBox {
     width: 25%;
   }
 
@@ -2677,7 +2677,7 @@ pre code {
   }
 
   /* line 35, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-9 {
+  .col-md-9, #contentRow #contentBox {
     width: 75%;
   }
 
@@ -8208,7 +8208,7 @@ button.close {
 #contentRow {
   padding-top: 15px;
 }
-/* line 58, ../sass/_cgk-responsive-framework.scss */
+/* line 59, ../sass/_cgk-responsive-framework.scss */
 #contentRow #contentBox {
   margin: 0;
   min-width: auto;
@@ -8216,57 +8216,57 @@ button.close {
 }
 
 /* Responsive newsfeeds */
-/* line 66, ../sass/_cgk-responsive-framework.scss */
+/* line 67, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv {
   min-width: 0px !important;
 }
-/* line 69, ../sass/_cgk-responsive-framework.scss */
+/* line 70, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea {
   display: none;
   min-width: 0px !important;
 }
-/* line 72, ../sass/_cgk-responsive-framework.scss */
+/* line 73, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
   margin-top: 0;
 }
-/* line 77, ../sass/_cgk-responsive-framework.scss */
+/* line 78, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-microblogdiv {
   min-width: 0px !important;
 }
-/* line 82, ../sass/_cgk-responsive-framework.scss */
+/* line 83, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv {
   min-width: 0px !important;
 }
-/* line 84, ../sass/_cgk-responsive-framework.scss */
+/* line 85, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv * {
   min-width: auto;
   max-width: auto;
 }
-/* line 90, ../sass/_cgk-responsive-framework.scss */
+/* line 91, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
   min-width: auto;
   max-width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 93, ../sass/_cgk-responsive-framework.scss */
+  /* line 94, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 99, ../sass/_cgk-responsive-framework.scss */
+  /* line 100, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 104, ../sass/_cgk-responsive-framework.scss */
+  /* line 105, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../sass/_cgk-responsive-framework.scss */
+  /* line 111, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
     margin: 0;
   }
@@ -8485,10 +8485,124 @@ button.close {
   background-color: white;
 }
 
+/* Use expanadable Quick Launch */
+/* -- Expandable Quick Launch */
+/*!
+ * SharePoint 2013 Quick Launch accordion
+ * version: 1.0 (2014/07/17)
+ * 
+ * Copyright (c) 2014 Yakovenko Max, yakovenkomax.com, yakovenkomax@outlook.com
+ *
+ * Released under the MIT License
+ */
+/* Default menu levels 3+ padding */
+/* line 12, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item {
+  padding-left: 60px;
+}
+
+/* line 13, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item {
+  padding-left: 80px;
+}
+
+/* line 14, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item {
+  padding-left: 100px;
+}
+
+/* Switch level 2+ padding */
+/* line 17, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > .switch {
+  padding-left: 20px;
+}
+
+/* line 18, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > .switch {
+  padding-left: 40px;
+}
+
+/* line 19, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .switch {
+  padding-left: 60px;
+}
+
+/* line 20, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .switch {
+  padding-left: 80px;
+}
+
+/* Collapsed and expanded levels */
+/* line 23, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li ul {
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 27, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.ms-core-listMenu-verticalBox li.expanded > ul {
+  height: auto;
+}
+
+/* Switch styles */
+/* line 32, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.switch {
+  float: left;
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 43, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.switch span {
+  display: block;
+  width: 10px;
+  height: 15px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+/* line 50, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.switch img {
+  position: relative;
+  left: -254px;
+  top: -184px;
+}
+
+/* line 55, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.expanded > .switch img {
+  left: -254px;
+  top: -144px;
+}
+
+/* line 59, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+#TopNavContainer {
+  overflow: hidden !important;
+}
+
+/* line 62, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+#TopNavBarControl {
+  overflow: hidden !important;
+}
+
+/* line 65, ../sass/JBC/Navigation/_jbc-expandable-quicklaunch.scss */
+.navbar {
+  margin-bottom: 0px !important;
+}
+
 /* TODO Local font gebruiken */
-/* line 23, ../sass/jbc-HR4MeContentPageLayout.scss */
+/* line 26, ../sass/jbc-HR4MeContentPageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Content Styling */
+/* line 35, ../sass/jbc-HR4MeContentPageLayout.scss */
+#contentRow #sideNavBox {
+  margin: 0;
+}

@@ -14,6 +14,9 @@
 /* JBC General styling */
 @import "JBC/jbc-general";
 
+/* Use expanadable Quick Launch */
+@import "JBC/Navigation/jbc-expandable-quicklaunch";
+
 /* TODO Local font gebruiken */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
@@ -29,5 +32,11 @@
 
 /* Content Styling */
 #contentRow {
-	
+	#sideNavBox{
+		@extend .col-md-3;
+		@include resetmargin;
+	}
+	#contentBox{
+		@extend .col-md-9;
+	}
 }

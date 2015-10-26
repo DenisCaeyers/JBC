@@ -8,6 +8,9 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	
+	<!-- TODO Clean -->
+	<script src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/JS/jbc-scripts.js" type="text/javascript"></script>
+	
 	<PublishingWebControls:EditModePanel runat="server">
 		<!-- Styles for edit mode only-->
 		<SharePointWebControls:CssRegistration name="<% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/editmode15.css %>"

@@ -8208,7 +8208,7 @@ button.close {
 #contentRow {
   padding-top: 15px;
 }
-/* line 58, ../sass/_cgk-responsive-framework.scss */
+/* line 59, ../sass/_cgk-responsive-framework.scss */
 #contentRow #contentBox {
   margin: 0;
   min-width: auto;
@@ -8216,57 +8216,57 @@ button.close {
 }
 
 /* Responsive newsfeeds */
-/* line 66, ../sass/_cgk-responsive-framework.scss */
+/* line 67, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv {
   min-width: 0px !important;
 }
-/* line 69, ../sass/_cgk-responsive-framework.scss */
+/* line 70, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea {
   display: none;
   min-width: 0px !important;
 }
-/* line 72, ../sass/_cgk-responsive-framework.scss */
+/* line 73, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
   margin-top: 0;
 }
-/* line 77, ../sass/_cgk-responsive-framework.scss */
+/* line 78, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-microblogdiv {
   min-width: 0px !important;
 }
-/* line 82, ../sass/_cgk-responsive-framework.scss */
+/* line 83, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv {
   min-width: 0px !important;
 }
-/* line 84, ../sass/_cgk-responsive-framework.scss */
+/* line 85, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv * {
   min-width: auto;
   max-width: auto;
 }
-/* line 90, ../sass/_cgk-responsive-framework.scss */
+/* line 91, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
   min-width: auto;
   max-width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 93, ../sass/_cgk-responsive-framework.scss */
+  /* line 94, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 99, ../sass/_cgk-responsive-framework.scss */
+  /* line 100, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 104, ../sass/_cgk-responsive-framework.scss */
+  /* line 105, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../sass/_cgk-responsive-framework.scss */
+  /* line 111, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
     margin: 0;
   }

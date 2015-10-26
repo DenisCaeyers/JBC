@@ -55,6 +55,7 @@
 #contentRow{
 	@extend .container;
 	padding-top:$gutter;
+	
 	#contentBox{
 		@include resetmargin;
 		@include resetminmax-width;
