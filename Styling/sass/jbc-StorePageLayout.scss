@@ -42,4 +42,24 @@
 	.jbc-pageimage img {
 		@extend .img-responsive;
 	} 
+	
+	.jbc-contactzone{
+		h2{
+			margin-top:0;
+			padding-top:20px;
+		}
+		h5{
+			margin-bottom:0;
+		}
+		.paragraph{
+			padding-left: $gutter;
+		}
+		.sub-paragraph{
+			padding-left: $gutter + $gutter;
+		}
+		i{
+			float: left;
+			margin-top:3px;
+		}
+	}
 }

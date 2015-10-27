@@ -13,10 +13,21 @@
 	@extend .hidden-xs;
 }
 
+#s4-bodyContainer{		
+	@media screen and (max-width: $screen-sm){
+		width: 750px !important;
+	}
+	@media screen and (max-width: $screen-md){
+		width: 970px !important;
+	}
+	@media screen and (max-width: $screen-lg){
+		width: 1170px !important;
+	}
+}
+
 /* Extend the TitleRow to use the container features */
 #s4-titlerow{
 	#titleAreaBox{
-		@extend .container;
 		@media screen and (max-width: $screen-sm){
 			@include resetmargin;
 		}
@@ -53,7 +64,6 @@
 
 /* Extend contentRow with container */
 #contentRow{
-	@extend .container;
 	padding-top:$gutter;
 	
 	#contentBox{

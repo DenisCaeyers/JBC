@@ -1,69 +1,77 @@
 /* Import navigation styling */
 @import "Navigation/jbc-collapsable-topnav";
-
-
-#s4-titlerow{
-	/* Use Bootstrap container */
-	@extend .container;
-	@include resetpadding;
-	/* Style the top row, set padding & height */
-	padding-top: 15px;
-	padding-bottom: 0;
-	min-height: 170px;
-	@media screen and (max-width:$screen-sm){
-		min-height:110px;
+body{
+	.ms-core-overlay{
+		background-color:$background-gray;
 	}
-	height:auto;
- 	position: relative;
-	#titleAreaBox{
-		margin: 0;
-  		width: 100%;
-		#titleAreaRow{
-			/* Center the site logo */
-			/* Navigation container¨*/
- 			/* Search box div */
-			#siteIcon{ 
-				position: absolute;
- 				left: 50%;
- 				padding-top: 20px;
-				#DeltaSiteLogo {
- 					position: relative;
- 					left: -50%;
+	#s4-workspace{
+		#s4-bodyContainer{	
+			/* Use Bootstrap Container */
+			@extend .container;
+			width:inherit !important;
+			#s4-titlerow{
+				@include resetpadding;
+				/* Style the top row, set padding & height */
+				padding-top: 15px;
+				padding-bottom: 0;
+				min-height: 170px;
+				@media screen and (max-width:$screen-sm){
+					min-height:110px;
+				}
+				height:auto;
+				position: relative;
+				#titleAreaBox{
+					margin: 0;
+					width: 100%;
+					#titleAreaRow{
+						/* Center the site logo */
+						/* Navigation container¨*/
+						/* Search box div */
+						#siteIcon{ 
+							position: absolute;
+							left: 50%;
+							padding-top: 20px;
+							#DeltaSiteLogo {
+								position: relative;
+								left: -50%;
+							}
+						}
+						.ms-breadcrumb-box{
+							#DeltaTopNavigation {
+								margin-top: 105px;
+							}
+						}
+						> div + div + div + div {
+							position: absolute;
+							right: 15px;
+						}
+					}
+				} 
+			}
+			
+			/* Content Styling */
+			#contentRow{
+				padding-top: $gutter + 5px;
+				.ms-webpartzone-cell {
+					margin: 0;
+				}
+				.jbc-box{
+					padding-left:15px;
+					padding-right:15px;
+				}
+				.jbc-graybox{
+					@extend .jbc-box;
+					background-color:$gray;
+				}
+				.jbc-yellowbox{
+					@extend .jbc-box;
+					background-color:$yellow;
+				}
+				.jbc-whitebox{
+					@extend .jbc-box;
+					background-color:white;
 				}
 			}
-			.ms-breadcrumb-box{
-				 #DeltaTopNavigation {
-					 margin-top: 105px;
-				 }
-			}
-			> div + div + div + div {
-				position: absolute;
-  				right: 15px;
-			}
 		}
-	} 
-}
-
-/* Content Styling */
-#contentRow{
-	padding-top: $gutter + 5px;
-	.ms-webpartzone-cell {
- 		margin: 0;
-	}
-	.jbc-box{
-		padding-left:15px;
-		padding-right:15px;
-	}
-	.jbc-graybox{
-		@extend .jbc-box;
-		background-color:$gray;
-	}
-	.jbc-yellowbox{
-		@extend .jbc-box;
-		background-color:$yellow;
-	}
-	.jbc-whitebox{
-		@extend .jbc-box;
-		background-color:white;
 	}
 }
