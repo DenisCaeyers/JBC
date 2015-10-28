@@ -2035,36 +2035,36 @@ pre code {
 }
 
 /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-.container, body #s4-workspace #s4-bodyContainer {
+.container, #s4-titlerow, #contentRow {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 /* line 14, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:before, body #s4-workspace #s4-bodyContainer:before, .container:after, body #s4-workspace #s4-bodyContainer:after {
+.container:before, #s4-titlerow:before, #contentRow:before, .container:after, #s4-titlerow:after, #contentRow:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.container:after, body #s4-workspace #s4-bodyContainer:after {
+.container:after, #s4-titlerow:after, #contentRow:after {
   clear: both;
 }
 @media (min-width: 768px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, body #s4-workspace #s4-bodyContainer {
+  .container, #s4-titlerow, #contentRow {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, body #s4-workspace #s4-bodyContainer {
+  .container, #s4-titlerow, #contentRow {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_grid.scss */
-  .container, body #s4-workspace #s4-bodyContainer {
+  .container, #s4-titlerow, #contentRow {
     width: 1170px;
   }
 }
@@ -5231,12 +5231,13 @@ tbody.collapse.in, #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box t
 }
 
 /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-.container > .navbar-header, body #s4-workspace #s4-bodyContainer > .navbar-header,
+.container > .navbar-header, #s4-titlerow > .navbar-header, #contentRow > .navbar-header,
 .container > .navbar-collapse,
-body #s4-workspace #s4-bodyContainer > .navbar-collapse,
+#s4-titlerow > .navbar-collapse,
+#contentRow > .navbar-collapse,
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container > #DeltaTopNavigation,
-body #s4-workspace #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-bodyContainer > #DeltaTopNavigation,
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box body #s4-workspace #s4-bodyContainer > #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-titlerow > #DeltaTopNavigation,
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #contentRow > #DeltaTopNavigation,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse,
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container-fluid > #DeltaTopNavigation {
@@ -5245,12 +5246,13 @@ body #s4-workspace #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #
 }
 @media (min-width: 768px) {
   /* line 108, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .container > .navbar-header, body #s4-workspace #s4-bodyContainer > .navbar-header,
+  .container > .navbar-header, #s4-titlerow > .navbar-header, #contentRow > .navbar-header,
   .container > .navbar-collapse,
-  body #s4-workspace #s4-bodyContainer > .navbar-collapse,
+  #s4-titlerow > .navbar-collapse,
+  #contentRow > .navbar-collapse,
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container > #DeltaTopNavigation,
-  body #s4-workspace #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-bodyContainer > #DeltaTopNavigation,
-  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box body #s4-workspace #s4-bodyContainer > #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #s4-titlerow > #DeltaTopNavigation,
+  #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #contentRow > #DeltaTopNavigation,
   .container-fluid > .navbar-header,
   .container-fluid > .navbar-collapse,
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .container-fluid > #DeltaTopNavigation {
@@ -5316,7 +5318,7 @@ body #s4-workspace #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #
 }
 @media (min-width: 768px) {
   /* line 177, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar > .container .navbar-brand, body #s4-workspace .navbar > #s4-bodyContainer .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > #s4-titlerow .navbar-brand, .navbar > #contentRow .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -6055,11 +6057,11 @@ a.badge:hover, a.badge:focus {
   border-top-color: #d5d5d5;
 }
 /* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.container .jumbotron, body #s4-workspace #s4-bodyContainer .jumbotron {
+.container .jumbotron, #s4-titlerow .jumbotron, #contentRow .jumbotron {
   border-radius: 6px;
 }
 /* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.jumbotron .container, .jumbotron body #s4-workspace #s4-bodyContainer, body #s4-workspace .jumbotron #s4-bodyContainer {
+.jumbotron .container, .jumbotron #s4-titlerow, .jumbotron #contentRow {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -6069,7 +6071,7 @@ a.badge:hover, a.badge:focus {
     padding-bottom: 48px;
   }
   /* line 38, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .container .jumbotron, body #s4-workspace #s4-bodyContainer .jumbotron {
+  .container .jumbotron, #s4-titlerow .jumbotron, #contentRow .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -8164,64 +8166,65 @@ button.close {
 /* SASS only file */
 /* Suitbar, hide on mobile devices */
 /* RibbonRow, hide on mobile devices */
-@media screen and (max-width: 768px) {
-  /* line 16, ../sass/_cgk-responsive-framework.scss */
-  #s4-bodyContainer {
-    width: 750px !important;
-  }
-}
-@media screen and (max-width: 992px) {
-  /* line 16, ../sass/_cgk-responsive-framework.scss */
-  #s4-bodyContainer {
-    width: 970px !important;
-  }
-}
-@media screen and (max-width: 1200px) {
-  /* line 16, ../sass/_cgk-responsive-framework.scss */
-  #s4-bodyContainer {
-    width: 1170px !important;
-  }
-}
-
+/*body #s4-workspace #s4-bodyContainer{
+	@extend .container;
+	background-color:white;
+	/* Overrides for SharePoints bodyContainer javascript 		
+	@media (max-width: $screen-sm){
+		width: auto !important;
+	}
+	@media (max-width: $screen-md){
+		width: auto !important;
+	}
+	@media (min-width: $screen-lg){
+		width: auto !important;
+	}
+}*/
 /* Extend the TitleRow to use the container features */
+/* line 32, ../sass/_cgk-responsive-framework.scss */
+#s4-titlerow {
+  background-color: white;
+}
 @media screen and (max-width: 768px) {
-  /* line 30, ../sass/_cgk-responsive-framework.scss */
+  /* line 35, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 36, ../sass/_cgk-responsive-framework.scss */
+  /* line 41, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
     display: table !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 42, ../sass/_cgk-responsive-framework.scss */
+  /* line 47, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
     display: table !important;
     height: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 49, ../sass/_cgk-responsive-framework.scss */
+  /* line 54, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell {
     display: block;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 54, ../sass/_cgk-responsive-framework.scss */
+  /* line 59, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell .ms-mpSearchBox {
     float: none;
   }
 }
 
 /* Extend contentRow with container */
-/* line 66, ../sass/_cgk-responsive-framework.scss */
+/* line 71, ../sass/_cgk-responsive-framework.scss */
 #contentRow {
   padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
 }
-/* line 69, ../sass/_cgk-responsive-framework.scss */
+/* line 77, ../sass/_cgk-responsive-framework.scss */
 #contentRow #contentBox {
   margin: 0;
   min-width: auto;
@@ -8229,57 +8232,57 @@ button.close {
 }
 
 /* Responsive newsfeeds */
-/* line 77, ../sass/_cgk-responsive-framework.scss */
+/* line 85, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv {
   min-width: 0px !important;
 }
-/* line 80, ../sass/_cgk-responsive-framework.scss */
+/* line 88, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea {
   display: none;
   min-width: 0px !important;
 }
-/* line 83, ../sass/_cgk-responsive-framework.scss */
+/* line 91, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
   margin-top: 0;
 }
-/* line 88, ../sass/_cgk-responsive-framework.scss */
+/* line 96, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-microblogdiv {
   min-width: 0px !important;
 }
-/* line 93, ../sass/_cgk-responsive-framework.scss */
+/* line 101, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv {
   min-width: 0px !important;
 }
-/* line 95, ../sass/_cgk-responsive-framework.scss */
+/* line 103, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv * {
   min-width: auto;
   max-width: auto;
 }
-/* line 101, ../sass/_cgk-responsive-framework.scss */
+/* line 109, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
   min-width: auto;
   max-width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 104, ../sass/_cgk-responsive-framework.scss */
+  /* line 112, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../sass/_cgk-responsive-framework.scss */
+  /* line 118, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 115, ../sass/_cgk-responsive-framework.scss */
+  /* line 123, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 121, ../sass/_cgk-responsive-framework.scss */
+  /* line 129, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
     margin: 0;
   }
@@ -8428,11 +8431,9 @@ body .ms-core-overlay {
 }
 /* line 8, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer {
-  /* Use Bootstrap Container */
-  width: inherit !important;
   /* Content Styling */
 }
-/* line 12, ../sass/JBC/_jbc-general.scss */
+/* line 9, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow {
   padding: 0;
   /* Style the top row, set padding & height */
@@ -8443,64 +8444,69 @@ body #s4-workspace #s4-bodyContainer #s4-titlerow {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 12, ../sass/JBC/_jbc-general.scss */
+  /* line 9, ../sass/JBC/_jbc-general.scss */
   body #s4-workspace #s4-bodyContainer #s4-titlerow {
     min-height: 110px;
   }
 }
-/* line 23, ../sass/JBC/_jbc-general.scss */
+/* line 20, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox {
   margin: 0;
   width: 100%;
 }
-/* line 26, ../sass/JBC/_jbc-general.scss */
+/* line 23, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow {
   /* Center the site logo */
   /* Navigation container¨*/
   /* Search box div */
 }
-/* line 30, ../sass/JBC/_jbc-general.scss */
+/* line 27, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
   position: absolute;
   left: 50%;
   padding-top: 20px;
 }
-/* line 34, ../sass/JBC/_jbc-general.scss */
+/* line 31, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon #DeltaSiteLogo {
   position: relative;
   left: -50%;
 }
+/* line 37, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .ms-breadcrumb-top {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* line 40, ../sass/JBC/_jbc-general.scss */
-body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation {
+body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .ms-breadcrumb-top #DeltaTopNavigation {
   margin-top: 105px;
 }
-/* line 44, ../sass/JBC/_jbc-general.scss */
+/* line 45, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
   position: absolute;
   right: 15px;
 }
-/* line 53, ../sass/JBC/_jbc-general.scss */
+/* line 54, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow {
   padding-top: 20px;
 }
-/* line 55, ../sass/JBC/_jbc-general.scss */
+/* line 56, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 58, ../sass/JBC/_jbc-general.scss */
+/* line 59, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 62, ../sass/JBC/_jbc-general.scss */
+/* line 63, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 66, ../sass/JBC/_jbc-general.scss */
+/* line 67, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 70, ../sass/JBC/_jbc-general.scss */
+/* line 71, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
 }

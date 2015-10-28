@@ -6,9 +6,6 @@ body{
 	}
 	#s4-workspace{
 		#s4-bodyContainer{	
-			/* Use Bootstrap Container */
-			@extend .container;
-			width:inherit !important;
 			#s4-titlerow{
 				@include resetpadding;
 				/* Style the top row, set padding & height */
@@ -37,8 +34,12 @@ body{
 							}
 						}
 						.ms-breadcrumb-box{
-							#DeltaTopNavigation {
-								margin-top: 105px;
+							.ms-breadcrumb-top{
+								padding-left:$gutter;
+								padding-right:$gutter;
+								#DeltaTopNavigation {
+									margin-top: 105px;
+								}
 							}
 						}
 						> div + div + div + div {

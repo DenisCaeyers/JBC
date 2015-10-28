@@ -13,20 +13,25 @@
 	@extend .hidden-xs;
 }
 
-#s4-bodyContainer{		
-	@media screen and (max-width: $screen-sm){
-		width: 750px !important;
+/*body #s4-workspace #s4-bodyContainer{
+	@extend .container;
+	background-color:white;
+	/* Overrides for SharePoints bodyContainer javascript 		
+	@media (max-width: $screen-sm){
+		width: auto !important;
 	}
-	@media screen and (max-width: $screen-md){
-		width: 970px !important;
+	@media (max-width: $screen-md){
+		width: auto !important;
 	}
-	@media screen and (max-width: $screen-lg){
-		width: 1170px !important;
+	@media (min-width: $screen-lg){
+		width: auto !important;
 	}
-}
+}*/
 
 /* Extend the TitleRow to use the container features */
 #s4-titlerow{
+	@extend .container;
+	background-color:white;
 	#titleAreaBox{
 		@media screen and (max-width: $screen-sm){
 			@include resetmargin;
@@ -64,7 +69,10 @@
 
 /* Extend contentRow with container */
 #contentRow{
+	@extend .container;
 	padding-top:$gutter;
+	padding-bottom:$gutter;
+	background-color:white;
 	
 	#contentBox{
 		@include resetmargin;
