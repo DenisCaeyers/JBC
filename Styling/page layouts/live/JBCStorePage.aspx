@@ -51,34 +51,35 @@
 					<div class="adress" class="paragraph">
 						<i class="fa fa-home"></i>
 						<div class="sub-paragraph">
-							<div id="street">Van Veldekesingel 1B</div>
-							<div id="tdown">2400 Mol</div>
+							<div id="street"></div>
+							<div id="town"></div>
+							<div id="country"></div>
 						</div>
 					</div>
 					<div id="phoneblock">
 						<i class="fa fa-phone"></i>
-						<div id="phone" class="sub-paragraph">011/28 47 90</div>
+						<div id="phone" class="sub-paragraph"></div>
 					</div>
 				</div>
 				<div id="gerant" class="paragraph">
 					<h5>Gerant</h5>
 					<div>
-						<div id="name"><a id="mail" href="mailto:johan.alverman@jbc.be">Johan Alverman</a></div>
-						<div id="phone">011/28 47 90</div>
+						<i class="fa fa-envelope"></i><div id="name" class="sub-paragraph"><a id="mail" href=""></a></div>
+						<i class="fa fa-phone"></i><div id="phone" class="sub-paragraph"></div>
 					</div>
 				</div>
 				<div id="districtmanager" class="paragraph">
 					<h5>District Manager</h5>
 					<div>
-						<div id="name"><a id="mail" href="mailto:peter.peeters@jbc.be">Peter Peeters</a></div>
-						<div id="phone">011/28 47 90</div>
+						<i class="fa fa-envelope"></i><div id="name" class="sub-paragraph"><a id="mail" href=""></a></div>
+						<i class="fa fa-phone"></i><div id="phone" class="sub-paragraph"></div>
 					</div>
 				</div>
 				<div id="vm" class="paragraph">
 					<h5>Visual Merchandiser</h5>
 					<div>
-						<div id="name"><a id="mail" href="mailto:peter.peeters@jbc.be">Peter Peeters</a></div>
-						<div id="phone">011/28 47 90</div>
+						<i class="fa fa-envelope"></i><div id="name" class="sub-paragraph"><a id="mail" href=""></a></div>
+						<i class="fa fa-phone"></i><div id="phone" class="sub-paragraph"></div>
 					</div>
 				</div>
 				

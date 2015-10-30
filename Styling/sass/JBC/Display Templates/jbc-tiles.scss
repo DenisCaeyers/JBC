@@ -14,11 +14,12 @@
 		
 		h3{
 			@include resetmargin;
-			color:white;					
+			color:white;
+			font-size:1em;					
 		}		
 		
 		h3:after{
-			content: "  >>";
+			content: " ••";
 			font-size:14px;
 		}
 }

@@ -1,6 +1,9 @@
+
 /* Import navigation styling */
 @import "Navigation/jbc-collapsable-topnav";
+
 body{
+	font-family: $lato;
 	.ms-core-overlay{
 		background-color:$background-gray;
 	}
@@ -34,12 +37,19 @@ body{
 							}
 						}
 						.ms-breadcrumb-box{
+							padding-left:$gutter;
+							padding-right:$gutter;
 							.ms-breadcrumb-top{
-								padding-left:$gutter;
-								padding-right:$gutter;
 								#DeltaTopNavigation {
 									margin-top: 105px;
 								}
+							}
+							#pageTitle{
+								@include resetmargin;
+								@include resetpadding;
+								font-size: 18px;
+								padding-top: $gutter;
+								font-family: $lato;
 							}
 						}
 						> div + div + div + div {
@@ -53,9 +63,19 @@ body{
 			/* Content Styling */
 			#contentRow{
 				padding-top: $gutter + 5px;
+				
+				/* Quick Launch */
+				#sideNavBox{
+					* {
+						font-family: $lato;
+					}
+				}
+				
+				/* Web Parts */
 				.ms-webpartzone-cell {
 					margin: 0;
 				}
+				/* JBC Boxes */
 				.jbc-box{
 					padding-left:15px;
 					padding-right:15px;

@@ -1,7 +1,7 @@
 /* Bootstrap styling */
-@import "bootstrap-compass";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "bootstrap-variables";
-@import "bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Variables & mixins */
 @import "variables";
@@ -17,16 +17,6 @@
 /* TODO Local font gebruiken */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-#s4-titlerow{
-	#titleAreaBox{
-		#titleAreaRow{
-			#pageTitle{
-				display: none;
-			}
-		}	
-	}   	
-}
-
 /* Hide the Quick Launch */
 #sideNavBox {
   display: none;
@@ -36,7 +26,7 @@
 #contentRow {
 	.row{
 	  	.jbc-box{
-		  min-height:300px;
+		  min-height:325px;
 		}
  	}
 	.jbc-pageimage img {

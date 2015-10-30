@@ -13,21 +13,6 @@
 	@extend .hidden-xs;
 }
 
-/*body #s4-workspace #s4-bodyContainer{
-	@extend .container;
-	background-color:white;
-	/* Overrides for SharePoints bodyContainer javascript 		
-	@media (max-width: $screen-sm){
-		width: auto !important;
-	}
-	@media (max-width: $screen-md){
-		width: auto !important;
-	}
-	@media (min-width: $screen-lg){
-		width: auto !important;
-	}
-}*/
-
 /* Extend the TitleRow to use the container features */
 #s4-titlerow{
 	@extend .container;
@@ -78,6 +63,15 @@
 		@include resetmargin;
 		@include resetminmax-width;
 	}
+	
+	//Web Part styling features
+	.ms-webpartzone-cell{
+		//Allow repsonsive grouping of web part views
+		td[nowrap="nowrap"]{
+			white-space:normal;
+		}
+	}
+	
 }
 
 /* Responsive newsfeeds */
