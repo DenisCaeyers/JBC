@@ -1,7 +1,8 @@
 /* Bootstrap styling */
-@import "bootstrap-compass";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "bootstrap-variables";
-@import "bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
 
 /* Variables & mixins */
 @import "variables";

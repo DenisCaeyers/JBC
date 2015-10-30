@@ -34,12 +34,18 @@ body{
 							}
 						}
 						.ms-breadcrumb-box{
+							padding-left:$gutter;
+							padding-right:$gutter;
 							.ms-breadcrumb-top{
-								padding-left:$gutter;
-								padding-right:$gutter;
 								#DeltaTopNavigation {
 									margin-top: 105px;
 								}
+							}
+							#pageTitle{
+								@include resetmargin;
+								@include resetpadding;
+								font-size: 18px;
+								padding-top: $gutter;
 							}
 						}
 						> div + div + div + div {
@@ -72,6 +78,10 @@ body{
 					@extend .jbc-box;
 					background-color:white;
 				}
+			}
+			#footer{
+				
+				
 			}
 		}
 	}

@@ -1,0 +1,16 @@
+{
+  "name": "jbc-styling",
+  "version": "1.0.0",
+  "description": "SharePoint Styling for JBC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denis Caeyers",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
