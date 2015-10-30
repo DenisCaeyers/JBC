@@ -64,21 +64,21 @@
 					<h5>Gerant</h5>
 					<div>
 						<div id="name"><a id="mail" href="mailto:johan.alverman@jbc.be">Johan Alverman</a></div>
-						<div id="phone">011/28 47 90</div>
+						<div id="phone"><i class="fa fa-phone"></i>011/28 47 90</div>
 					</div>
 				</div>
 				<div id="districtmanager" class="paragraph">
 					<h5>District Manager</h5>
 					<div>
 						<div id="name"><a id="mail" href="mailto:peter.peeters@jbc.be">Peter Peeters</a></div>
-						<div id="phone">011/28 47 90</div>
+						<div id="phone"><i class="fa fa-phone"></i>011/28 47 90</div>
 					</div>
 				</div>
 				<div id="vm" class="paragraph">
 					<h5>Visual Merchandiser</h5>
 					<div>
 						<div id="name"><a id="mail" href="mailto:peter.peeters@jbc.be">Peter Peeters</a></div>
-						<div id="phone">011/28 47 90</div>
+						<div id="phone"><i class="fa fa-phone"></i>011/28 47 90</div>
 					</div>
 				</div>
 				
