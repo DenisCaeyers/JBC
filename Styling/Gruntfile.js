@@ -13,12 +13,11 @@ module.exports = function(grunt) {
 			files:'**/*.scss',
 			tasks: ['compass']
 		}
-	}  
+	},
   })
   
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
   
   grunt.registerTask('default', ['watch']);
 };

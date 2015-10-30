@@ -1,6 +1,9 @@
+
 /* Import navigation styling */
 @import "Navigation/jbc-collapsable-topnav";
+
 body{
+	font-family: $lato;
 	.ms-core-overlay{
 		background-color:$background-gray;
 	}
@@ -46,6 +49,7 @@ body{
 								@include resetpadding;
 								font-size: 18px;
 								padding-top: $gutter;
+								font-family: $lato;
 							}
 						}
 						> div + div + div + div {
@@ -59,9 +63,19 @@ body{
 			/* Content Styling */
 			#contentRow{
 				padding-top: $gutter + 5px;
+				
+				/* Quick Launch */
+				#sideNavBox{
+					* {
+						font-family: $lato;
+					}
+				}
+				
+				/* Web Parts */
 				.ms-webpartzone-cell {
 					margin: 0;
 				}
+				/* JBC Boxes */
 				.jbc-box{
 					padding-left:15px;
 					padding-right:15px;
@@ -78,10 +92,6 @@ body{
 					@extend .jbc-box;
 					background-color:white;
 				}
-			}
-			#footer{
-				
-				
 			}
 		}
 	}

@@ -8823,6 +8823,7 @@ button.close {
 /* Variables & mixins */
 /* Gutter sizing */
 /* Colors */
+/* fonts */
 /* CGK Repsonsive Framework */
 /* Override with Content-Box */
 /* line 2, ../sass/_general.scss */
@@ -9131,7 +9132,7 @@ button.close {
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   text-transform: uppercase;
   font-size: 1;
   line-height: 10px !important;
@@ -9160,15 +9161,19 @@ button.close {
   display: none;
 }
 
-/* line 4, ../sass/JBC/_jbc-general.scss */
+/* line 5, ../sass/JBC/_jbc-general.scss */
+body {
+  font-family: "lato", "helvetica", "Arial";
+}
+/* line 7, ../sass/JBC/_jbc-general.scss */
 body .ms-core-overlay {
   background-color: #f3f1f1;
 }
-/* line 8, ../sass/JBC/_jbc-general.scss */
+/* line 11, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer {
   /* Content Styling */
 }
-/* line 9, ../sass/JBC/_jbc-general.scss */
+/* line 12, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow {
   padding: 0;
   /* Style the top row, set padding & height */
@@ -9179,76 +9184,84 @@ body #s4-workspace #s4-bodyContainer #s4-titlerow {
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  /* line 9, ../sass/JBC/_jbc-general.scss */
+  /* line 12, ../sass/JBC/_jbc-general.scss */
   body #s4-workspace #s4-bodyContainer #s4-titlerow {
     min-height: 110px;
   }
 }
-/* line 20, ../sass/JBC/_jbc-general.scss */
+/* line 23, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox {
   margin: 0;
   width: 100%;
 }
-/* line 23, ../sass/JBC/_jbc-general.scss */
+/* line 26, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow {
   /* Center the site logo */
   /* Navigation container¨*/
   /* Search box div */
 }
-/* line 27, ../sass/JBC/_jbc-general.scss */
+/* line 30, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
   position: absolute;
   left: 50%;
   padding-top: 20px;
 }
-/* line 31, ../sass/JBC/_jbc-general.scss */
+/* line 34, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon #DeltaSiteLogo {
   position: relative;
   left: -50%;
 }
-/* line 36, ../sass/JBC/_jbc-general.scss */
+/* line 39, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 40, ../sass/JBC/_jbc-general.scss */
+/* line 43, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .ms-breadcrumb-top #DeltaTopNavigation {
   margin-top: 105px;
 }
-/* line 44, ../sass/JBC/_jbc-general.scss */
+/* line 47, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #pageTitle {
   margin: 0;
   padding: 0;
   font-size: 18px;
   padding-top: 15px;
+  font-family: "lato", "helvetica", "Arial";
 }
-/* line 51, ../sass/JBC/_jbc-general.scss */
+/* line 55, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
   position: absolute;
   right: 15px;
 }
-/* line 60, ../sass/JBC/_jbc-general.scss */
+/* line 64, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow {
   padding-top: 20px;
+  /* Quick Launch */
+  /* Web Parts */
+  /* JBC Boxes */
 }
-/* line 62, ../sass/JBC/_jbc-general.scss */
+/* line 69, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox * {
+  font-family: "lato", "helvetica", "Arial";
+}
+/* line 75, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 65, ../sass/JBC/_jbc-general.scss */
+/* line 79, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 69, ../sass/JBC/_jbc-general.scss */
+/* line 83, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 73, ../sass/JBC/_jbc-general.scss */
+/* line 87, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 77, ../sass/JBC/_jbc-general.scss */
+/* line 91, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
 }
@@ -9263,7 +9276,7 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
 /* Content Styling */
 /* line 28, ../sass/jbc-StorePageLayout.scss */
 #contentRow .row .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-whitebox {
-  min-height: 300px;
+  min-height: 325px;
 }
 /* line 37, ../sass/jbc-StorePageLayout.scss */
 #contentRow .jbc-contactzone h2 {
