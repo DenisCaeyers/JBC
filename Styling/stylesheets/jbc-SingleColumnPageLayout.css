@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 /* line 9, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -9265,13 +9266,14 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
 }
 
-/* line 21, ../sass/jbc-SingleColumnPageLayout.scss */
+/* TODO Local font gebruiken */
+/* line 23, ../sass/jbc-SingleColumnPageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
 /* Hide the Quick Launch */
-/* line 29, ../sass/jbc-SingleColumnPageLayout.scss */
+/* line 31, ../sass/jbc-SingleColumnPageLayout.scss */
 #sideNavBox {
   display: none;
 }

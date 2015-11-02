@@ -3,7 +3,6 @@
 @import "bootstrap-variables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-
 /* Variables & mixins */
 @import "variables";
 @import "mixins";
@@ -14,6 +13,9 @@
 
 /* JBC General styling */
 @import "JBC/jbc-general";
+
+/* TODO Local font gebruiken */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 #s4-titlerow{
 	#titleAreaBox{
