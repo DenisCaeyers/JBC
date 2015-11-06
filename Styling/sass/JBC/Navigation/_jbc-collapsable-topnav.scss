@@ -45,14 +45,13 @@
 				#DeltaTopNavigation{
 					@extend .navbar-collapse;
 					@extend .collapse;
-					border-top: 1px $darkgray solid;
-  					border-bottom: 1px $darkgray solid;
+					@include resetpadding;
 					@media screen and (max-width:$screen-sm){
 						overflow-y:visible !important;
 					}
+					
 					.ms-core-listMenu-horizontalBox{
 						width: 100%;
-						text-align: center;
 						@media screen and (max-width:$screen-sm){
 							text-align: left;
 							* {
@@ -79,7 +78,8 @@
 									background-color:white !important;
 								}
 								a:hover{
-									/*border-bottom:4px solid $yellow;*/
+									background-color:$yellow !important;
+									color:white !important;
 								}
 								a:active{
 									color:black;
@@ -91,14 +91,13 @@
 
 								}
 								a{
-									padding-top:10px !important;
-									padding-bottom:10px !important;
-									font-family: 'Open Sans', sans-serif !important;
-									text-transform: uppercase;
+									padding-top:$gutter !important;
+									padding-bottom:$gutter !important;
 									font-size:1;
 									line-height: 10px !important;
 									@include resetmargin;
-									margin-right:50px;
+									margin-right:$gutter;
+									@include border-radius(2px);
 									/*padding-top: $gutter;
 									padding-bottom: $gutter;*/
 								}
@@ -107,13 +106,23 @@
 							li.dynamic-children{
 								> ul.dynamic{
 									/*position: relative;*/
-									width:220px !important;
+									@include resetpadding;
+									width:auto !important;
+									white-space:nowrap;
+									background-color:rgba(255,255,255, 0.9);
+									border:none;
+									min-width:200px;
 									li{
 										display: block;
 										float: none;
 										/* padding:2px 5px; */	
 										a{
-											margin-right:0;
+											margin-right:0 !important;	
+											background-color:rgba(255,255,255, 0) !important;
+											padding:5
+										}
+										a:hover{
+											background-color:$yellow !important;
 										}
 									}
 								}

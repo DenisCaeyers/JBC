@@ -1765,7 +1765,7 @@ img {
 }
 
 /* line 81, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img, #contentRow .jbc-pageimage img {
+.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img, .jbc-pageimage img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -9145,30 +9145,19 @@ button.close {
 /* line 107, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic {
   /*position: relative;*/
-  padding: 0;
-  width: auto !important;
-  white-space: nowrap;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: none;
-  min-width: 200px;
+  width: 100% !important;
 }
-/* line 115, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 110, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li {
   display: block;
   float: none;
   /* padding:2px 5px; */
 }
-/* line 119, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 114, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a {
   margin-right: 0 !important;
-  background-color: rgba(255, 255, 255, 0) !important;
-  padding: 5;
 }
-/* line 124, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
-#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a:hover {
-  background-color: #ffcf1f !important;
-}
-/* line 130, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 120, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
   display: none;
 }
@@ -9275,36 +9264,13 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
 }
 
 /* TODO Local font gebruiken */
-/* Hide the Quick Launch */
-/* line 21, ../sass/jbc-StorePageLayout.scss */
-#sideNavBox {
+/* line 23, ../sass/jbc-HeaderDoubleColumnPageLayout.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
   display: none;
 }
 
-/* Content Styling */
-/* line 28, ../sass/jbc-StorePageLayout.scss */
-#contentRow .row .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .row .jbc-whitebox {
-  min-height: 325px;
-}
-/* line 37, ../sass/jbc-StorePageLayout.scss */
-#contentRow .jbc-contactzone h2 {
-  margin-top: 0;
-  padding-top: 20px;
-}
-/* line 41, ../sass/jbc-StorePageLayout.scss */
-#contentRow .jbc-contactzone h5 {
-  margin-bottom: 0;
-}
-/* line 44, ../sass/jbc-StorePageLayout.scss */
-#contentRow .jbc-contactzone .paragraph {
-  padding-left: 15px;
-}
-/* line 47, ../sass/jbc-StorePageLayout.scss */
-#contentRow .jbc-contactzone .sub-paragraph {
-  padding-left: 30px;
-}
-/* line 50, ../sass/jbc-StorePageLayout.scss */
-#contentRow .jbc-contactzone i {
-  float: left;
-  margin-top: 3px;
+/* Hide the Quick Launch */
+/* line 35, ../sass/jbc-HeaderDoubleColumnPageLayout.scss */
+#sideNavBox {
+  display: none;
 }
