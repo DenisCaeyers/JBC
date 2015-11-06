@@ -10,51 +10,60 @@ body{
 	#s4-workspace{
 		#s4-bodyContainer{	
 			#s4-titlerow{
-				@include resetpadding;
 				/* Style the top row, set padding & height */
-				padding-top: 15px;
-				padding-bottom: 0;
-				min-height: 170px;
-				@media screen and (max-width:$screen-sm){
+				min-height: 110px;
+				/*@media screen and (max-width:$screen-sm){
 					min-height:110px;
-				}
-				height:auto;
-				position: relative;
+				}*/
 				#titleAreaBox{
-					margin: 0;
-					width: 100%;
+					@include resetmargin;
+					display: block;
+					margin-top:$gutter;
 					#titleAreaRow{
+						
 						/* Center the site logo */
 						/* Navigation container¨*/
 						/* Search box div */
+						display: block;
 						#siteIcon{ 
-							position: absolute;
-							left: 50%;
-							padding-top: 20px;
+							@extend .col-md-2;
+							@include resetmargin;
+							@include resetpadding;
 							#DeltaSiteLogo {
-								position: relative;
-								left: -50%;
 							}
 						}
 						.ms-breadcrumb-box{
-							padding-left:$gutter;
-							padding-right:$gutter;
+							@extend .col-md-8;
 							.ms-breadcrumb-top{
 								#DeltaTopNavigation {
-									margin-top: 105px;
 								}
 							}
 							#pageTitle{
 								@include resetmargin;
 								@include resetpadding;
 								font-size: 18px;
-								padding-top: $gutter;
+								padding-left: $gutter;
+								margin-right:$gutter;						
 								font-family: $lato;
 							}
 						}
+					
 						> div + div + div + div {
-							position: absolute;
-							right: 15px;
+							@extend .col-md-2;
+							@include resetpadding;
+							padding-top:$gutter;
+							#DeltaPlaceHolderSearchArea{
+								width:100%;
+								#searchInputBox{
+									width:100%;
+									.ms-srch-sb-border{
+										border-color:$yellow;
+										input{
+											width:70%;
+										}		
+									}																	
+								}
+							}
 						}
 					}
 				} 
