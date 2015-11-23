@@ -1765,7 +1765,7 @@ img {
 }
 
 /* line 81, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img {
+.img-responsive, #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentDiv img, body #s4-workspace #s4-bodyContainer #contentRow .jbc-roundedtile .title img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -2402,22 +2402,22 @@ pre code {
 }
 
 /* line 39, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
-.row {
+.row, body #s4-workspace #jbc-footer {
   margin-left: -15px;
   margin-right: -15px;
 }
 /* line 14, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.row:before, .row:after {
+.row:before, body #s4-workspace #jbc-footer:before, .row:after, body #s4-workspace #jbc-footer:after {
   content: " ";
   display: table;
 }
 /* line 19, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.row:after {
+.row:after, body #s4-workspace #jbc-footer:after {
   clear: both;
 }
 
 /* line 11, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2947,7 +2947,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-md-3, .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links, .col-md-5, .col-md-6, .col-md-7, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social, .col-md-9, .col-md-10, .col-md-11, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text {
     float: left;
   }
 
@@ -2967,7 +2967,7 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4 {
+  .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links {
     width: 33.33333%;
   }
 
@@ -2987,7 +2987,7 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
+  .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social {
     width: 66.66667%;
   }
 
@@ -3007,7 +3007,7 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-12 {
+  .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text {
     width: 100%;
   }
 
@@ -9145,19 +9145,30 @@ button.close {
 /* line 107, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic {
   /*position: relative;*/
-  width: 100% !important;
+  padding: 0;
+  width: auto !important;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  min-width: 200px;
 }
-/* line 110, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 115, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li {
   display: block;
   float: none;
   /* padding:2px 5px; */
 }
-/* line 114, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 119, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a {
   margin-right: 0 !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  padding: 5;
 }
-/* line 120, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+/* line 124, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
+#s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a:hover {
+  background-color: #ffcf1f !important;
+}
+/* line 130, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
   display: none;
 }
@@ -9234,33 +9245,139 @@ body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > 
 body #s4-workspace #s4-bodyContainer #contentRow {
   padding-top: 20px;
   /* Quick Launch */
+  /* JBC Bullets */
   /* Web Parts */
   /* JBC Boxes */
+  /* JBC links */
+  /* JBC Rounded Tile */
+  /* ref: divisionsoverview.scss*/
 }
 /* line 78, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox * {
   font-family: "lato", "helvetica", "Arial";
 }
 /* line 84, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .bullets:after {
+  content: " •• ";
+  color: white;
+}
+/* line 90, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 88, ../sass/JBC/_jbc-general.scss */
+/* line 94, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 92, ../sass/JBC/_jbc-general.scss */
+/* line 98, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 96, ../sass/JBC/_jbc-general.scss */
+/* line 102, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 100, ../sass/JBC/_jbc-general.scss */
+/* line 106, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
+}
+/* line 112, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-link {
+  font: 14px;
+  padding: 5px;
+  float: right;
+  margin-bottom: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 119, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-link:after {
+  content: " ••";
+}
+/* line 123, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:visited {
+  background-color: #ffcf1f;
+  color: white !important;
+}
+/* line 128, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:visited {
+  background-color: #382d24;
+  color: #ffcf1f !important;
+}
+/* line 136, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-roundedtile .title img {
+  width: 32px;
+}
+/* line 144, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer {
+  background-color: #382d24;
+  min-height: 110px;
+  margin: -15px;
+  margin-top: 15px;
+}
+/* line 150, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #marginrow {
+  height: 15px;
+  background-color: #f3f1f1;
+}
+/* line 155, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow {
+  padding: 15px;
+  padding-top: 30px;
+}
+/* line 160, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #left-links a:link, body #s4-workspace #jbc-footer #footerrow #left-links a:hover, body #s4-workspace #jbc-footer #footerrow #left-links a:visited {
+  color: #ffcf1f;
+}
+/* line 164, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #social {
+  text-align: right;
+}
+/* line 167, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-footer #footerrow #social a:link, body #s4-workspace #jbc-footer #footerrow #social a:visited {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #382d24;
+  background-color: #ffcf1f;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.6em;
+  margin-right: 5px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+}
+/* line 184, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #social a:hover {
+  background-color: white;
+}
+/* line 187, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #social img {
+  display: inline-block;
+}
+/* line 190, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #social .logo {
+  margin-left: 15px;
+}
+/* line 195, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #text {
+  text-align: right;
+  color: white;
+  padding: 15px;
+}
+/* line 200, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #text a:hover {
+  color: white;
 }
 
 /* TODO Local font gebruiken */

@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+
+.jbc-roundedtile{
+	border: 1px $yellow solid;
+    padding: $gutter;
+    margin-bottom: $gutter + $gutter;
+    @include border-top-left-radius($gutter);
+	@include box-shadow(3px, 3px, 16px, 0px , lighten($black, 50%));
+	.title{
+		background-color:$yellow;
+		margin:-15px;
+		padding: 10px;
+		margin-bottom:0;
+		text-align: right;
+		@include border-top-left-radius(13px);
+		h4{
+			@include resetmargin();
+			color:white;
+			margin-right:15px;
+			margin-top:5px;
+		}
+		* {
+			float:right;
+		}
+	}
+	p{
+		padding:$gutter;
+	}	
+
+}

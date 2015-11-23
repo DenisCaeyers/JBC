@@ -18,6 +18,13 @@
           border-radius: $radius;
 }
 
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-top-left-radius: $radius;
+      -ms-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+}
+
 @mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color)
 {
   -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;

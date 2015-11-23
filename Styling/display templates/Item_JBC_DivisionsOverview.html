@@ -1,0 +1,54 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>JBC - Divisions Overview</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Hiermee wordt het itemsjabloon voor standaardresultaten weergegeven.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;JBCPeopleLink&#39;:&#39;JBCPeopleLink&#39;,&#39;JBCDivisionDescription&#39;:&#39;JBCDivisionDescription&#39;,&#39;JBCLinkIcon&#39;:&#39;JBCLinkIcon&#39;,&#39;JBCNavigateUrl&#39;:&#39;JBCNavigateUrl&#39;,&#39;PublishingImage&#39;:&#39;PublishingImage&#39;,&#39;ContentType&#39;:&#39;ContentType&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
+
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/_catalogs/masterpage/Display Templates/Search/Item_JBC_Overzicht3Tiles.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+	
+
+	
+    <div id="Item_Default">
+<!--#_ 
+       if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){	
+	   				var title = $getItemValue(ctx, "Title");
+	   				var navUrl = $getItemValue(ctx, "JBCNavigateUrl");
+					var linkIcon = $getItemValue(ctx, "JBCLinkIcon");	
+					var divDesc = $getItemValue(ctx, "JBCDivisionDescription");			
+					var pplLink = $getItemValue(ctx, "JBCPeopleLink");
+			
+				_#-->      
+				         	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position:relative">	
+								<div class="jbc-roundedtile clearfix">
+									<div class="title clearfix">
+										<span class="jbc-respspan"> _#= STSHtmlDecode(linkIcon.value) =#_ </span><h4>_#= title =#_</h4>
+									</div>
+										<p>_#= divDesc =#_</p>
+										<div class="col-md-12"><a href="_#= pplLink =#_" class="jbc-link jbc-yellowLink">Find people</a></div>
+										<div class="col-md-12" style="display:none;"><a href="_#= navUrl =#_" class="jbc-link jbc-brownLink">Restricted site</a></div>
+								</div>
+				         	</div>
+				         
+				<!--#_ 
+
+			}
+        
+        
+_#-->
+    </div>
+</body>
+</html>

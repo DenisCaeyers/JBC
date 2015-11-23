@@ -8,6 +8,11 @@
  * Released under the MIT License
  */
 
+/* Backgroun color */
+.ms-core-listMenu-verticalBox{
+	background-color: $gray;
+}
+
 /* Default menu levels 3+ padding */
 .ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item { padding-left: 60px; }
 .ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item { padding-left: 80px; }

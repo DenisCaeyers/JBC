@@ -80,6 +80,12 @@ body{
 					}
 				}
 				
+				/* JBC Bullets */
+				.bullets:after{
+					content: " •• ";
+					color: white;
+				}
+				
 				/* Web Parts */
 				.ms-webpartzone-cell {
 					margin: 0;
@@ -100,6 +106,100 @@ body{
 				.jbc-whitebox{
 					@extend .jbc-box;
 					background-color:white;
+				}
+				
+				/* JBC links */
+				.jbc-link{
+					font:14px;
+					padding: 5px;
+					float: right;
+					margin-bottom:10px;
+					@include border-radius(2px);
+				}
+				.jbc-link:after{
+					content:" ••";
+				}
+				
+				.jbc-yellowLink:hover, .jbc-yellowLink:link, .jbc-yellowLink:visited{
+					background-color:$yellow;
+					color:white !important;
+				}
+				
+				.jbc-brownLink:hover, .jbc-brownLink:link, .jbc-brownLink:visited{
+					background-color:$bodycolor;
+					color:$yellow !important;
+				}
+				
+				/* JBC Rounded Tile */ /* ref: divisionsoverview.scss*/
+				.jbc-roundedtile{
+					.title{
+						img{
+							@extend .img-responsive;
+							width:32px;
+						}
+					}
+				}
+			}
+		}
+		#jbc-footer{
+			@extend .row;
+			background-color:$bodycolor;
+			min-height:110px;
+			margin:-15px;
+			margin-top:$gutter;
+			#marginrow{
+				@extend .col-md-12;
+				height:$gutter;
+				background-color:$background-gray;
+			}
+			#footerrow{
+				padding: $gutter;
+				padding-top:$gutter + $gutter;
+				#left-links{
+					@extend .col-md-4;
+					a:link, a:hover, a:visited{
+						color:$yellow;
+					}
+				}
+				#social{
+					@extend .col-md-8;
+					text-align: right;
+					a, a:link,a:visited{
+						display: inline-block;
+						position: relative;
+						cursor: pointer;
+						width: 40px;
+						height: 40px;
+						padding: 0px;
+						text-decoration: none;
+						text-align: center;
+						color: $bodycolor;
+						background-color:$yellow;
+						font-size: 25px;
+						font-weight: normal;
+						line-height: 1.6em;
+						margin-right:5px;
+						@include border-radius(25px);
+					}
+					a:hover{
+						background-color:white;
+					}
+					img{
+						display: inline-block;
+					}
+					.logo{
+						margin-left: $gutter;
+					}
+					
+				}
+				#text{
+					@extend .col-md-12;
+					text-align: right;
+					color:white;
+					padding:$gutter;
+					a:hover{
+						color:white;
+					}
 				}
 			}
 		}
