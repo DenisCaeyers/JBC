@@ -10,7 +10,7 @@
 <mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
-<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display%20Templates/Search/Control_Knowledge_DocumentTable.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display Templates/Search/Control_Knowledge_Newsflash.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 <mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
 <mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
 </mso:CustomDocumentProperties>
@@ -301,22 +301,7 @@ _#-->
                 <div id="Groups" class="ms-srch-result-groups">
 <!--#_ 
                     ctx.ListDataJSONGroupsKey = "ResultTables"; 
-_#-->
-                    <div class="table-responsive">
-                        <table class="table table-striped jbc-table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                    <th>Language</th>
-                                    <th>Owner</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                    _#= ctx.RenderGroups(ctx) =#_            
-                            </tbody>                  
-                        </table>
-                    </div>
+_#-->               _#= ctx.RenderGroups(ctx) =#_            
 <!--#_
                     if(ctx.ClientControl.get_shouldShowNoResultMessage()){
 _#-->

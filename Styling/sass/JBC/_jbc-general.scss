@@ -80,10 +80,33 @@ body{
 					}
 				}
 				
+				/* JBC Alert */
+				.jbc-alert{
+					background-color:$gray;
+					padding: $gutter;
+					padding-right: $gutter*4;
+					background-image: url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/excl.png");
+				}
+				
+				/* General link styling */
+				a{
+					color:$yellow;
+				}
+				
 				/* JBC Bullets */
 				.bullets:after{
 					content: " •• ";
 					color: white;
+				}
+				 
+				/* JBC Table style */
+				.jbc-table{
+					thead{
+						background-color:$yellow;
+						th{
+							color:white;
+						}	
+					}
 				}
 				
 				/* Web Parts */
