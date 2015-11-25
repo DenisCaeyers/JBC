@@ -74,4 +74,11 @@
 }
 .ms-srch-result-groups{
     @include resetmargin;
+    .ms-srch-item-title{
+        h3{
+            @include resetmargin;
+            float: left;
+            
+        }
+    }
 }

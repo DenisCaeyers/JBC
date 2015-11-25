@@ -8,27 +8,28 @@
   position: absolute;
   z-index: 10;
   background-color: #ffcf1f;
-  padding: 10px 70px 10px 15px;
+  padding: 10px 3em 10px 15px;
   bottom: 20%;
   left: 0;
+  width: 80%;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 15, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 16, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile-title h3 {
   margin: 0;
   color: white;
   font-size: 1em;
 }
-/* line 21, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 22, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile-title h3:after {
   content: " ••";
   font-size: 14px;
 }
 
-/* line 27, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 28, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile {
   overflow: hidden;
   background-size: 100%;
@@ -38,7 +39,7 @@
   background-color: #F1F1F1;
   margin-bottom: 30px;
 }
-/* line 37, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 38, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile .stretch {
   position: absolute;
   top: 0;
@@ -46,7 +47,7 @@
   left: 0;
   right: 0;
 }
-/* line 44, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 45, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile .stretch .overlay {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -61,7 +62,7 @@
   transition: all 0.4s ease;
 }
 
-/* line 57, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
+/* line 58, ../../../sass/JBC/Display Templates/jbc-tiles.scss */
 .jbc-tile:hover .overlay {
   top: 0;
 }

@@ -6,9 +6,10 @@
 		position: absolute;
 		z-index:10;
 		background-color: $yellow;
-		padding: 10px 70px 10px $gutter;
+		padding: 10px 3em 10px $gutter;
 		bottom: 20%;
 		left: 0;
+		width:80%;
 		
 		@include border-radius(3px);
 		

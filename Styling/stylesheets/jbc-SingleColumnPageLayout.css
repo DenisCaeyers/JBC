@@ -8907,6 +8907,11 @@ button.close {
 .ms-srch-result-groups {
   margin: 0;
 }
+/* line 78, ../sass/_general.scss */
+.ms-srch-result-groups .ms-srch-item-title h3 {
+  margin: 0;
+  float: left;
+}
 
 /* CGK Responsive Framework */
 /* SASS only file */
