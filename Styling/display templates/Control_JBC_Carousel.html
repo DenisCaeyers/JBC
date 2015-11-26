@@ -1,0 +1,89 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Control JBC Carousel</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Hiermee wordt de besturing voor zoekresultaten weergegeven.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106601</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://rto365.sharepoint.com/_catalogs/masterpage/Display%20Templates/Search/Control_VRT_Carousel.html, De conversie is voltooid.</mso:HtmlDesignStatusAndPreview>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+	 <script>
+        $includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js");
+    </script>
+	
+    <div id="Carousel_SearchResults">
+<!--#_ 
+
+// Set the Group Display Template
+        ctx.ClientControl.set_groupTemplateId('~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js');
+
+if (!$isNull(ctx.ClientControl) &&
+    !$isNull(ctx.ClientControl.shouldRenderControl) &&
+    !ctx.ClientControl.shouldRenderControl())
+{
+    return "";
+}
+ctx.ListDataJSONGroupsKey = "ResultTables";
+var ListRenderRenderWrapper = function(itemRenderResult, inCtx, tpl)
+{
+    var iStr = [];
+    iStr.push(itemRenderResult);
+    return iStr.join('');
+}
+ctx['ItemRenderWrapper'] = ListRenderRenderWrapper;
+
+var numResults = ctx.DataProvider.get_rowCount();
+
+_#-->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+  	 
+	<!--#_
+  	  for(var slideNum = 0; slideNum < numResults; slideNum++){
+  	  
+  	  if(slideNum == 0)
+  	  {
+  	  _#-->
+  	  <li data-target="#myCarousel" data-slide-to="_#= slideNum =#_" class="active"></li>
+  	  <!--#_
+  	  }
+  	  else
+  	  {
+  	 _#-->
+  	   <li data-target="#myCarousel" data-slide-to="_#= slideNum =#_"></li>
+  	  <!--#_
+  	  }
+  	  }
+ 	 _#-->
+
+  </ol>
+ <!--  Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	_#= ctx.RenderGroups(ctx) =#_
+  </div>
+ </div> <!-- Carousel -->
+
+<!--#_
+if (ctx.ClientControl.get_shouldShowNoResultMessage())
+{
+_#-->
+        
+<!--#_
+}
+
+
+_#-->
+
+    </div>
+</body>
+</html>
