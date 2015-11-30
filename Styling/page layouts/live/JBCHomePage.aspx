@@ -35,7 +35,7 @@
       	</button>
 	</div>
 	
-	<div class="row">
+	<div class="row jbc-header-row">
 		<div class="col-md-8">
 			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949D" runat="server" title="Slider zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 		</div>
@@ -43,7 +43,17 @@
 			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949E" runat="server" title="Quick Links zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 		</div>
 	</div>
-	<div class="row">
+	
+	<div class="row jbc-header2-row">
+		<div class="col-md-4">
+			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949H" runat="server" title="Left upper zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+		</div>
+		<div class="col-md-8">
+			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949I" runat="server" title="Right upper zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+		</div>
+	</div>
+	
+	<div class="row jbc-centered-row">
 		<div class="col-md-6">
 			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949F" runat="server" title="Left zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 		</div>

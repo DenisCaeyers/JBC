@@ -9,7 +9,7 @@
 <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
 <mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
-<mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableDate00&#39;:&#39;RefinableDate00&#39;,&#39;RefinableString08&#39;:&#39;RefinableString08&#39;,&#39;RefinableString09&#39;:&#39;RefinableString09&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableString29&#39;:&#39;RefinableString29&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
 <mso:HtmlDesignStatusAndPreview msdt:dt="string">https://rto365.sharepoint.com/_catalogs/masterpage/Display%20Templates/Search/Item_VRT_Carousel.html, De conversie is voltooid.</mso:HtmlDesignStatusAndPreview>
 </mso:CustomDocumentProperties>
@@ -20,15 +20,11 @@
 <!--#_ 
        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){	
 			
-			var image = $getItemValue(ctx, "RefinableString09");
-   			var imageUrlWithRendition = Srch.U.getImageSourceWithRendition(image, 800, 800)
+			var image = $getItemValue(ctx, "RefinableString29");
+   			var imageUrlWithRendition = Srch.U.getImageSourceWithRendition(image)
 			
 			var linkURL = $getItemValue(ctx, "Path");
-
-			var title = $getItemValue(ctx, "Title");
-			var postCategory = $getItemValue(ctx, "RefinableString08");
-			var postDateString = $getItemValue(ctx, "RefinableDate00");
-			var postDate = new Date(postDateString.inputValue)
+            var title = $getItemValue(ctx, "Title");
 
 			var itemId = ctx.CurrentItemIdx;
 			var divClass;
@@ -44,20 +40,8 @@
 			
 _#-->           
           <div class="_#= divClass =#_" onclick="window.location='_#= linkURL =#_';" style="cursor:pointer">
-                        <div class="vrt-carousel-item" style="background-image:url('_#= imageUrlWithRendition =#_');">
-                                   <div class="vrt-carousel-overlay">
-                                               <div class="vrt-carousel-content">
-                                                           <div class="vrt-carousel-title">
-                                                                       <h1>_#= title =#_</h1>
-                                                           </div>
-                                                           <div class="vrt-tile-subblock">
-                                                                       <span class="category">_#= postCategory =#_</span>
-                                                                       <span class="date">_#= postDate.format("dd.MM.yyyy")=#_</span>
-                                                           </div>
-                                               </div>
-                                   </div>
-                        </div>
-    </div>
+            <img src="_#= imageUrlWithRendition =#_" class="img-responsive" alt="_#= title =#_" />
+          </div>
             
 <!--#_ 
         } 

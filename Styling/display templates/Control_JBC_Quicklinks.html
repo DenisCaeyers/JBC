@@ -1,0 +1,71 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>JBC Control Quicklinks</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the Search Results control.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106601</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display%20Templates/Search/Control_Knowledge_DocumentTable.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    
+     <script>
+         $includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js");
+         $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/JBC/CSS/jbc-quicklinks.css");
+    </script>
+    
+    <div id="Control_SearchResults">
+<!--#_
+        // Set the Group Display Template
+        ctx.ClientControl.set_groupTemplateId('~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js');
+      
+       if (!$isNull(ctx.ClientControl) &&
+    !$isNull(ctx.ClientControl.shouldRenderControl) &&
+    !ctx.ClientControl.shouldRenderControl())
+{
+    return "";
+}
+ctx.ListDataJSONGroupsKey = "ResultTables";
+var ListRenderRenderWrapper = function(itemRenderResult, inCtx, tpl)
+{
+    var iStr = [];
+    iStr.push(itemRenderResult);
+    return iStr.join('');
+}
+ctx['ItemRenderWrapper'] = ListRenderRenderWrapper;
+
+var numResults = ctx.DataProvider.get_rowCount();
+
+_#-->
+
+<div id="jbc-quicklinks">
+    <div class="title">
+        <span class="one">Quick </span><span class="two">links</span>
+    </div>
+    <div class="list">
+        _#= ctx.RenderGroups(ctx) =#_
+    </div>
+</div>
+ 
+<!--#_
+if (ctx.ClientControl.get_shouldShowNoResultMessage())
+{
+_#-->
+        
+<!--#_
+}
+
+
+_#-->
+    </div>
+</body>
+</html>

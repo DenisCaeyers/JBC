@@ -31,5 +31,19 @@ body{
         #sideNavBox {
           display: none;
         }
+        
+        .ms-webpartzone-cell{
+            margin-bottom:$gutter !important;
+        }
+        
+        .jbc-centered-row{
+            img{
+                @include resetmargin;
+            } 
+        }
+        
+        #jbc-footer{
+            margin-top:0;
+        }
     }
 }

@@ -1,0 +1,19 @@
+@import "variables";
+
+.carousel-indicators{
+	li{
+		border-color:$yellow;
+	}
+	.active{
+		background-color:$yellow;
+	}
+}
+
+.carousel-control{
+	span.glyphicon-chevron-right:before{
+		content:"";
+	}
+	span.glyphicon-chevron-left:before{
+		content:"";
+	}
+}
