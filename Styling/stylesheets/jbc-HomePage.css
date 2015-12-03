@@ -9410,32 +9410,51 @@ body #s4-workspace #jbc-footer #footerrow #text a:hover {
 }
 
 /* TODO Local font gebruiken */
-/* line 22, ../sass/jbc-HomePage.scss */
+/* line 20, ../sass/jbc-HomePage.scss */
 body {
   /* Content Styling */
 }
-/* line 23, ../sass/jbc-HomePage.scss */
+/* line 21, ../sass/jbc-HomePage.scss */
 body .ms-core-overlay {
   background: url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/bg.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-position-y: 10px;
 }
-/* line 29, ../sass/jbc-HomePage.scss */
+/* line 27, ../sass/jbc-HomePage.scss */
+body #pageTitle {
+  display: none;
+}
+/* line 32, ../sass/jbc-HomePage.scss */
 body #contentRow {
+  padding-top: 0px;
+  background-color: transparent;
   /* Hide the Quick Launch */
 }
-/* line 31, ../sass/jbc-HomePage.scss */
+/* line 37, ../sass/jbc-HomePage.scss */
 body #contentRow #sideNavBox {
   display: none;
 }
-/* line 35, ../sass/jbc-HomePage.scss */
+/* line 41, ../sass/jbc-HomePage.scss */
 body #contentRow .ms-webpartzone-cell {
   margin-bottom: 15px !important;
 }
-/* line 40, ../sass/jbc-HomePage.scss */
+/* line 45, ../sass/jbc-HomePage.scss */
+body #contentRow .jbc-header2-row {
+  background-color: white;
+}
+/* line 48, ../sass/jbc-HomePage.scss */
+body #contentRow .jbc-header-row {
+  margin-left: -30px;
+}
+/* line 51, ../sass/jbc-HomePage.scss */
+body #contentRow .jbc-centered-row {
+  background-color: white;
+}
+/* line 53, ../sass/jbc-HomePage.scss */
 body #contentRow .jbc-centered-row img {
   margin: 0;
 }
-/* line 45, ../sass/jbc-HomePage.scss */
+/* line 58, ../sass/jbc-HomePage.scss */
 body #contentRow #jbc-footer {
   margin-top: 0;
 }

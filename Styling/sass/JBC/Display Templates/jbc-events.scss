@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixins";
+
+#jbc-events{
+	margin-right:-15px;
+	.title{
+		text-align: center;
+		font-size:24px;
+		margin:$gutter;
+		.one{
+			font-weight: bold;
+			text-transform: uppercase;
+			color:$yellow;
+		}
+		.two{
+			text-decoration: underline;
+			color:$bodycolor;
+		}
+	}
+	ul#eventslist{
+		@include resetpadding;
+		background-color: $zalm;
+		li{
+			list-style: none;
+			@include transition(all, 1s, ease-in-out);
+			padding:$gutter;
+			border-right: 2px white solid;
+			div.date{
+				float: left;
+				width:20%;
+				color:$yellow;
+				div.day{
+					font-size:50px;
+					line-height:40px;
+					margin-top:15px;
+				}
+				div.month{
+					text-transform: uppercase;
+				}
+			}
+			.item{
+				width: 80%;
+				float: left;
+				.item-header{
+					.item-title{
+						a, a:hover, a:visited{
+							color:$bodycolor !important;
+							font-weight: bold;
+							font-size:16px;
+							margin-right:5px;
+						}
+					}
+					.date{
+						line-height:26px;
+					}
+				}
+				.intro{
+					float:left;
+				}
+			}
+		}
+		.active{
+			.item{
+				background-color:lighten($yellow,30%);
+				border-right: 2px $yellow solid;
+			}
+		}
+	}
+	#eventsfooter{
+		background-color:$yellow;
+		padding:5px;
+		text-align: center;
+		a:link, a:hover,a:visited{
+			color:white !important;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+}

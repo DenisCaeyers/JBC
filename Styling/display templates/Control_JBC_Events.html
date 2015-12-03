@@ -1,6 +1,6 @@
 ﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
-<title>JBC Newsscroller</title>
+<title>JBC Control Events</title>
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -20,7 +20,7 @@
     
      <script>
          $includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js");
-         $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/JBC/CSS/jbc-quicklinks.css");
+         $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/JBC/CSS/jbc-events.css");
     </script>
     
     <div id="Control_SearchResults">
@@ -47,12 +47,15 @@ var numResults = ctx.DataProvider.get_rowCount();
 
 _#-->
 
-<div id="jbc-quicklinks">
+<div id="jbc-events">
     <div class="title">
-        <span class="one">Quick </span><span class="two">links</span>
+        <span class="one">Upcomming </span><span class="two">Events</span>
     </div>
-    <div class="list">
+    <ul id="eventslist">
         _#= ctx.RenderGroups(ctx) =#_
+    </ul>
+    <div id="eventsfooter">
+        <a href="https://jbcbe.sharepoint.com/news">View more</a>
     </div>
 </div>
  
@@ -64,7 +67,28 @@ _#-->
 <!--#_
 }
 
-
+AddPostRenderCallback(ctx, function(){
+    setNextItemActive();
+    
+    setInterval(function() {
+        setNextItemActive();
+    },4000);
+    
+    
+    function setNextItemActive(){
+        if($('#newsticker li.active').length==0 || $('#newsticker li.active').next().length==0)
+        {
+            $('#newsticker li.active').removeClass('active', 1000);
+            $('#newsticker li:first').addClass('active', 1000);
+        }
+        else
+        {
+            $('#newsticker li.active').removeClass('active', 1000).next().addClass('active', 1000);
+        }  
+    }
+    
+});
+   
 _#-->
     </div>
 </body>

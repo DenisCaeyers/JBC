@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+
+#jbc-newsscroller{
+	.title{
+		text-align: center;
+		font-size:24px;
+		margin:$gutter;
+		.one{
+			font-weight: bold;
+			text-transform: uppercase;
+			color:$yellow;
+		}
+		.two{
+			text-decoration: underline;
+			color:$bodycolor;
+		}
+	}
+	#newsticker{
+		@include resetpadding;
+		li{
+			list-style: none;
+			@include transition(all, 1s, ease-in-out);
+			padding:5px;
+			border-right: 2px white solid;
+			div.image{
+				float: left;
+				width:30%;
+				img{
+					max-width:100%;
+					height:auto;
+					display: block;
+				}
+			}
+			.item{
+				padding-left:10px;
+				padding-right:10px;
+				padding-top: 5px;
+				width: 65%;
+				float: left;
+				.item-header{
+					.item-title{
+						float: left;
+						a, a:hover, a:visited{
+							color:$bodycolor !important;
+							font-weight: bold;
+							font-size:16px;
+							margin-right:5px;
+						}
+					}
+					.date{
+						line-height:26px;
+					}
+				}
+				.intro{
+					float:left;
+				}
+			}
+		}
+		.active{
+			.item{
+				background-color:lighten($yellow,30%);
+				border-right: 2px $yellow solid;
+			}
+		}
+	}
+	#tickerfooter{
+		background-color:$yellow;
+		padding:5px;
+		text-align: center;
+		a:link, a:hover,a:visited{
+			color:white !important;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,6 +1,14 @@
 @import "variables";
 
 .carousel-indicators{
+	
+	background-color:rgba(255,255,255,0.5);
+	width:100%;
+	left:0;
+	margin-left:0;
+	bottom: -10px;
+	padding:$gutter;
+	
 	li{
 		border-color:$yellow;
 	}

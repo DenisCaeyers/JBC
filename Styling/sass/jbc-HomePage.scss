@@ -17,16 +17,22 @@
 /* TODO Local font gebruiken */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-
-
 body{
   .ms-core-overlay{
       background:url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/bg.png");
-      background-repeat: no-repeat; 
+      background-repeat: repeat-x; 
+      background-position-y:10px;
+    }
+    
+    #pageTitle{
+        display: none;
     }
     
     /* Content Styling */
     #contentRow {
+        padding-top:0px;
+        background-color:transparent;
+       
         /* Hide the Quick Launch */
         #sideNavBox {
           display: none;
@@ -36,7 +42,14 @@ body{
             margin-bottom:$gutter !important;
         }
         
+        .jbc-header2-row{
+            background-color:white;
+        }
+        .jbc-header-row{
+            margin-left:-30px;
+        }
         .jbc-centered-row{
+            background-color:white;
             img{
                 @include resetmargin;
             } 

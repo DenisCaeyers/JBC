@@ -1,0 +1,94 @@
+/* Gutter sizing */
+/* Colors */
+/* fonts */
+/* line 4, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events {
+  margin-right: -15px;
+}
+/* line 6, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events .title {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px;
+}
+/* line 10, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events .title .one {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcf1f;
+}
+/* line 15, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events .title .two {
+  text-decoration: underline;
+  color: #382d24;
+}
+/* line 20, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist {
+  padding: 0;
+  background-color: #d39e81;
+}
+/* line 23, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li {
+  list-style: none;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  padding: 15px;
+  border-right: 2px white solid;
+}
+/* line 28, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li div.date {
+  float: left;
+  width: 20%;
+  color: #ffcf1f;
+}
+/* line 32, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li div.date div.day {
+  font-size: 50px;
+  line-height: 40px;
+  margin-top: 15px;
+}
+/* line 37, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li div.date div.month {
+  text-transform: uppercase;
+}
+/* line 41, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li .item {
+  width: 80%;
+  float: left;
+}
+/* line 46, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li .item .item-header .item-title a, #jbc-events ul#eventslist li .item .item-header .item-title a:hover, #jbc-events ul#eventslist li .item .item-header .item-title a:visited {
+  color: #382d24 !important;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 5px;
+}
+/* line 53, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li .item .item-header .date {
+  line-height: 26px;
+}
+/* line 57, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist li .item .intro {
+  float: left;
+}
+/* line 63, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events ul#eventslist .active .item {
+  background-color: #fff0b8;
+  border-right: 2px #ffcf1f solid;
+}
+/* line 69, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events #eventsfooter {
+  background-color: #ffcf1f;
+  padding: 5px;
+  text-align: center;
+}
+/* line 73, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events #eventsfooter a:link, #jbc-events #eventsfooter a:hover, #jbc-events #eventsfooter a:visited {
+  color: white !important;
+}
+/* line 76, ../../../sass/JBC/Display Templates/jbc-events.scss */
+#jbc-events #eventsfooter a:hover {
+  text-decoration: underline;
+}

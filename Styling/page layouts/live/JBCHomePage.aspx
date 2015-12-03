@@ -39,7 +39,7 @@
 		<div class="col-md-8">
 			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949D" runat="server" title="Slider zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 jbc-whitebox">
 			<WebPartPages:WebPartZone id="g_D82265B6E37E4C6984C0C394AA49949E" runat="server" title="Quick Links zone"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 		</div>
 	</div>

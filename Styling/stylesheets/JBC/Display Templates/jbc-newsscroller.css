@@ -1,0 +1,91 @@
+/* Gutter sizing */
+/* Colors */
+/* fonts */
+/* line 5, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller .title {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px;
+}
+/* line 9, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller .title .one {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcf1f;
+}
+/* line 14, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller .title .two {
+  text-decoration: underline;
+  color: #382d24;
+}
+/* line 19, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker {
+  padding: 0;
+}
+/* line 21, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li {
+  list-style: none;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  padding: 5px;
+  border-right: 2px white solid;
+}
+/* line 26, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li div.image {
+  float: left;
+  width: 30%;
+}
+/* line 29, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li div.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 35, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li .item {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  width: 65%;
+  float: left;
+}
+/* line 42, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li .item .item-header .item-title {
+  float: left;
+}
+/* line 44, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li .item .item-header .item-title a, #jbc-newsscroller #newsticker li .item .item-header .item-title a:hover, #jbc-newsscroller #newsticker li .item .item-header .item-title a:visited {
+  color: #382d24 !important;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 5px;
+}
+/* line 51, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li .item .item-header .date {
+  line-height: 26px;
+}
+/* line 55, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker li .item .intro {
+  float: left;
+}
+/* line 61, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #newsticker .active .item {
+  background-color: #fff0b8;
+  border-right: 2px #ffcf1f solid;
+}
+/* line 67, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #tickerfooter {
+  background-color: #ffcf1f;
+  padding: 5px;
+  text-align: center;
+}
+/* line 71, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #tickerfooter a:link, #jbc-newsscroller #tickerfooter a:hover, #jbc-newsscroller #tickerfooter a:visited {
+  color: white !important;
+}
+/* line 74, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
+#jbc-newsscroller #tickerfooter a:hover {
+  text-decoration: underline;
+}

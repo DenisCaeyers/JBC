@@ -1,0 +1,52 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>JBC Newsscroller Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableString31&#39;:&#39;RefinableString31&#39;,&#39;RefinableString30&#39;:&#39;RefinableString30&#39;,&#39;RefinableDate03&#39;:&#39;RefinableDate03&#39;,&#39;RefinableString25&#39;:&#39;RefinableString25&#39;,&#39;Filename&#39;:&#39;Filename&#39;,&#39;ServerRedirectedURL&#39;:&#39;ServerRedirectedURL&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display%20Templates/Search/Item_Knowledge_DocumentTable.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Default">
+<!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){   
+           	var Title = $getItemValue(ctx, "Title");
+            var navigateUrl = $getItemValue(ctx, "Path");
+            var published = $getItemValue(ctx, "RefinableDate03");
+            var publishedDate = new Date(published.inputValue);
+            var intro = $getItemValue(ctx, "RefinableString30");
+            var miniature = $getItemValue(ctx, "RefinableString31");
+_#-->		
+            
+           <li class="clearfix">
+              <div class="image">
+                  _#= STSHtmlDecode(miniature.value) =#_
+              </div>
+              <div class="item">
+                <div class="item-header">
+                    <span class="item-title"><a href="_#= navigateUrl =#_">_#= Title =#_</a></span>
+                    <span class="date">_#= publishedDate.format("dd.MM.yyyy") =#_</span>
+                </div>
+                <div class="intro">
+                    _#= intro =#_
+                </div>
+              </div>                  
+           </li>
+           
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>
