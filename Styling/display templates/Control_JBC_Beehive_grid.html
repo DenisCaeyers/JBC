@@ -1,6 +1,6 @@
 ﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
 <head>
-<title>JBC Control Events</title>
+<title>JBC Control Beehive grid</title>
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -17,10 +17,9 @@
 </xml><![endif]-->
 </head>
 <body>
-    
      <script>
          $includeScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Search/Group_Clean.js");
-         $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/JBC/CSS/jbc-events.css");
+         $includeCSS(this.url, "~sitecollection/_catalogs/masterpage/JBC/CSS/jbc-beehivegrid.css");
     </script>
     
     <div id="Control_SearchResults">
@@ -47,15 +46,9 @@ var numResults = ctx.DataProvider.get_rowCount();
 
 _#-->
 
-<div id="jbc-events">
-    <div class="title">
-        <span class="one">Upcoming </span><span class="two">Events</span>
-    </div>
-    <ul id="eventslist">
+<div id="jbc-beehivegrid" class="clearfix">
+    <div class="views-row views-row-1 views-row-odd">
         _#= ctx.RenderGroups(ctx) =#_
-    </ul>
-    <div id="eventsfooter">
-        <a href="https://jbcbe.sharepoint.com/news">View more</a>
     </div>
 </div>
  

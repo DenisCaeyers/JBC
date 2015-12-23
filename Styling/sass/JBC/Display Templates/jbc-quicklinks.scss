@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+@import "bootstrap-variables";
+
 #jbc-quicklinks{
 	.title{
 		text-align: center;
@@ -19,6 +21,13 @@
 	.list{
 		.quicklink{
 			padding:$gutter;
+            
+            // Sizing of the quick links for small desktop devices.
+            @media screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+                padding-top:5px;
+                padding-bottom:5px;      
+            }
+            
 			border:1px solid $yellow;
 			margin:$gutter 0 $gutter 0;
 			font-size: 16px;

@@ -29,6 +29,12 @@
 		background:url('/_catalogs/masterpage/JBC/IMG/beehivebackground.png');
 		padding:$gutter;
 		padding-top:$gutter*4;
+        .col-md-4{
+            @media screen and (max-width:$screen-md)
+            {
+                display:none;
+            }
+        }
 		.jbc-knowledge-header{
 			background-color:rgba(255,255,255,0.5);
 			padding:$gutter;
@@ -41,7 +47,10 @@
 				padding: $gutter;
 				background-color:$bodycolor;
 				color:$yellow;
+                float: left;
+                margin:5px;
 				@include border-radius(2px);
+                
 			}
 			a:after{
 				content:" ••";

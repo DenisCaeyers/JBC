@@ -1,6 +1,10 @@
 /* CGK Responsive Framework */
 /* SASS only file */
 
+#s4-workspace{
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Suitbar, hide on mobile devices */
 #suiteBarDelta{
 	@extend .hidden-sm;
@@ -62,6 +66,7 @@
 	#contentBox{
 		@include resetmargin;
 		@include resetminmax-width;
+        min-width:0 !important;
 	}
 	
 	//Web Part styling features
@@ -71,6 +76,11 @@
 			white-space:normal;
 		}
 	}
+    .ms-srch-sbLarge-fullWidth{
+        @media screen and (max-width:$screen-md){
+            width:auto !important;
+        }
+    }
 	
 }
 

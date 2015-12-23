@@ -46,7 +46,10 @@ body{
             background-color:white;
         }
         .jbc-header-row{
-            margin-left:-30px;
+            @media screen and (min-width: $screen-md)
+            {
+                margin-left:-30px;
+            }
         }
         .jbc-centered-row{
             background-color:white;

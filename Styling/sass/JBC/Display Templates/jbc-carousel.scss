@@ -1,27 +1,36 @@
 @import "variables";
+@import "bootstrap-variables";
 
-.carousel-indicators{
-	
-	background-color:rgba(255,255,255,0.5);
-	width:100%;
-	left:0;
-	margin-left:0;
-	bottom: -10px;
-	padding:$gutter;
-	
-	li{
-		border-color:$yellow;
-	}
-	.active{
-		background-color:$yellow;
-	}
-}
 
-.carousel-control{
-	span.glyphicon-chevron-right:before{
-		content:"";
-	}
-	span.glyphicon-chevron-left:before{
-		content:"";
-	}
+#myCarousel{
+    @media screen and (max-width:$screen-md)
+    {
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+    
+    .carousel-indicators{
+        background-color:rgba(255,255,255,0.5);
+        width:100%;
+        left:0;
+        margin-left:0;
+        bottom: -10px;
+        padding:$gutter;
+        
+        li{
+            border-color:$yellow;
+        }
+        .active{
+            background-color:$yellow;
+        }
+    }
+
+    .carousel-control{
+        span.glyphicon-chevron-right:before{
+            content:"";
+        }
+        span.glyphicon-chevron-left:before{
+            content:"";
+        }
+    }
 }

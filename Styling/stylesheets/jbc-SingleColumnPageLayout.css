@@ -8915,115 +8915,127 @@ button.close {
 
 /* CGK Responsive Framework */
 /* SASS only file */
+/* line 4, ../sass/_cgk-responsive-framework.scss */
+#s4-workspace {
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Suitbar, hide on mobile devices */
 /* RibbonRow, hide on mobile devices */
 /* Extend the TitleRow to use the container features */
-/* line 17, ../sass/_cgk-responsive-framework.scss */
+/* line 21, ../sass/_cgk-responsive-framework.scss */
 #s4-titlerow {
   background-color: white;
 }
 @media screen and (max-width: 768px) {
-  /* line 20, ../sass/_cgk-responsive-framework.scss */
+  /* line 24, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 26, ../sass/_cgk-responsive-framework.scss */
+  /* line 30, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon {
     display: table !important;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 32, ../sass/_cgk-responsive-framework.scss */
+  /* line 36, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
     display: table !important;
     height: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 39, ../sass/_cgk-responsive-framework.scss */
+  /* line 43, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell {
     display: block;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 44, ../sass/_cgk-responsive-framework.scss */
+  /* line 48, ../sass/_cgk-responsive-framework.scss */
   #s4-titlerow #titleAreaBox #titleAreaRow div.ms-tableCell .ms-mpSearchBox {
     float: none;
   }
 }
 
 /* Extend contentRow with container */
-/* line 56, ../sass/_cgk-responsive-framework.scss */
+/* line 60, ../sass/_cgk-responsive-framework.scss */
 #contentRow {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: white;
 }
-/* line 62, ../sass/_cgk-responsive-framework.scss */
+/* line 66, ../sass/_cgk-responsive-framework.scss */
 #contentRow #contentBox {
   margin: 0;
   min-width: auto;
   max-width: auto;
+  min-width: 0 !important;
 }
-/* line 70, ../sass/_cgk-responsive-framework.scss */
+/* line 75, ../sass/_cgk-responsive-framework.scss */
 #contentRow .ms-webpartzone-cell td[nowrap="nowrap"] {
   white-space: normal;
 }
+@media screen and (max-width: 992px) {
+  /* line 79, ../sass/_cgk-responsive-framework.scss */
+  #contentRow .ms-srch-sbLarge-fullWidth {
+    width: auto !important;
+  }
+}
 
 /* Responsive newsfeeds */
-/* line 79, ../sass/_cgk-responsive-framework.scss */
+/* line 89, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv {
   min-width: 0px !important;
 }
-/* line 82, ../sass/_cgk-responsive-framework.scss */
+/* line 92, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea {
   display: none;
   min-width: 0px !important;
 }
-/* line 85, ../sass/_cgk-responsive-framework.scss */
+/* line 95, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-titlebararea #ms-titlebardiv {
   margin-top: 0;
 }
-/* line 90, ../sass/_cgk-responsive-framework.scss */
+/* line 100, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-microblogdiv {
   min-width: 0px !important;
 }
-/* line 95, ../sass/_cgk-responsive-framework.scss */
+/* line 105, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv {
   min-width: 0px !important;
 }
-/* line 97, ../sass/_cgk-responsive-framework.scss */
+/* line 107, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv * {
   min-width: auto;
   max-width: auto;
 }
-/* line 103, ../sass/_cgk-responsive-framework.scss */
+/* line 113, ../sass/_cgk-responsive-framework.scss */
 #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-attachmentReplyPreviewDiv {
   min-width: auto;
   max-width: auto;
 }
 @media screen and (max-width: 768px) {
-  /* line 106, ../sass/_cgk-responsive-framework.scss */
+  /* line 116, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-rootBody {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 112, ../sass/_cgk-responsive-framework.scss */
+  /* line 122, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 117, ../sass/_cgk-responsive-framework.scss */
+  /* line 127, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeedReplyContent {
     margin: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 123, ../sass/_cgk-responsive-framework.scss */
+  /* line 133, ../sass/_cgk-responsive-framework.scss */
   #ms-microfeeddiv #ms-newsfeedpartdiv .ms-microfeed-replyArea .ms-microfeed-replyBody {
     margin: 0;
   }
@@ -9266,52 +9278,59 @@ body #s4-workspace #s4-bodyContainer #contentRow {
 body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox * {
   font-family: "lato", "helvetica", "Arial";
 }
-/* line 86, ../sass/JBC/_jbc-general.scss */
+@media screen and (max-width: 992px) {
+  /* line 79, ../sass/JBC/_jbc-general.scss */
+  body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox {
+    width: auto;
+    z-index: 200;
+  }
+}
+/* line 90, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-alert {
   background-color: #F1F1F1;
   padding: 15px;
   padding-right: 60px;
   background-image: url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/excl.png");
 }
-/* line 94, ../sass/JBC/_jbc-general.scss */
+/* line 98, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow a {
   color: #ffcf1f;
 }
-/* line 99, ../sass/JBC/_jbc-general.scss */
+/* line 103, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .bullets:after {
   content: " •• ";
   color: white;
 }
-/* line 106, ../sass/JBC/_jbc-general.scss */
+/* line 110, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-table thead {
   background-color: #ffcf1f;
 }
-/* line 108, ../sass/JBC/_jbc-general.scss */
+/* line 112, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-table thead th {
   color: white;
 }
-/* line 115, ../sass/JBC/_jbc-general.scss */
+/* line 119, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 119, ../sass/JBC/_jbc-general.scss */
+/* line 123, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 123, ../sass/JBC/_jbc-general.scss */
+/* line 127, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 127, ../sass/JBC/_jbc-general.scss */
+/* line 131, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox {
   background-color: #ffcf1f;
 }
-/* line 131, ../sass/JBC/_jbc-general.scss */
+/* line 135, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
 }
-/* line 137, ../sass/JBC/_jbc-general.scss */
+/* line 141, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-link {
   font: 14px;
   padding: 5px;
@@ -9322,50 +9341,51 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-link {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 144, ../sass/JBC/_jbc-general.scss */
+/* line 148, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-link:after {
   content: " ••";
 }
-/* line 148, ../sass/JBC/_jbc-general.scss */
+/* line 152, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:visited {
   background-color: #ffcf1f;
   color: white !important;
 }
-/* line 153, ../sass/JBC/_jbc-general.scss */
+/* line 157, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:visited {
   background-color: #382d24;
   color: #ffcf1f !important;
 }
-/* line 161, ../sass/JBC/_jbc-general.scss */
+/* line 165, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-roundedtile .title img {
-  width: 32px;
+  height: 32px;
+  width: inherit !important;
 }
-/* line 169, ../sass/JBC/_jbc-general.scss */
+/* line 174, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer {
   background-color: #382d24;
   min-height: 110px;
   margin: -15px;
   margin-top: 15px;
 }
-/* line 175, ../sass/JBC/_jbc-general.scss */
+/* line 180, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #marginrow {
   height: 15px;
   background-color: #f3f1f1;
 }
-/* line 180, ../sass/JBC/_jbc-general.scss */
+/* line 185, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow {
   padding: 15px;
   padding-top: 30px;
 }
-/* line 185, ../sass/JBC/_jbc-general.scss */
+/* line 190, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #left-links a:link, body #s4-workspace #jbc-footer #footerrow #left-links a:hover, body #s4-workspace #jbc-footer #footerrow #left-links a:visited {
   color: #ffcf1f;
 }
-/* line 189, ../sass/JBC/_jbc-general.scss */
+/* line 194, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social {
   text-align: right;
 }
-/* line 192, ../sass/JBC/_jbc-general.scss */
+/* line 197, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-footer #footerrow #social a:link, body #s4-workspace #jbc-footer #footerrow #social a:visited {
   display: inline-block;
   position: relative;
@@ -9386,25 +9406,25 @@ body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-foo
   -ms-border-radius: 25px;
   border-radius: 25px;
 }
-/* line 209, ../sass/JBC/_jbc-general.scss */
+/* line 214, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a:hover {
   background-color: white;
 }
-/* line 212, ../sass/JBC/_jbc-general.scss */
+/* line 217, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social img {
   display: inline-block;
 }
-/* line 215, ../sass/JBC/_jbc-general.scss */
+/* line 220, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social .logo {
   margin-left: 15px;
 }
-/* line 220, ../sass/JBC/_jbc-general.scss */
+/* line 225, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text {
   text-align: right;
   color: white;
   padding: 15px;
 }
-/* line 225, ../sass/JBC/_jbc-general.scss */
+/* line 230, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text a:hover {
   color: white;
 }
@@ -9412,7 +9432,7 @@ body #s4-workspace #jbc-footer #footerrow #text a:hover {
 /* TODO Local font gebruiken */
 /* line 23, ../sass/jbc-SingleColumnPageLayout.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow #pageTitle {
-  display: none;
+  /*display: none;*/
 }
 
 /* Hide the Quick Launch */

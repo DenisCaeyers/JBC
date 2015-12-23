@@ -1,24 +1,24 @@
 /* Gutter sizing */
 /* Colors */
 /* fonts */
-/* line 5, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 7, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .title {
   text-align: center;
   font-size: 24px;
   margin: 15px;
 }
-/* line 9, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 11, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .title .one {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffcf1f;
 }
-/* line 14, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 16, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .title .two {
   text-decoration: underline;
   color: #382d24;
 }
-/* line 20, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 22, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink {
   padding: 15px;
   border: 1px solid #ffcf1f;
@@ -30,33 +30,40 @@
   border-radius: 2px;
   background-color: white;
 }
-/* line 27, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 22, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+  #jbc-quicklinks .list .quicklink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+/* line 36, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink a, #jbc-quicklinks .list .quicklink a:link, #jbc-quicklinks .list .quicklink a:visited {
   color: #382d24 !important;
 }
-/* line 30, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 39, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink .image {
   margin-right: 15px;
 }
-/* line 35, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 44, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover {
   background-color: #ffcf1f;
   color: white !important;
 }
-/* line 38, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 47, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover a, #jbc-quicklinks .list .quicklink:hover a:link, #jbc-quicklinks .list .quicklink:hover a:visited {
   color: white !important;
 }
-/* line 41, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 50, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover .arrow:before {
   color: white !important;
 }
-/* line 45, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 54, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .arrow:before {
   content: " > ";
   color: #382d24;
 }
-/* line 49, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 58, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .arrow {
   float: right;
 }

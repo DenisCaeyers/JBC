@@ -1,6 +1,8 @@
 @import "variables";
 @import "mixins";
 
+@import "bootstrap-variables";
+
 #jbc-newsscroller{
 	.title{
 		text-align: center;
@@ -24,8 +26,10 @@
 			padding:5px;
 			border-right: 2px white solid;
 			div.image{
-				float: left;
-				width:30%;
+                @media screen and (min-width:$screen-sm){
+				    float: left;
+				    width:30%;
+                }
 				img{
 					max-width:100%;
 					height:auto;
@@ -36,8 +40,10 @@
 				padding-left:10px;
 				padding-right:10px;
 				padding-top: 5px;
-				width: 65%;
-				float: left;
+                @media screen and (min-width:$screen-sm){
+				    width: 65%;
+				    float: left;
+                }
 				.item-header{
 					.item-title{
 						float: left;
@@ -57,11 +63,9 @@
 				}
 			}
 		}
-		.active{
-			.item{
-				background-color:lighten($yellow,30%);
-				border-right: 2px $yellow solid;
-			}
+		.item:hover{
+			background-color:lighten($yellow,30%);
+			border-right: 2px $yellow solid;
 		}
 	}
 	#tickerfooter{

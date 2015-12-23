@@ -27,11 +27,16 @@
 	}   	
 }
 
-.jbc-pageimage img {
-	@extend .img-responsive;
-} 
-
 /* Hide the Quick Launch */
 #sideNavBox {
   display: none;
+}
+
+#contentBox{
+	.row{
+		img{
+			@extend .img-responsive;
+			margin:0 !important;
+		}
+	}
 }

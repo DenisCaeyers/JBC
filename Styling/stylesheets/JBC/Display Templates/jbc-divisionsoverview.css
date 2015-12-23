@@ -6,6 +6,7 @@
   border: 1px #ffcf1f solid;
   padding: 15px;
   margin-bottom: 30px;
+  min-height: 350px;
   -webkit-border-top-left-radius: 15px;
   -moz-border-top-left-radius: 15px;
   -ms-border-top-left-radius: 15px;
@@ -14,7 +15,7 @@
   -webkit-box-shadow: 3px 3px 16px 0px gray;
   box-shadow: 3px 3px 16px 0px gray;
 }
-/* line 10, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
+/* line 11, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile .title {
   background-color: #ffcf1f;
   margin: -15px;
@@ -26,18 +27,18 @@
   -ms-border-top-left-radius: 13px;
   border-top-left-radius: 13px;
 }
-/* line 17, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
+/* line 18, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile .title h4 {
   margin: 0;
   color: white;
   margin-right: 15px;
   margin-top: 5px;
 }
-/* line 23, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
+/* line 24, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile .title * {
   float: right;
 }
-/* line 27, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
+/* line 28, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile p {
   padding: 15px;
 }

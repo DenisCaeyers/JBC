@@ -80,6 +80,10 @@ body{
 					* {
 						font-family: $lato;
 					}
+                    @media screen and (max-width:$screen-md){
+                        width:auto;
+                        z-index:200;
+                    }
 				}
 				
 				/* JBC Alert */
@@ -160,7 +164,8 @@ body{
 					.title{
 						img{
 							@extend .img-responsive;
-							width:32px;
+							height:32px;
+                            width: inherit !important;
 						}
 					}
 				}

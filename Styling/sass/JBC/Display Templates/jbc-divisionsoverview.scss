@@ -5,6 +5,7 @@
 	border: 1px $yellow solid;
     padding: $gutter;
     margin-bottom: $gutter + $gutter;
+	min-height: 350px;
     @include border-top-left-radius($gutter);
 	@include box-shadow(3px, 3px, 16px, 0px , lighten($black, 50%));
 	.title{
@@ -27,5 +28,4 @@
 	p{
 		padding:$gutter;
 	}	
-
 }
