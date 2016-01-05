@@ -117,5 +117,16 @@ var SP2013QLAccordion = {
   }
 };
 
+var SwapLogoLink = {
+    // Initialization function
+    init: function (){
+        console.log("function loaded");
+    }
+}
+   
+
 // SharePoint default DOM onLoad function
 ExecuteOrDelayUntilBodyLoaded(SP2013QLAccordion.init);
+ExecuteOrDelayUntilBodyLoaded(SwapLogoLink.init);
+
+
