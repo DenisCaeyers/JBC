@@ -116,17 +116,12 @@ var SP2013QLAccordion = {
     }
   }
 };
-
-var SwapLogoLink = {
-    // Initialization function
-    init: function (){
-        console.log("function loaded");
-    }
-}
    
-
 // SharePoint default DOM onLoad function
 ExecuteOrDelayUntilBodyLoaded(SP2013QLAccordion.init);
-ExecuteOrDelayUntilBodyLoaded(SwapLogoLink.init);
+
+$('document').ready(function(){
+    setTimeout(function(){ $("#DeltaSiteLogo a").attr("href","http://beehive.jbc.be"); }, 3000);
+});
 
 

@@ -1,4 +1,4 @@
-
+@import "mixins";
 /* Import navigation styling */
 @import "Navigation/jbc-collapsable-topnav";
 
@@ -173,7 +173,7 @@ body{
 		}
 		#jbc-footer{
 			@extend .row;
-			background-color:$bodycolor;
+			background-color:$yellow;
 			min-height:110px;
 			margin:-15px;
 			margin-top:$gutter;
@@ -186,13 +186,21 @@ body{
 				padding: $gutter;
 				padding-top:$gutter + $gutter;
 				#left-links{
-					@extend .col-md-4;
+					@extend .col-md-6;
 					a:link, a:hover, a:visited{
-						color:$yellow;
+                        color: $bodycolor;
+                        background-color: white;
+                        padding: 6px 20px 6px 20px;
+                        @include border-radius(2px);
+                        margin-left: 2px;
+                        margin-right: 2px;
+                        font-size:12px;
+                        font-weight:bold;
+                        
 					}
 				}
 				#social{
-					@extend .col-md-8;
+					@extend .col-md-3;
 					text-align: right;
 					a, a:link,a:visited{
 						display: inline-block;
@@ -204,7 +212,7 @@ body{
 						text-decoration: none;
 						text-align: center;
 						color: $bodycolor;
-						background-color:$yellow;
+						background-color:white;
 						font-size: 25px;
 						font-weight: normal;
 						line-height: 1.6em;
@@ -212,21 +220,30 @@ body{
 						@include border-radius(25px);
 					}
 					a:hover{
-						background-color:white;
+						color:$bodycolor;
 					}
-					img{
+				}
+                #logo{
+                    @extend .col-md-3;
+                    img{
 						display: inline-block;
+                        float: right;
 					}
 					.logo{
 						margin-left: $gutter;
 					}
-					
-				}
+                }
+                
 				#text{
 					@extend .col-md-12;
 					text-align: right;
-					color:white;
+                    font-weight: bold;
+                    font-size: 12px;
+                    font-style: italic;
 					padding:$gutter;
+                    a{
+                        color:$bodycolor;
+                    }
 					a:hover{
 						color:white;
 					}

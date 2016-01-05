@@ -2417,7 +2417,7 @@ pre code {
 }
 
 /* line 11, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, #contentRow #sideNavBox, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, #contentRow #contentBox, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, body #s4-workspace #jbc-footer #footerrow #social, body #s4-workspace #jbc-footer #footerrow #logo, #contentRow #sideNavBox, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, body #s4-workspace #jbc-footer #footerrow #left-links, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, #contentRow #contentBox, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2947,7 +2947,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-md-3, #contentRow #sideNavBox, .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links, .col-md-5, .col-md-6, .col-md-7, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social, .col-md-9, #contentRow #contentBox, .col-md-10, .col-md-11, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text {
+  .col-md-1, .col-md-2, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #siteIcon, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div, .col-md-3, body #s4-workspace #jbc-footer #footerrow #social, body #s4-workspace #jbc-footer #footerrow #logo, #contentRow #sideNavBox, .col-md-4, .col-md-5, .col-md-6, body #s4-workspace #jbc-footer #footerrow #left-links, .col-md-7, .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, .col-md-9, #contentRow #contentBox, .col-md-10, .col-md-11, .col-md-12, body #s4-workspace #jbc-footer #marginrow, body #s4-workspace #jbc-footer #footerrow #text {
     float: left;
   }
 
@@ -2962,12 +2962,12 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-3, #contentRow #sideNavBox {
+  .col-md-3, body #s4-workspace #jbc-footer #footerrow #social, body #s4-workspace #jbc-footer #footerrow #logo, #contentRow #sideNavBox {
     width: 25%;
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, body #s4-workspace #jbc-footer #footerrow #left-links {
+  .col-md-4 {
     width: 33.33333%;
   }
 
@@ -2977,7 +2977,7 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6 {
+  .col-md-6, body #s4-workspace #jbc-footer #footerrow #left-links {
     width: 50%;
   }
 
@@ -2987,7 +2987,7 @@ pre code {
   }
 
   /* line 35, ../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box, body #s4-workspace #jbc-footer #footerrow #social {
+  .col-md-8, body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box {
     width: 66.66667%;
   }
 
@@ -9362,7 +9362,7 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-roundedtile .title img {
 }
 /* line 174, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer {
-  background-color: #382d24;
+  background-color: #ffcf1f;
   min-height: 110px;
   margin: -15px;
   margin-top: 15px;
@@ -9379,13 +9379,23 @@ body #s4-workspace #jbc-footer #footerrow {
 }
 /* line 190, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #left-links a:link, body #s4-workspace #jbc-footer #footerrow #left-links a:hover, body #s4-workspace #jbc-footer #footerrow #left-links a:visited {
-  color: #ffcf1f;
+  color: #382d24;
+  background-color: white;
+  padding: 6px 20px 6px 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 12px;
+  font-weight: bold;
 }
-/* line 194, ../sass/JBC/_jbc-general.scss */
+/* line 202, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social {
   text-align: right;
 }
-/* line 197, ../sass/JBC/_jbc-general.scss */
+/* line 205, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-footer #footerrow #social a:link, body #s4-workspace #jbc-footer #footerrow #social a:visited {
   display: inline-block;
   position: relative;
@@ -9396,7 +9406,7 @@ body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-foo
   text-decoration: none;
   text-align: center;
   color: #382d24;
-  background-color: #ffcf1f;
+  background-color: white;
   font-size: 25px;
   font-weight: normal;
   line-height: 1.6em;
@@ -9406,25 +9416,32 @@ body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-foo
   -ms-border-radius: 25px;
   border-radius: 25px;
 }
-/* line 214, ../sass/JBC/_jbc-general.scss */
+/* line 222, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a:hover {
-  background-color: white;
+  color: #382d24;
 }
-/* line 217, ../sass/JBC/_jbc-general.scss */
-body #s4-workspace #jbc-footer #footerrow #social img {
+/* line 228, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #logo img {
   display: inline-block;
+  float: right;
 }
-/* line 220, ../sass/JBC/_jbc-general.scss */
-body #s4-workspace #jbc-footer #footerrow #social .logo {
+/* line 232, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #logo .logo {
   margin-left: 15px;
 }
-/* line 225, ../sass/JBC/_jbc-general.scss */
+/* line 237, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text {
   text-align: right;
-  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
   padding: 15px;
 }
-/* line 230, ../sass/JBC/_jbc-general.scss */
+/* line 244, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #jbc-footer #footerrow #text a {
+  color: #382d24;
+}
+/* line 247, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text a:hover {
   color: white;
 }

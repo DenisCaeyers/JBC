@@ -66,8 +66,8 @@
 		<div id="marginrow"></div>
 		<div id="footerrow">
 			<div id="left-links">
-				<a href="https://www.jbc.be/" target="_blank">E-Shop</a><span class="bullets"></span>
-				<a href="http://jobs.jbc.be" target="_blank">Jobs</a><span class="bullets"></span>
+				<a href="https://www.jbc.be/" target="_blank">E-Shop</a>
+				<a href="http://jobs.jbc.be" target="_blank">Jobs</a>
 				<a href="http://www.google.be" target="_blank">Contact us</a>			
 			</div>
 			<div id="social">
@@ -76,11 +76,14 @@
 				<a href="https://www.pinterest.com/jbcfashion/" class="social-pin" target="_blank"><i class="fa fa-pinterest-p"></i></a>
 				<a href="https://instagram.com/jbcfashion/" class="social-inst" target="_blank"><i class="fa fa-instagram"></i></a>
 				<a href="https://www.jbc.be/nl/jbc/jbc-app" class="social-app" target="_blank"><img src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/app.png" style="margin-top:-5px;" /></i></a>
-				<img src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/logo-wit.png" class="img-responsive logo" alt="JBC" />
+                <div id="text">
+				    Centrum-Zuid 3401, 3530 Houthalen
+			    </div>
 			</div>
-			<div id="text">
-				Centrum-Zuid 3401 - 3530 Houthalen - <a href="https://www.jbc.be/nl/contact/contacteer-ons" >Check our addresses</a>
-			</div>
+            <div id="logo">
+                <img src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/logo-wit.png" class="img-responsive logo" alt="JBC" />
+            </div>
+			
 		</div>
 	</footer>
 </asp:Content>

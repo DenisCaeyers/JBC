@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 		},
         js:{
             files:'**/*.js',
-        }
+        },
 	},
     
     
@@ -47,8 +47,10 @@ module.exports = function(grunt) {
                 // Create a local server on Port:
                 port: 9000,
                 // Optional only for SSL
-                key: grunt.file.read('ssl/livereload.key').toString(),
-                cert: grunt.file.read('ssl/livereload.crt').toString(),
+                https:{
+                    key: 'ssl/livereload.key',
+                    cert: 'ssl/livereload.crt',
+                },
                 server: {
                     // base directory of the local server
                     baseDir: ['./'],
@@ -58,8 +60,6 @@ module.exports = function(grunt) {
             }
         }
     },
-    
-    
     
     
   })
