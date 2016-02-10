@@ -3,7 +3,7 @@
 /* fonts */
 /* line 4, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile {
-  border: 1px #ffcf1f solid;
+  border: 1px #fdc82f solid;
   padding: 15px;
   margin-bottom: 30px;
   min-height: 350px;
@@ -11,13 +11,13 @@
   -moz-border-top-left-radius: 15px;
   -ms-border-top-left-radius: 15px;
   border-top-left-radius: 15px;
-  -moz-box-shadow: 3px 3px 16px 0px gray;
-  -webkit-box-shadow: 3px 3px 16px 0px gray;
-  box-shadow: 3px 3px 16px 0px gray;
+  -moz-box-shadow: 3px 3px 16px 0px #bfac9c;
+  -webkit-box-shadow: 3px 3px 16px 0px #bfac9c;
+  box-shadow: 3px 3px 16px 0px #bfac9c;
 }
 /* line 11, ../../../sass/JBC/Display Templates/jbc-divisionsoverview.scss */
 .jbc-roundedtile .title {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
   margin: -15px;
   padding: 10px;
   margin-bottom: 0;

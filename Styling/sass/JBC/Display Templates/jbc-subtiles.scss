@@ -1,0 +1,64 @@
+/* Variables & mixins */
+@import "variables";
+@import "mixins";
+
+.jbc-tile-title {
+		position: relative;
+		z-index:10;
+		background-color: $yellow;
+		padding: 10px 3em 10px $gutter;
+		width:100%;
+        
+        height:75px;
+        
+        margin-bottom: $gutter;
+		
+		@include border-radius(3px);
+		
+		h3{
+			@include resetmargin;
+			color:white;
+			font-size:1em;					
+		}		
+		
+		h3:after{
+			content: " ••";
+			font-size:14px;
+		}
+        
+}
+
+.jbc-tile{   
+    overflow:hidden;
+    background-size:100%;
+    padding-bottom:100%;
+    height:auto;
+	position: relative;
+	background-color:$gray;
+	
+	margin-bottom:$gutter + $gutter;
+	
+	.stretch{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		
+		.overlay{
+			background-color: rgba(0,0,0,0.3);
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top:100%;
+			color:white;
+			padding: $gutter*2;
+			@include transition(all, 0.4s, ease);
+		}
+	}
+}
+.jbc-tile:hover{
+	.overlay{
+		top:0;
+	}
+}

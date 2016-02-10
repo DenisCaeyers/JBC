@@ -5,10 +5,12 @@
 //http://codepen.io/reallifedigital/pen/dYwdMb
 
 #jbc-beehivegrid{
-	background-color:$yellow;
 	margin-left:-15px;
 	margin-right:-15px;
-	background:url("/_catalogs/masterpage/JBC/IMG/beehivebackground_noborder.png");
+    
+    a:link, a:hover, a:visited{
+        color:white !important;
+    }
 	
 	.views-row{
 		width:900px;
@@ -42,7 +44,8 @@
 		height: 100%;
 		width: 57.735%;
 		display: inline-block;
-		background-color:white;
+		background-color:$yellow;
+        
 		p{
 			position: absolute;
 			z-index: 1;
@@ -59,7 +62,7 @@
 		}
 	}
 	.hexagon:hover{
-		background-color:$yellow;
+		background-color:lighten($yellow,10%);
 		color:white;
 	}
 		

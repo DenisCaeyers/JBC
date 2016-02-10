@@ -11,7 +11,7 @@
 #jbc-quicklinks .title .one {
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffcf1f;
+  color: #fdc82f;
 }
 /* line 16, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .title .two {
@@ -21,7 +21,7 @@
 /* line 22, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink {
   padding: 15px;
-  border: 1px solid #ffcf1f;
+  border: 1px solid #fdc82f;
   margin: 15px 0 15px 0;
   font-size: 16px;
   -webkit-border-radius: 2px;
@@ -47,7 +47,7 @@
 }
 /* line 44, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
   color: white !important;
 }
 /* line 47, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */

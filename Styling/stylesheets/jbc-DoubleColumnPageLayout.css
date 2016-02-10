@@ -9133,7 +9133,7 @@ button.close {
 }
 /* line 80, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li a:hover {
-  background-color: #ffcf1f !important;
+  background-color: #fdc82f !important;
   color: white !important;
 }
 /* line 84, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
@@ -9183,7 +9183,7 @@ button.close {
 }
 /* line 124, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root li.dynamic-children > ul.dynamic li a:hover {
-  background-color: #ffcf1f !important;
+  background-color: #fdc82f !important;
 }
 /* line 130, ../sass/JBC/Navigation/_jbc-collapsable-topnav.scss */
 #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #DeltaTopNavigation .ms-core-listMenu-horizontalBox ul.ms-core-listMenu-root .ms-navedit-editArea {
@@ -9230,7 +9230,11 @@ body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow #s
   padding: 0;
   height: inherit;
 }
-/* line 43, ../sass/JBC/_jbc-general.scss */
+/* line 39, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box .ms-breadcrumb-top {
+  margin-top: 5px;
+}
+/* line 44, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .ms-breadcrumb-box #pageTitle {
   margin: 0;
   padding: 0;
@@ -9239,28 +9243,28 @@ body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow .m
   margin-right: 15px;
   font-family: "lato", "helvetica", "Arial";
 }
-/* line 53, ../sass/JBC/_jbc-general.scss */
+/* line 54, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div {
   padding: 0;
   padding-top: 15px;
 }
-/* line 57, ../sass/JBC/_jbc-general.scss */
+/* line 58, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div #DeltaPlaceHolderSearchArea {
   width: 100%;
 }
-/* line 59, ../sass/JBC/_jbc-general.scss */
+/* line 60, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div #DeltaPlaceHolderSearchArea #searchInputBox {
   width: 100%;
 }
-/* line 61, ../sass/JBC/_jbc-general.scss */
+/* line 62, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div #DeltaPlaceHolderSearchArea #searchInputBox .ms-srch-sb-border {
-  border-color: #ffcf1f;
+  border-color: #fdc82f;
 }
-/* line 63, ../sass/JBC/_jbc-general.scss */
+/* line 64, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #s4-titlerow #titleAreaBox #titleAreaRow > div + div + div + div #DeltaPlaceHolderSearchArea #searchInputBox .ms-srch-sb-border input {
   width: 70%;
 }
-/* line 75, ../sass/JBC/_jbc-general.scss */
+/* line 76, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow {
   padding-top: 20px;
   /* Quick Launch */
@@ -9274,63 +9278,64 @@ body #s4-workspace #s4-bodyContainer #contentRow {
   /* JBC Rounded Tile */
   /* ref: divisionsoverview.scss*/
 }
-/* line 80, ../sass/JBC/_jbc-general.scss */
+/* line 81, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox * {
   font-family: "lato", "helvetica", "Arial";
+  color: black;
 }
 @media screen and (max-width: 992px) {
-  /* line 79, ../sass/JBC/_jbc-general.scss */
+  /* line 80, ../sass/JBC/_jbc-general.scss */
   body #s4-workspace #s4-bodyContainer #contentRow #sideNavBox {
     width: auto;
     z-index: 200;
   }
 }
-/* line 90, ../sass/JBC/_jbc-general.scss */
+/* line 92, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-alert {
   background-color: #F1F1F1;
   padding: 15px;
   padding-right: 60px;
   background-image: url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/excl.png");
 }
-/* line 98, ../sass/JBC/_jbc-general.scss */
+/* line 100, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow a {
-  color: #ffcf1f;
+  color: #fdc82f;
 }
-/* line 103, ../sass/JBC/_jbc-general.scss */
+/* line 105, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .bullets:after {
   content: " •• ";
   color: white;
 }
-/* line 110, ../sass/JBC/_jbc-general.scss */
-body #s4-workspace #s4-bodyContainer #contentRow .jbc-table thead {
-  background-color: #ffcf1f;
-}
 /* line 112, ../sass/JBC/_jbc-general.scss */
+body #s4-workspace #s4-bodyContainer #contentRow .jbc-table thead {
+  background-color: #fdc82f;
+}
+/* line 114, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-table thead th {
   color: white;
 }
-/* line 119, ../sass/JBC/_jbc-general.scss */
+/* line 121, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .ms-webpartzone-cell {
   margin: 0;
 }
-/* line 123, ../sass/JBC/_jbc-general.scss */
+/* line 125, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-box, body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox, body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 127, ../sass/JBC/_jbc-general.scss */
+/* line 129, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-graybox {
   background-color: #F1F1F1;
 }
-/* line 131, ../sass/JBC/_jbc-general.scss */
+/* line 133, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowbox {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
 }
-/* line 135, ../sass/JBC/_jbc-general.scss */
+/* line 137, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-whitebox {
   background-color: white;
 }
-/* line 141, ../sass/JBC/_jbc-general.scss */
+/* line 143, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-link {
   font: 14px;
   padding: 5px;
@@ -9341,43 +9346,43 @@ body #s4-workspace #s4-bodyContainer #contentRow .jbc-link {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 148, ../sass/JBC/_jbc-general.scss */
+/* line 150, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-link:after {
   content: " ••";
 }
-/* line 152, ../sass/JBC/_jbc-general.scss */
+/* line 154, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-yellowLink:visited {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
   color: white !important;
 }
-/* line 157, ../sass/JBC/_jbc-general.scss */
+/* line 159, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:hover, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:link, body #s4-workspace #s4-bodyContainer #contentRow .jbc-brownLink:visited {
   background-color: #382d24;
-  color: #ffcf1f !important;
+  color: #fdc82f !important;
 }
-/* line 165, ../sass/JBC/_jbc-general.scss */
+/* line 167, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #s4-bodyContainer #contentRow .jbc-roundedtile .title img {
   height: 32px;
   width: inherit !important;
 }
-/* line 174, ../sass/JBC/_jbc-general.scss */
+/* line 176, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
   min-height: 110px;
   margin: -15px;
   margin-top: 15px;
 }
-/* line 180, ../sass/JBC/_jbc-general.scss */
+/* line 182, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #marginrow {
   height: 15px;
   background-color: #f3f1f1;
 }
-/* line 185, ../sass/JBC/_jbc-general.scss */
+/* line 187, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow {
   padding: 15px;
   padding-top: 30px;
 }
-/* line 190, ../sass/JBC/_jbc-general.scss */
+/* line 192, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #left-links a:link, body #s4-workspace #jbc-footer #footerrow #left-links a:hover, body #s4-workspace #jbc-footer #footerrow #left-links a:visited {
   color: #382d24;
   background-color: white;
@@ -9391,11 +9396,11 @@ body #s4-workspace #jbc-footer #footerrow #left-links a:link, body #s4-workspace
   font-size: 12px;
   font-weight: bold;
 }
-/* line 202, ../sass/JBC/_jbc-general.scss */
+/* line 204, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social {
   text-align: right;
 }
-/* line 205, ../sass/JBC/_jbc-general.scss */
+/* line 207, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-footer #footerrow #social a:link, body #s4-workspace #jbc-footer #footerrow #social a:visited {
   display: inline-block;
   position: relative;
@@ -9416,20 +9421,20 @@ body #s4-workspace #jbc-footer #footerrow #social a, body #s4-workspace #jbc-foo
   -ms-border-radius: 25px;
   border-radius: 25px;
 }
-/* line 222, ../sass/JBC/_jbc-general.scss */
+/* line 224, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #social a:hover {
   color: #382d24;
 }
-/* line 228, ../sass/JBC/_jbc-general.scss */
+/* line 230, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #logo img {
   display: inline-block;
   float: right;
 }
-/* line 232, ../sass/JBC/_jbc-general.scss */
+/* line 234, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #logo .logo {
   margin-left: 15px;
 }
-/* line 237, ../sass/JBC/_jbc-general.scss */
+/* line 239, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text {
   text-align: right;
   font-weight: bold;
@@ -9437,11 +9442,11 @@ body #s4-workspace #jbc-footer #footerrow #text {
   font-style: italic;
   padding: 15px;
 }
-/* line 244, ../sass/JBC/_jbc-general.scss */
+/* line 246, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text a {
   color: #382d24;
 }
-/* line 247, ../sass/JBC/_jbc-general.scss */
+/* line 249, ../sass/JBC/_jbc-general.scss */
 body #s4-workspace #jbc-footer #footerrow #text a:hover {
   color: white;
 }

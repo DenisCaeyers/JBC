@@ -68,7 +68,7 @@
 			<div id="left-links">
 				<a href="https://www.jbc.be/" target="_blank">E-Shop</a>
 				<a href="http://jobs.jbc.be" target="_blank">Jobs</a>
-				<a href="http://www.google.be" target="_blank">Contact us</a>			
+				<a href="https://jbcbe.sharepoint.com/about/Pages/Contacts-JBC-HQ.aspx" target="_blank">Contact us</a>			
 			</div>
 			<div id="social">
 				<a href="https://www.facebook.com/jbcfashion" class="social-fb" target="_blank"><i class="fa fa-facebook"></i></a>

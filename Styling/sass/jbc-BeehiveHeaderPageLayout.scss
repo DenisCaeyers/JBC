@@ -17,53 +17,69 @@
 /* TODO Local font gebruiken */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
-/* Hide the Quick Launch */
-#sideNavBox {
-  display: none;
-}   
-
-/* Content Styling */
-#contentRow {
-	.jbc-beehive-header{
-		min-height:400px;
-		background:url('/_catalogs/masterpage/JBC/IMG/beehivebackground.png');
-		padding:$gutter;
-		padding-top:$gutter*4;
-        .col-md-4{
-            @media screen and (max-width:$screen-md)
-            {
-                display:none;
+body{
+  .ms-core-overlay{
+      background:url("https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/IMG/bg.png");
+      background-repeat: repeat-x; 
+      background-position-y:10px;
+    }
+    
+    #pageTitle{
+        display: none;
+    }
+    
+    /* Content Styling */
+    #contentRow {
+        padding-top:0px;
+        background-color:transparent;
+       
+        /* Hide the Quick Launch */
+        #sideNavBox {
+          display: none;
+        }
+        
+        .ms-webpartzone-cell{
+            margin-bottom:$gutter !important;
+        }
+        
+        .jbc-content-row{
+            background-color:white;
+            padding-top:30px;
+            .jbc-image-row{
+                img{
+                    @extend .img-responsive;
+                }
             }
         }
-		.jbc-knowledge-header{
-			background-color:rgba(255,255,255,0.5);
-			padding:$gutter;
-			@include border-radius(2px);
-		}
-		
-		.jbc-knowledge-links{
-			margin-top:$gutter*2;
-			a, a:visited{
-				padding: $gutter;
-				background-color:$bodycolor;
-				color:$yellow;
-                float: left;
-                margin:5px;
-				@include border-radius(2px);
-                
-			}
-			a:after{
-				content:" ••";
-			}
-		}
-	}
-	.jbc-beehive-content{
-		padding:$gutter*2;
-		*{
-			text-align: center !important;
-		}
-		#SearchBox{
-			float:inherit;
-		}
-	}
+        .jbc-header-row{
+            text-align: center;
+            a:link, a:hover, a:visited{
+                color: white !important;
+            }
+            
+            .jbc-knowledge-links{
+                a:link, a:hover, a:visited{
+                    color: $bodycolor !important;
+                    background-color: white;
+                    padding: 6px 20px 6px 20px;
+                    @include border-radius(2px);
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    font-size:14px;
+                    font-weight:bold;
+				}
+
+            }
+        }
+        .jbc-centered-row{
+            background-color:white;
+            img{
+                @include resetmargin;
+            } 
+        }
+        
+        #jbc-footer{
+            margin-top:0;
+        }
+    }
 }

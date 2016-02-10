@@ -20,13 +20,14 @@
 			color:$bodycolor;
 		}
 	}
+    
 	ul#eventslist{
 		@include resetpadding;
 		background-color: $zalm;
 		li{
 			list-style: none;
 			@include transition(all, 1s, ease-in-out);
-			padding:$gutter + 5px;
+			padding:$gutter + 7px;
 			border-bottom: 1px solid $yellow;
 			div.date{
 				float: left;
@@ -76,6 +77,7 @@
 		background-color:$yellow;
 		padding:5px;
 		text-align: center;
+        margin-top:11px;
 		a:link, a:hover,a:visited{
 			color:white !important;
 		}

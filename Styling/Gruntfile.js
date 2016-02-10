@@ -12,6 +12,17 @@ module.exports = function(grunt) {
 		}
 	},
     
+   autoprefixer: {
+        build: {
+            options: {
+                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+            },
+            // Target-specific file lists and/or options go here.
+            files:{
+                'stylesheets/JBC/Display Templates/jbc-beehivegrid.css' : 'stylesheets/JBC/Display Templates/jbc-beehivegrid.css'
+            } 
+         },
+    },
     
     
     
@@ -67,7 +78,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   
+  grunt.registerTask('autoprefix', ['autoprefixer:build']);
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('sync', ['browserSync:livereload','watch']);
 

@@ -37,6 +37,7 @@ body{
 						.ms-breadcrumb-box{
 							@extend .col-md-8;
 							.ms-breadcrumb-top{
+                                margin-top: 5px;
 								#DeltaTopNavigation {
 								}
 							}
@@ -79,6 +80,7 @@ body{
 				#sideNavBox{
 					* {
 						font-family: $lato;
+                        color:black;
 					}
                     @media screen and (max-width:$screen-md){
                         width:auto;

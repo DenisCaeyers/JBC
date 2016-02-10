@@ -11,7 +11,7 @@
 #jbc-newsscroller .title .one {
   font-weight: bold;
   text-transform: uppercase;
-  color: #ffcf1f;
+  color: #fdc82f;
 }
 /* line 16, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
 #jbc-newsscroller .title .two {
@@ -79,12 +79,12 @@
 }
 /* line 66, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
 #jbc-newsscroller #newsticker .item:hover {
-  background-color: #fff0b8;
-  border-right: 2px #ffcf1f solid;
+  background-color: #fef0c7;
+  border-right: 2px #fdc82f solid;
 }
 /* line 71, ../../../sass/JBC/Display Templates/jbc-newsscroller.scss */
 #jbc-newsscroller #tickerfooter {
-  background-color: #ffcf1f;
+  background-color: #fdc82f;
   padding: 5px;
   text-align: center;
 }
