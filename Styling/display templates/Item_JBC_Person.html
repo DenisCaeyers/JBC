@@ -10,7 +10,7 @@
 <mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
 <mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
-<mso:ManagedPropertyMapping msdt:dt="string">&#39;AboutMe&#39;:&#39;AboutMe&#39;,&#39;AccountName&#39;:&#39;AccountName&#39;,&#39;BaseOfficeLocation&#39;:&#39;BaseOfficeLocation&#39;,&#39;Department&#39;:&#39;Department&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;Interests&#39;:&#39;Interests&#39;,&#39;JobTitle&#39;:&#39;JobTitle&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;Memberships&#39;:&#39;Memberships&#39;,&#39;PastProjects&#39;:&#39;PastProjects&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;PictureURL&#39;:&#39;PictureURL&#39;,&#39;PreferredName&#39;:&#39;PreferredName&#39;,&#39;Responsibilities&#39;:&#39;Responsibilities&#39;,&#39;Schools&#39;:&#39;Schools&#39;,&#39;ServiceApplicationID&#39;:&#39;ServiceApplicationID&#39;,&#39;SipAddress&#39;:&#39;SipAddress&#39;,&#39;Skills&#39;:&#39;Skills&#39;,&#39;UserProfile_GUID&#39;:&#39;UserProfile_GUID&#39;,&#39;WorkEmail&#39;:&#39;WorkEmail&#39;,&#39;WorkId&#39;:&#39;WorkId&#39;,&#39;YomiDisplayName&#39;:&#39;YomiDisplayName&#39;,&#39;WorkPhone&#39;:&#39;WorkPhone&#39;,&#39;MobilePhone&#39;:&#39;MobilePhone&#39;,&#39;OfficeNumber&#39;:&#39;OfficeNumber&#39;</mso:ManagedPropertyMapping>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableString34&#39;:&#39;RefinableString34&#39;,&#39;AboutMe&#39;:&#39;AboutMe&#39;,&#39;AccountName&#39;:&#39;AccountName&#39;,&#39;BaseOfficeLocation&#39;:&#39;BaseOfficeLocation&#39;,&#39;Department&#39;:&#39;Department&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;Interests&#39;:&#39;Interests&#39;,&#39;JobTitle&#39;:&#39;JobTitle&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;Memberships&#39;:&#39;Memberships&#39;,&#39;PastProjects&#39;:&#39;PastProjects&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;PictureURL&#39;:&#39;PictureURL&#39;,&#39;PreferredName&#39;:&#39;PreferredName&#39;,&#39;Responsibilities&#39;:&#39;Responsibilities&#39;,&#39;Schools&#39;:&#39;Schools&#39;,&#39;ServiceApplicationID&#39;:&#39;ServiceApplicationID&#39;,&#39;SipAddress&#39;:&#39;SipAddress&#39;,&#39;Skills&#39;:&#39;Skills&#39;,&#39;UserProfile_GUID&#39;:&#39;UserProfile_GUID&#39;,&#39;WorkEmail&#39;:&#39;WorkEmail&#39;,&#39;WorkId&#39;:&#39;WorkId&#39;,&#39;YomiDisplayName&#39;:&#39;YomiDisplayName&#39;,&#39;WorkPhone&#39;:&#39;WorkPhone&#39;,&#39;MobilePhone&#39;:&#39;MobilePhone&#39;,&#39;OfficeNumber&#39;:&#39;OfficeNumber&#39;</mso:ManagedPropertyMapping>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
 <mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/search/_catalogs/masterpage/Display%20Templates/Search/Item_JBC_Person.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 </mso:CustomDocumentProperties>
@@ -52,7 +52,7 @@
                         var uWorkPhone =  ctx.CurrentItem.WorkPhone;
                         var uMobilePhone =  ctx.CurrentItem.MobilePhone;
                         var uOfficeNumber = ctx.CurrentItem.OfficeNumber;
-                        
+                        var uIpPhone = ctx.CurrentItem.RefinableString34;
 						
 						 if (!uEmail) 
                         {
@@ -66,6 +66,10 @@
 						if (!uWorkPhone) 
                         {
                         	uWorkPhone = "(not known)"
+						}
+                        if (!uIpPhone) 
+                        {
+                        	uIpPhone = "(not known)"
 						}
 
 
@@ -96,8 +100,8 @@ _#-->
                                         <div id="WorkPhone">
                                         	Office phone: _#= uWorkPhone =#_
                                         </div>
-										<div id="MobilePhone">
-                                        	Mobile phone: _#= uMobilePhone =#_
+                                        <div id="Internal Phone">
+                                        	Internal phone: _#= uIpPhone =#_
                                         </div>
 
 

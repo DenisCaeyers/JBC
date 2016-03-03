@@ -11,6 +11,7 @@
 	
 	<!-- TODO relative link, not absolute -->
 	<script src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/JS/jbc-scripts.js" type="text/javascript"></script>
+    <script src="https://jbcbe.sharepoint.com/_catalogs/masterpage/JBC/JS/jbc-homepage.js" type="text/javascript"></script>
 	
 	<PublishingWebControls:EditModePanel runat="server">
 		<!-- Styles for edit mode only-->

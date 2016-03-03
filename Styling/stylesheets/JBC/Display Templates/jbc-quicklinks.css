@@ -19,6 +19,14 @@
   color: #382d24;
 }
 /* line 22, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+#jbc-quicklinks .list a, #jbc-quicklinks .list a:link, #jbc-quicklinks .list a:visited {
+  color: #382d24 !important;
+}
+/* line 25, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+#jbc-quicklinks .list a:hover {
+  color: white !important;
+}
+/* line 28, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink {
   padding: 15px;
   border: 1px solid #fdc82f;
@@ -31,39 +39,35 @@
   background-color: white;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 22, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+  /* line 28, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
   #jbc-quicklinks .list .quicklink {
     padding-top: 5px;
     padding-bottom: 5px;
   }
 }
-/* line 36, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
-#jbc-quicklinks .list .quicklink a, #jbc-quicklinks .list .quicklink a:link, #jbc-quicklinks .list .quicklink a:visited {
-  color: #382d24 !important;
-}
-/* line 39, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 42, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink .image {
   margin-right: 15px;
 }
-/* line 44, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 47, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover {
   background-color: #fdc82f;
   color: white !important;
 }
-/* line 47, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 50, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover a, #jbc-quicklinks .list .quicklink:hover a:link, #jbc-quicklinks .list .quicklink:hover a:visited {
   color: white !important;
 }
-/* line 50, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 53, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .quicklink:hover .arrow:before {
   color: white !important;
 }
-/* line 54, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 57, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .arrow:before {
   content: " > ";
   color: #382d24;
 }
-/* line 58, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
+/* line 61, ../../../sass/JBC/Display Templates/jbc-quicklinks.scss */
 #jbc-quicklinks .list .arrow {
   float: right;
 }

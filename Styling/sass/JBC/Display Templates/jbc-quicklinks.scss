@@ -19,6 +19,12 @@
 		}
 	}
 	.list{
+         a, a:link,a:visited{
+				color:$bodycolor !important;
+	     }
+         a:hover{
+             color:white !important;
+         }
 		.quicklink{
 			padding:$gutter;
             
@@ -33,9 +39,6 @@
 			font-size: 16px;
 			@include border-radius(2px);
 			background-color:white;
-			a, a:link,a:visited{
-				color:$bodycolor !important;
-			}
 			.image{
 				margin-right:$gutter;;
 			}

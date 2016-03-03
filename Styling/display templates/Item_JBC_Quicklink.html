@@ -25,10 +25,11 @@
             var navigateUrl = $getItemValue(ctx, "RefinableString25");
             var icon = $getItemValue(ctx, "RefinableString26");
 _#-->		
-            
-           <div class="quicklink">
-               <a href="_#= navigateUrl =#_" ><span class="image">_#= STSHtmlDecode(icon.value) =#_</span><span class="content"> _#= Title =#_ </span><span class="arrow"></span></a>
-           </div>
+           <a href="_#= navigateUrl =#_" > 
+                <div class="quicklink">
+                    <span class="image">_#= STSHtmlDecode(icon.value) =#_</span><span class="content"> _#= Title =#_ </span><span class="arrow"></span>
+                </div>
+           </a>
            
 <!--#_ 
         } 
