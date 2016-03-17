@@ -117,6 +117,11 @@ body{
 					}
 				}
 				
+                /* images */
+                img.jbc-rounded{
+                    border-radius: 2px;
+                }
+                
 				/* Web Parts */
 				.ms-webpartzone-cell {
 					margin: 0;
@@ -151,7 +156,7 @@ body{
 					content:" ••";
 				}
 				
-				.jbc-yellowLink:hover, .jbc-yellowLink:link, .jbc-yellowLink:visited{
+				.jbc-yellowLink:hover,.jbc-yellowLink, .jbc-yellowLink:link, .jbc-yellowLink:visited{
 					background-color:$yellow;
 					color:white !important;
 				}
