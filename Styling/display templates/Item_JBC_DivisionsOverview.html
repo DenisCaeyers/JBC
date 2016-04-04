@@ -11,7 +11,7 @@
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
 <mso:ManagedPropertyMapping msdt:dt="string">&#39;JBCPeopleLink&#39;:&#39;JBCPeopleLink&#39;,&#39;JBCDivisionDescription&#39;:&#39;JBCDivisionDescription&#39;,&#39;JBCLinkIcon&#39;:&#39;JBCLinkIcon&#39;,&#39;JBCNavigateUrl&#39;:&#39;JBCNavigateUrl&#39;,&#39;PublishingImage&#39;:&#39;PublishingImage&#39;,&#39;ContentType&#39;:&#39;ContentType&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
 
-<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/_catalogs/masterpage/Display Templates/Search/Item_JBC_Overzicht3Tiles.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/_catalogs/masterpage/Display%20Templates/Search/Item_JBC_DivisionsOverview.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
 <mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
 <mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
@@ -30,6 +30,15 @@
 					var linkIcon = $getItemValue(ctx, "JBCLinkIcon");	
 					var divDesc = $getItemValue(ctx, "JBCDivisionDescription");			
 					var pplLink = $getItemValue(ctx, "JBCPeopleLink");
+                    var hideDivLink;
+                    
+                    if(navUrl.inputValue == ""){
+                        hideDivLink = "display:none;";
+                    }
+                    else
+                    {
+                        hideDivLink = "";
+                    }
 			
 				_#-->      
 				         	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="position:relative">	
@@ -39,7 +48,7 @@
 									</div>
 										<p>_#= divDesc =#_</p>
 										<div class="col-md-12"><a href="_#= pplLink =#_" class="jbc-link jbc-yellowLink">Find people</a></div>
-										<div class="col-md-12" style="display:none;"><a href="_#= navUrl =#_" class="jbc-link jbc-brownLink">Restricted site</a></div>
+										<div class="col-md-12" style="_#= hideDivLink =#_"><a href="_#= navUrl =#_" class="jbc-link jbc-brownLink">Restricted site</a></div>
 								</div>
 				         	</div>
 				         

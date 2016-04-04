@@ -1,7 +1,7 @@
 var albumContainer= "#jbc-albumdetail";
 
 $(document).ready(function () {
-  ExecuteOrDelayUntilScriptLoaded(buildPictureItems, "sp.js");
+  ExecuteOrDelayUntilScriptLoaded(buildPictureItems, "sp.init.js");
 });
 
 function buildPictureItems() {
