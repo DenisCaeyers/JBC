@@ -1,0 +1,85 @@
+/* Gutter sizing */
+/* Colors */
+/* fonts */
+/* line 3, ../sass/jbc-StorePageLayoutNew.scss */
+#DeltaPlaceHolderSearchArea {
+  display: none;
+}
+
+/* line 6, ../sass/jbc-StorePageLayoutNew.scss */
+header {
+  margin-top: 15px;
+}
+/* line 8, ../sass/jbc-StorePageLayoutNew.scss */
+header .logo {
+  margin-left: -15px;
+  float: left;
+}
+/* line 12, ../sass/jbc-StorePageLayoutNew.scss */
+header .nav {
+  padding: 15px;
+  float: left;
+  text-decoration: underline;
+}
+
+/* line 18, ../sass/jbc-StorePageLayoutNew.scss */
+#contact-info {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: lightgray;
+}
+
+/* line 25, ../sass/jbc-StorePageLayoutNew.scss */
+.row .col-md-6 {
+  margin-top: 25px;
+}
+
+/* line 32, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles .tile {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #fdc82f;
+  color: white;
+}
+/* line 38, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles .tile:hover {
+  background-color: #fdd562;
+}
+/* line 41, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles .tile .content {
+  position: absolute;
+  padding: 20% 10%;
+  text-align: center;
+}
+/* line 45, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles .tile .content i {
+  font-size: 70px;
+  width: 100%;
+}
+/* line 50, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles .tile .notification {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 15px;
+  right: -10px;
+  top: -10px;
+  text-align: center;
+  padding-top: 5px;
+}
+/* line 62, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles #tickets {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 66, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles #tickets div {
+  background-color: lightgray;
+  padding: 15px;
+}
+/* line 69, ../sass/jbc-StorePageLayoutNew.scss */
+#tiles #tickets div i {
+  font-size: 24px;
+}
