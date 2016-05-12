@@ -1,0 +1,74 @@
+@import 'variables';
+#DeltaPlaceHolderSearchArea {
+    display: none;
+}
+header{
+    margin-top: 15px;
+    .logo{
+        margin-left: -15px;
+        float: left;
+    }
+    .nav{
+        padding: 15px;
+        float: left;
+        text-decoration: underline;
+    }
+}
+    #contact-info{
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: lightgray;
+
+    }
+.row {
+    .col-md-6 {
+        margin-top:25px;
+    }
+}
+#tiles{
+    div{
+    }
+    .tile{
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $c-accent-1;
+        color: white;
+        &:hover{
+            background-color: lighten($c-accent-1, 10%);
+        }
+        .content{
+            position: absolute;
+            padding: 20% 10%;
+            text-align: center;
+            i{
+                font-size: 70px;
+                width:100%
+            } 
+        }
+        .notification{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color:red;
+            border-radius: 15px;
+            right: -10px;
+            top: -10px;
+            text-align: center;
+            padding-top: 5px;
+        }
+    } 
+    #tickets{
+        padding-left: 15px;
+        padding-right: 15px;
+       
+        div{
+            background-color: lightgray;
+            padding: 15px;   
+            i{
+                font-size: 24px;
+             
+            }
+        }
+    }
+}

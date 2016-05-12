@@ -1,0 +1,86 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title>Store Table Row</title>
+
+    <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableString23&#39;:&#39;RefinableString23&#39;,&#39;RefinableString20&#39;:&#39;RefinableString20&#39;,&#39;RefinableString00&#39;:&#39;RefinableString00&#39;,&#39;Filename&#39;:&#39;Filename&#39;,&#39;ServerRedirectedURL&#39;:&#39;ServerRedirectedURL&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;,&#39;JBCStoreFirstName&#39;:&#39;JBCStoreFirstName&#39;,&#39;JBCStoreLastName&#39;:&#39;JBCStoreLastName&#39;,&#39;JBCStorePhone&#39;:&#39;JBCStorePhone&#39;,&#39;JBCStoreEmail&#39;:&#39;JBCStoreEmail&#39;,&#39;JBCStoreURL&#39;:&#39;JBCStoreURL&#39;,&#39;JBCSStoreNumber&#39;:&#39;JBCSStoreNumber&#39;,&#39;JBCSStoreAddress&#39;:&#39;JBCSStoreAddress&#39;,&#39;JBCSStorePostalcode&#39;:&#39;JBCSStorePostalcode&#39;,&#39;JBCSStorCity&#39;:&#39;JBCSStoreCity&#39;,&#39;JBCVisualMerchandising&#39;:&#39;JBCVisualMerchandising&#39;,&#39;JBCDistrictManager&#39;:&#39;JBCDistrictManager&#39;,&#39;JBCStoreAddress&#39;:&#39;JBCStoreAddress&#39;,&#39;JBCStorePostalcode&#39;:&#39;JBCStorePostalcode&#39;,&#39;JBCStoreCity&#39;:&#39;JBCStoreCity&#39;</mso:ManagedPropertyMapping>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display Templates/Search/Item_StoresTables.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body> JBCDistrictManager
+    <div id="Item_Default">
+        <!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            var itemId = id + Srch.U.Ids.item;
+			var hoverId = id + Srch.U.Ids.hover;
+			var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel.js";
+            $setResultItem(itemId, ctx.CurrentItem);
+			if(ctx.CurrentItem.IsContainer){
+				ctx.CurrentItem.csr_Icon = Srch.U.getFolderIconUrl();
+			}
+			ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+            
+           	var storeUrl = $getItemValue(ctx, "JBCStoreURL");
+            var itemTitle = $getItemValue(ctx, "Title"); 
+            var str_storenr = $getItemValue(ctx, "JBCSStoreNumber");
+            var storeAdres = $getItemValue(ctx, "JBCStoreAddress");
+            var storePostcode = $getItemValue(ctx, "JBCStorePostalcode");
+            var storeStad = $getItemValue(ctx, "JBCStoreCity");
+            
+ 			  
+_#-->
+        <tr class="panel">
+            <td><a href="#_#= str_storenr =#_" data-parent="#jbctable" data-toggle="collapse">_#= itemTitle =#_</a></td>
+            <td></td>
+            <td>_#= str_storenr =#_</td>
+        </tr>
+        <tr id="_#= str_storenr =#_" class="panel-collapse collapse">
+            <td colspan="3">
+                <div>
+                    <div style="width:33%;float:left">
+                        <p style="text-decoration: underline"> Locatie & Contact</p>
+                        <p> Adres: _#= storeAdres =#_ </p>
+                        <p> _#= storePostcode =#_ _#= storeStad =#_ </p>
+                        <p> tel.: _#=ctx.CurrentItem.JBCStorePhone=#_ </p>
+                    </div>
+                    <div style="width:33%;float:left">
+                        <p style="text-decoration: underline">Contactpersonen</p>
+                        <p>Gerant(en): _#= ctx.CurrentItem.JBCStoreFirstName =#_ _#= ctx.CurrentItem.JBCStoreLastName =#_</p>
+                        <p> _#=ctx.CurrentItem.JBCStoreEmail=#_ </p>
+                        <p>DM: _#=ctx.CurrentItem.JBCDistrictManager=#_ </p>
+                        <p>VM: _#=ctx.CurrentItem.JBCVisualMerchandising=#_ </p>
+                    </div>
+                    <div style="width:33%;float:left">
+                        <p style="text-decoration: underline">Extra info</p>
+                        <p>Accountant: </p>
+                        <p>Company: </p>
+                        <p>VAT: </p>
+                        <p>MZ: </p>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+
+
+        <!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+
+</html>
