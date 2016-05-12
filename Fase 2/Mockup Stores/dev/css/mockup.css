@@ -1,0 +1,53 @@
+header {
+  margin-top: 15px; }
+  header .logo {
+    margin-left: -15px;
+    float: left; }
+  header .nav {
+    padding: 15px;
+    float: left;
+    text-decoration: underline; }
+
+#tiles {
+  margin-top: 50px; }
+  #tiles div {
+    margin-bottom: 15px; }
+  #tiles .tile {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #fdc82f;
+    color: white; }
+    #tiles .tile:hover {
+      background-color: #fdd562; }
+    #tiles .tile .content {
+      position: absolute;
+      padding: 25%; }
+      #tiles .tile .content i {
+        font-size: 70px; }
+    #tiles .tile .notification {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 15px;
+      right: -10px;
+      top: -10px;
+      text-align: center;
+      padding-top: 5px; }
+  #tiles #contact-info {
+    padding-left: 15px;
+    padding-right: 15px; }
+    #tiles #contact-info div {
+      background-color: lightgray;
+      padding: 15px; }
+  #tiles #tickets {
+    padding-left: 15px;
+    padding-right: 15px; }
+    #tiles #tickets div {
+      background-color: lightgray;
+      padding: 15px; }
+      #tiles #tickets div i {
+        font-size: 24px; }
+
+/*# sourceMappingURL=mockup.css.map */

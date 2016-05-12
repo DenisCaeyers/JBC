@@ -11,7 +11,7 @@
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
 <mso:ManagedPropertyMapping msdt:dt="string">&#39;RefinableString12&#39;:&#39;RefinableString12&#39;,&#39;RefinableDate02&#39;:&#39;RefinableDate02&#39;,&#39;RefinableDate04&#39;:&#39;RefinableDate04&#39;,&#39;RefinableString25&#39;:&#39;RefinableString25&#39;,&#39;Filename&#39;:&#39;Filename&#39;,&#39;ServerRedirectedURL&#39;:&#39;ServerRedirectedURL&#39;,&#39;Title&#39;:&#39;Title&#39;,&#39;Path&#39;:&#39;Path&#39;,&#39;Description&#39;:&#39;Description&#39;,&#39;EditorOWSUSER&#39;:&#39;EditorOWSUSER&#39;,&#39;LastModifiedTime&#39;:&#39;LastModifiedTime&#39;,&#39;CollapsingStatus&#39;:&#39;CollapsingStatus&#39;,&#39;DocId&#39;:&#39;DocId&#39;,&#39;HitHighlightedSummary&#39;:&#39;HitHighlightedSummary&#39;,&#39;HitHighlightedProperties&#39;:&#39;HitHighlightedProperties&#39;,&#39;FileExtension&#39;:&#39;FileExtension&#39;,&#39;ViewsLifeTime&#39;:&#39;ViewsLifeTime&#39;,&#39;ParentLink&#39;:&#39;ParentLink&#39;,&#39;FileType&#39;:&#39;FileType&#39;,&#39;IsContainer&#39;:&#39;IsContainer&#39;,&#39;SecondaryFileExtension&#39;:&#39;SecondaryFileExtension&#39;,&#39;DisplayAuthor&#39;:&#39;DisplayAuthor&#39;</mso:ManagedPropertyMapping>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
-<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/sites/stores/_catalogs/masterpage/Display%20Templates/Search/Item_Knowledge_DocumentTable.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://jbcbe.sharepoint.com/_catalogs/masterpage/Display%20Templates/Search/Item_JBC_Event.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 <mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
 <mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
 </mso:CustomDocumentProperties>
@@ -25,8 +25,10 @@
             var navigateUrl = $getItemValue(ctx, "Path");
             var start = $getItemValue(ctx, "RefinableDate04");
             var startDate = new Date(start.inputValue);
+            startDate.setHours(startDate.getHours()+2);
             var end = $getItemValue(ctx, "RefinableDate02");
             var endDate = new Date(end.inputValue);
+            endDate.setHours(endDate.getHours()+2);
             var location = $getItemValue(ctx, "RefinableString12");
 _#-->		
             

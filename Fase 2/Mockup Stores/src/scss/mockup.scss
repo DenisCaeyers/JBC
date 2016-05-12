@@ -1,0 +1,73 @@
+@import 'variables';
+
+header{
+    margin-top: 15px;
+    .logo{
+        margin-left: -15px;
+        float: left;
+    }
+    .nav{
+        padding: 15px;
+        float: left;
+        text-decoration: underline;
+    }
+}
+
+#tiles{
+    margin-top: 50px;
+    div{
+        margin-bottom: 15px;
+    }
+    .tile{
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        background-color: $c-accent-1;
+        color: white;
+        &:hover{
+            background-color: lighten($c-accent-1, 10%);
+        }
+        .content{
+            position: absolute;
+            padding: 25%;
+            i{
+                font-size: 70px;
+            } 
+        }
+        .notification{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color:red;
+            border-radius: 15px;
+            right: -10px;
+            top: -10px;
+            text-align: center;
+            padding-top: 5px;
+        }
+    } 
+    #documents{
+        
+    }
+    #contact-info{
+        padding-left: 15px;
+        padding-right: 15px;
+        div{
+            background-color: lightgray;
+            padding: 15px;   
+        }
+    }
+    #tickets{
+         padding-left: 15px;
+        padding-right: 15px;
+       
+        div{
+            background-color: lightgray;
+            padding: 15px;   
+            i{
+                font-size: 24px;
+             
+            }
+        }
+    }
+}
